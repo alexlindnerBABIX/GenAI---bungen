@@ -1,0 +1,77 @@
+WEBVTT
+
+1
+00:00:00.098 --> 00:00:04.158
+Ein Tester verarbeitet mit einem LLM eine lange Spezifikation.
+
+2
+00:00:05.888 --> 00:00:08.328
+Welche Aussage beschreibt Tokenisierung,
+
+3
+00:00:08.647 --> 00:00:09.557
+Einbettungen
+
+4
+00:00:09.728 --> 00:00:11.408
+und Kontextfenster korrekt?
+
+5
+00:00:12.618 --> 00:00:15.208
+Tokenisierung zerlegt Text in Tokens.
+
+6
+00:00:15.728 --> 00:00:18.368
+Einbettungen repräsentieren diese numerisch.
+
+7
+00:00:18.927 --> 00:00:22.568
+Das Kontextfenster begrenzt nur die Länge der erzeugten Ausgabe.
+
+8
+00:00:24.237 --> 00:00:27.078
+Tokenisierung zerlegt Text in Tokens.
+
+9
+00:00:27.508 --> 00:00:31.107
+Einbettungen speichern die beim Training gesehenen Textpassagen.
+
+10
+00:00:31.838 --> 00:00:33.258
+Das Kontextfenster
+
+11
+00:00:33.467 --> 00:00:35.787
+wählt daraus die relevantesten Beispiele aus.
+
+12
+00:00:36.698 --> 00:00:40.808
+Tokenisierung legt die maximale Zahl verarbeitbarer Tokens fest.
+
+13
+00:00:41.527 --> 00:00:44.128
+Einbettungen codieren semantische Beziehungen.
+
+14
+00:00:44.768 --> 00:00:48.688
+Das Kontextfenster zerlegt den Text in verarbeitbare Einheiten.
+
+15
+00:00:50.238 --> 00:00:52.817
+Tokenisierung zerlegt Text in Tokens.
+
+16
+00:00:53.667 --> 00:00:56.387
+Einbettungen repräsentieren semantische und
+
+17
+00:00:56.387 --> 00:00:58.438
+kontextuelle Beziehungen numerisch.
+
+18
+00:00:59.198 --> 00:01:00.578
+Das Kontextfenster
+
+19
+00:01:00.787 --> 00:01:03.548
+begrenzt die gemeinsam berücksichtigbaren Tokens.

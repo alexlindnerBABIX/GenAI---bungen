@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.384 --> 00:00:03.314
+Nachdem der Testfall fachlich sauber definiert ist,
+
+2
+00:00:03.724 --> 00:00:05.705
+kommt nun seine Wartung ins Spiel.
+
+3
+00:00:06.395 --> 00:00:08.915
+Auf dieser Tafel verläuft die entscheidende
+
+4
+00:00:08.915 --> 00:00:12.035
+Grenze zwischen Technik und Testorakel.
+
+5
+00:00:12.675 --> 00:00:14.955
+Links darf Self-healing eingreifen.
+
+6
+00:00:15.514 --> 00:00:16.595
+DM-Strukturen,
+
+7
+00:00:16.915 --> 00:00:19.555
+CSS oder XPath Lokatoren,
+
+8
+00:00:20.035 --> 00:00:24.275
+technische Bindungen und UI-Identifier können sich ändern,
+
+9
+00:00:24.514 --> 00:00:27.235
+obwohl die fachliche Funktion gleich geblieben ist.
+
+10
+00:00:28.035 --> 00:00:33.595
+Dann darf Gen AI einen neuen technischen Weg zum selben Testziel vorschlagen.
+
+11
+00:00:34.355 --> 00:00:35.635
+Rechts steht dagegen,
+
+12
+00:00:35.995 --> 00:00:38.595
+was nicht automatisch geheilt werden darf
+
+13
+00:00:38.955 --> 00:00:40.375
+erwartete Ergebnisse,
+
+14
+00:00:40.754 --> 00:00:42.125
+fachliche Assertions,
+
+15
+00:00:42.394 --> 00:00:45.834
+Geschäftsregeln und damit das Testorakel.
+
+16
+00:00:46.745 --> 00:00:50.025
+Wenn eine Zahlung laut Spezifikation abgelehnt werden muss,
+
+17
+00:00:50.504 --> 00:00:53.334
+darf ein aktuell akzeptierendes System
+
+18
+00:00:53.565 --> 00:00:56.434
+nicht dadurch zum richtigen Verhalten erklärt werden,
+
+19
+00:00:56.824 --> 00:00:58.665
+dass die Assertion angepasst wird.
+
+20
+00:00:59.474 --> 00:01:02.555
+Der Satz unten fasst die Schutzregel zusammen.
+
+21
+00:01:03.154 --> 00:01:07.275
+Beobachtetes Verhalten ist nicht automatisch neue Wahrheit.
+
+22
+00:01:08.065 --> 00:01:11.754
+Je näher eine automatische Änderung an fachlicher Bedeutung liegt,
+
+23
+00:01:12.194 --> 00:01:14.875
+desto stärker muss die menschliche Kontrolle sein.
+
+24
+00:01:15.695 --> 00:01:20.755
+Self-healing ist damit Wartungsautomation für technische Repräsentation,
+
+25
+00:01:21.304 --> 00:01:22.494
+nicht eine Erlaubnis,
+
+26
+00:01:22.895 --> 00:01:26.255
+die Sol Aussage an den Ist-Zustand anzupassen.

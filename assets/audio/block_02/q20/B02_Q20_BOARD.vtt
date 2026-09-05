@@ -1,0 +1,101 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:04.460
+In der vorherigen Tafel war Variabilität eine eigene Ursache.
+
+2
+00:00:05.750 --> 00:00:09.079
+Jetzt zoomen wir genau auf den dazugehörigen Inferenzregler.
+
+3
+00:00:09.640 --> 00:00:11.510
+Die letzte Tafel dieses Blocks
+
+4
+00:00:11.680 --> 00:00:15.310
+zeigt Temperatur als Regler zwischen zwei Zielen.
+
+5
+00:00:15.560 --> 00:00:17.750
+Links bei niedriger Temperatur
+
+6
+00:00:17.909 --> 00:00:20.079
+liegt mehr Reproduzierbarkeit.
+
+7
+00:00:20.520 --> 00:00:24.239
+Die Auswahl konzentriert sich stärker auf wahrscheinlichere Tokens,
+
+8
+00:00:24.600 --> 00:00:29.120
+die Variabilität sinkt und Ergebnisse werden typischerweise konsistenter.
+
+9
+00:00:29.709 --> 00:00:32.020
+Rechts bei höherer Temperatur
+
+10
+00:00:32.189 --> 00:00:33.990
+liegt mehr Exploration.
+
+11
+00:00:34.590 --> 00:00:37.950
+Es werden eher weniger wahrscheinliche Alternativen zugelassen,
+
+12
+00:00:38.270 --> 00:00:41.150
+wodurch Vielfalt und Variation steigen können.
+
+13
+00:00:41.909 --> 00:00:43.830
+Wichtig ist der Hinweis in der Mitte.
+
+14
+00:00:44.270 --> 00:00:47.110
+Es gibt keinen intelligenten Universalwert.
+
+15
+00:00:47.590 --> 00:00:49.790
+Die passende Einstellung hängt vom Zweck ab.
+
+16
+00:00:50.270 --> 00:00:53.299
+Für präzise wiederholbare Testartefakte
+
+17
+00:00:53.549 --> 00:00:56.150
+kann eine niedrigere Temperatur sinnvoll sein.
+
+18
+00:00:56.610 --> 00:01:00.250
+Für Ideengenerierung oder explorative Testideen
+
+19
+00:01:00.419 --> 00:01:02.639
+kann mehr Variation erwünscht sein.
+
+20
+00:01:03.299 --> 00:01:06.489
+Temperatur verändert dabei nicht das Wissen des Modells
+
+21
+00:01:06.620 --> 00:01:09.180
+und vergrößert auch nicht das Kontextfenster.
+
+22
+00:01:09.779 --> 00:01:12.510
+Sie beeinflusst die Auswahl während der Generierung.
+
+23
+00:01:13.099 --> 00:01:15.819
+Deshalb ist die technische Frage immer ein Trade-off.
+
+24
+00:01:16.339 --> 00:01:21.050
+Brauche ich für diese Testaufgabe eher Reproduzierbarkeit und Präzision
+
+25
+00:01:21.269 --> 00:01:23.720
+oder eher Exploration und Vielfalt?

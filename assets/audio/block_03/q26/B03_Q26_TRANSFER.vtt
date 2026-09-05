@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.565 --> 00:00:03.345
+Architekturfragen über Verantwortung lösen.
+
+2
+00:00:03.696 --> 00:00:05.145
+Frontend für Benutzung,
+
+3
+00:00:05.496 --> 00:00:07.175
+Backend für Orchestrierung,
+
+4
+00:00:07.535 --> 00:00:09.365
+LLM für Generierung
+
+5
+00:00:09.535 --> 00:00:13.166
+und Vektordatenbank für Vektorsuche und Speicherung,
+
+6
+00:00:13.645 --> 00:00:14.815
+erst Schicht bestimmen,
+
+7
+00:00:15.216 --> 00:00:16.455
+dann Fehlersuchen.

@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:00.125 --> 00:00:01.015
+Nach Strategie,
+
+2
+00:00:01.094 --> 00:00:02.575
+Kompetenzen und Rollen
+
+3
+00:00:02.814 --> 00:00:05.015
+kehren die letzten drei Fragen bewusst
+
+4
+00:00:05.015 --> 00:00:08.134
+zu technischen Kernbegriffen zurück und prüfen,
+
+5
+00:00:08.375 --> 00:00:10.464
+ob das mentale Modell trägt.
+
+6
+00:00:10.854 --> 00:00:12.424
+Tafel 38
+
+7
+00:00:12.614 --> 00:00:16.455
+grenzt Met Prompting von den bereits bekannten Techniken ab.
+
+8
+00:00:17.095 --> 00:00:19.154
+Links lautet der Mechanismus.
+
+9
+00:00:19.534 --> 00:00:22.934
+Die KI erzeugt einen Prompt für eine spätere Aufgabe.
+
+10
+00:00:23.534 --> 00:00:25.455
+In der Mitte sehen wir zwei Ebenen.
+
+11
+00:00:25.995 --> 00:00:27.875
+Schritt A ist der Metaprompt,
+
+12
+00:00:28.195 --> 00:00:29.235
+also die Anweisung,
+
+13
+00:00:29.315 --> 00:00:33.195
+einen robusten Prompt mit bestimmten Kriterien zu konstruieren.
+
+14
+00:00:33.835 --> 00:00:35.754
+Das Ergebnis ist kein Testfall,
+
+15
+00:00:36.074 --> 00:00:37.555
+sondern ein neuer Prompt.
+
+16
+00:00:38.154 --> 00:00:42.474
+Erst dieser wird anschließend für konkrete Sicherheitstests eingesetzt.
+
+17
+00:00:43.265 --> 00:00:45.114
+Rechts liegt die Abgrenzung.
+
+18
+00:00:45.794 --> 00:00:47.385
+View und One Shot
+
+19
+00:00:47.515 --> 00:00:49.714
+geben Beispiele innerhalb eines Prompts.
+
+20
+00:00:50.154 --> 00:00:53.474
+Promptverkettung reicht fachliche Zwischenergebnisse weiter.

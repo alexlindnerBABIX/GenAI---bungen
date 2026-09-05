@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:02.880
+Ein Tester kopiert Produktionslogs mit Namen,
+
+2
+00:00:03.319 --> 00:00:04.269
+Kontonummern
+
+3
+00:00:04.440 --> 00:00:08.760
+und Session Tokens in einen öffentlich erreichbaren Gen AI Dienst.
+
+4
+00:00:09.890 --> 00:00:13.050
+Welches Risiko steht am direktesten im Vordergrund?
+
+5
+00:00:13.840 --> 00:00:17.729
+Das Modell kann aus den langen Loks aufgrund des Kontextfensters
+
+6
+00:00:17.940 --> 00:00:19.950
+relevante Fehlerhinweise übersehen.
+
+7
+00:00:21.069 --> 00:00:23.149
+Die erzeugte Fehleranalyse kann durch
+
+8
+00:00:23.149 --> 00:00:26.829
+Trainingsdaten bestimmte Ursachen systematisch bevorzugen.
+
+9
+00:00:27.819 --> 00:00:30.579
+Personenbezogene und vertrauliche Daten
+
+10
+00:00:30.829 --> 00:00:32.630
+können unkontrolliert verarbeitet,
+
+11
+00:00:32.830 --> 00:00:35.110
+gespeichert oder offengelegt werden.
+
+12
+00:00:36.549 --> 00:00:39.080
+Bei wiederholter Analyse derselben Loks
+
+13
+00:00:39.330 --> 00:00:41.610
+können aufgrund von Nichtdeterminismus
+
+14
+00:00:41.610 --> 00:00:43.650
+unterschiedliche Ergebnisse entstehen.

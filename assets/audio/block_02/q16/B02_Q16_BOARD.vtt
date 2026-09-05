@@ -1,0 +1,133 @@
+WEBVTT
+
+1
+00:00:00.029 --> 00:00:02.440
+Die Tafel zeigt A und B
+
+2
+00:00:02.680 --> 00:00:04.840
+nicht als zweibeliebige Prompts,
+
+3
+00:00:05.239 --> 00:00:07.519
+sondern als kontrollierten Vergleich.
+
+4
+00:00:08.039 --> 00:00:10.000
+Links steht Variante A,
+
+5
+00:00:10.350 --> 00:00:11.960
+rechts Variante B.
+
+6
+00:00:12.520 --> 00:00:14.159
+In der Mitte stehen die Faktoren,
+
+7
+00:00:14.239 --> 00:00:16.790
+die möglichst konstant bleiben sollen
+
+8
+00:00:17.000 --> 00:00:17.639
+Modell,
+
+9
+00:00:17.879 --> 00:00:18.719
+Aufgabe,
+
+10
+00:00:19.000 --> 00:00:20.149
+Testdaten
+
+11
+00:00:20.319 --> 00:00:23.159
+beziehungsweise Eingaben und relevante
+
+12
+00:00:23.159 --> 00:00:25.639
+Randbedingungen wie Sampling Einstellungen.
+
+13
+00:00:26.129 --> 00:00:30.000
+Unten werden die Bewertungsmetriken vor dem Vergleich festgelegt,
+
+14
+00:00:30.360 --> 00:00:31.440
+etwa Relevanz,
+
+15
+00:00:31.680 --> 00:00:32.400
+Korrektheit,
+
+16
+00:00:32.799 --> 00:00:34.060
+Vollständigkeit
+
+17
+00:00:34.229 --> 00:00:36.990
+oder eine aufgabenspezifische Erfolgsrate.
+
+18
+00:00:37.639 --> 00:00:39.400
+Die Logik ist experimentell.
+
+19
+00:00:40.040 --> 00:00:43.029
+Wenn nur die interessierende Promptänderung variiert
+
+20
+00:00:43.119 --> 00:00:45.439
+und die übrigen Bedingungen stabil bleiben,
+
+21
+00:00:45.840 --> 00:00:49.639
+kann ein Leistungsunterschied eher dieser Änderung zugeschrieben werden,
+
+22
+00:00:50.290 --> 00:00:51.720
+werden gleichzeitig Prompt,
+
+23
+00:00:51.919 --> 00:00:53.680
+Modell und Daten verändert.
+
+24
+00:00:54.009 --> 00:00:56.169
+Entsteht ein Konfundierungseffekt,
+
+25
+00:00:56.770 --> 00:00:58.009
+dann weiß niemand mehr,
+
+26
+00:00:58.290 --> 00:01:00.130
+was die Verbesserung verursacht hat.
+
+27
+00:01:00.770 --> 00:01:05.050
+Deshalb ist ein A-B-Test mehr als zwei Texte nebeneinander.
+
+28
+00:01:05.690 --> 00:01:08.559
+Er braucht eine kontrollierte Vergleichssituation
+
+29
+00:01:08.730 --> 00:01:10.800
+und vorab definierte Kriterien.
+
+30
+00:01:11.529 --> 00:01:14.040
+Das macht Prompt Engineering messbarer
+
+31
+00:01:14.169 --> 00:01:14.910
+und verhindert,
+
+32
+00:01:15.010 --> 00:01:17.839
+dass die subjektiv sympathischere Ausgabe
+
+33
+00:01:18.010 --> 00:01:20.889
+automatisch zur besseren Variante erklärt wird.

@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.036 --> 00:00:05.075
+One Shot Prompting nutzt genau ein Beispiel zur Steuerung einer Antwort.
+
+2
+00:00:05.556 --> 00:00:08.595
+Auch hier bleibt der Prompt grundsätzlich von uns formuliert.
+
+3
+00:00:09.156 --> 00:00:13.516
+Das Modell erzeugt nicht den später einzusetzenden Prompt als Ergebnis.

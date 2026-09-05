@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.230 --> 00:00:02.210
+Für eine Testreihenfolge gilt:
+
+2
+00:00:02.591 --> 00:00:05.290
+Test B benötigt erfolgreiches Test A,
+
+3
+00:00:05.911 --> 00:00:08.911
+Test C ist hochkritisch und benötigt Test B.
+
+4
+00:00:09.791 --> 00:00:12.201
+Das LLM priorisiert C zuerst,
+
+5
+00:00:12.451 --> 00:00:13.280
+B zuletzt,
+
+6
+00:00:13.881 --> 00:00:16.760
+und begründet dies allein mit der Kritikalität von C.
+
+7
+00:00:17.861 --> 00:00:20.510
+Welches Problem ist am ehesten erkennbar?
+
+8
+00:00:21.361 --> 00:00:22.440
+Reasoning Fehler,
+
+9
+00:00:22.881 --> 00:00:23.920
+Halluzination,
+
+10
+00:00:24.401 --> 00:00:25.111
+Verzerrung,
+
+11
+00:00:25.721 --> 00:00:26.960
+Nichtdeterminismus.

@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.258 --> 00:00:01.059
+Vorbedingungen,
+
+2
+00:00:01.379 --> 00:00:03.379
+Eingaben und Schritte sind vorhanden,
+
+3
+00:00:03.819 --> 00:00:05.859
+aber das erwartete Ergebnis fehlt.
+
+4
+00:00:06.578 --> 00:00:09.978
+Damit fehlt ein zentraler Bestandteil des Testorakels.
+
+5
+00:00:10.539 --> 00:00:13.859
+Ein Testfall ohne prüfbare Erwartung kann ausführen,
+
+6
+00:00:14.219 --> 00:00:16.138
+aber nicht zuverlässig entscheiden,
+
+7
+00:00:16.458 --> 00:00:18.098
+ob das Verhalten korrekt ist.

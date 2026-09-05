@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.042 --> 00:00:00.722
+Sicherheit,
+
+2
+00:00:01.122 --> 00:00:03.442
+Datenquellen und LLM.
+
+3
+00:00:04.282 --> 00:00:08.022
+Mit Frage 25 verlassen wir die Governance Perspektive
+
+4
+00:00:08.311 --> 00:00:10.751
+und gehen in die technische Infrastruktur.
+
+5
+00:00:11.512 --> 00:00:16.402
+Tafel 26 trennt die Verantwortlichkeiten entlang des Datenflusses.
+
+6
+00:00:16.872 --> 00:00:19.991
+Links interagiert der Nutzer mit dem Frontend,
+
+7
+00:00:20.431 --> 00:00:23.111
+danach übernimmt das Backend die Orchestrierung.
+
+8
+00:00:23.601 --> 00:00:25.372
+Authentifizierung prüfen,
+
+9
+00:00:25.732 --> 00:00:27.251
+Anfrage verarbeiten,
+
+10
+00:00:27.692 --> 00:00:30.501
+Datenquellen oder Retrieval anstoßen,
+
+11
+00:00:31.012 --> 00:00:32.961
+Kontext zusammensetzen
+
+12
+00:00:33.092 --> 00:00:35.211
+und den Prompt vorbereiten.
+
+13
+00:00:35.891 --> 00:00:39.491
+Das LLM bekommt diesen vorbereiteten Kontext
+
+14
+00:00:39.491 --> 00:00:42.131
+und erzeugt die eigentliche Generierung.
+
+15
+00:00:42.811 --> 00:00:46.241
+Eine Vektordatenbank hat wiederum eine engere Aufgabe,
+
+16
+00:00:46.491 --> 00:00:50.802
+Vektoren speichern und semantisch ähnliche Inhalte auffinden.
+
+17
+00:00:51.592 --> 00:00:54.751
+Rechts kommt die Antwort zurück zur Anwendung.
+
+18
+00:00:55.482 --> 00:00:58.351
+Diese Trennung ist nicht nur Architektursthetik,
+
+19
+00:00:58.811 --> 00:00:59.431
+sie bestimmt,
+
+20
+00:00:59.552 --> 00:01:01.832
+wo Fehler diagnostiziert werden müssen.
+
+21
+00:01:02.472 --> 00:01:04.472
+Eine falsche UI-Anzeige,
+
+22
+00:01:04.792 --> 00:01:06.512
+ein fehlerhaftes Retrieval,
+
+23
+00:01:06.912 --> 00:01:10.580
+ein rechte Problem und eine schlechte Modellantwort
+
+24
+00:01:10.792 --> 00:01:12.592
+liegen in unterschiedlichen Schichten.
+
+25
+00:01:13.271 --> 00:01:15.631
+Gute Systemgrenzen verbessern damit
+
+26
+00:01:15.631 --> 00:01:19.191
+unmittelbar Testbarkeit und Fehlerlokalisierung.

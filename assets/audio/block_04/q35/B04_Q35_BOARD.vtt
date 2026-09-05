@@ -1,0 +1,121 @@
+WEBVTT
+
+1
+00:00:00.005 --> 00:00:01.995
+Nach Strategie und Einführung
+
+2
+00:00:02.325 --> 00:00:05.224
+zoomt Tafel 35 auf die Person,
+
+3
+00:00:05.645 --> 00:00:08.724
+die Gen AI im Test wirklich nutzt.
+
+4
+00:00:09.404 --> 00:00:11.874
+Links bleibt die bestehende Basis
+
+5
+00:00:12.084 --> 00:00:14.685
+Testwissen und Domänenwissen.
+
+6
+00:00:15.404 --> 00:00:17.645
+Nur damit lassen sich Testbasis,
+
+7
+00:00:17.925 --> 00:00:18.965
+Testorakel,
+
+8
+00:00:19.285 --> 00:00:22.594
+Risiken und fachliche Plausibilität beurteilen.
+
+9
+00:00:23.234 --> 00:00:25.715
+Danach kommt Prompt Engineering hinzu,
+
+10
+00:00:26.035 --> 00:00:26.995
+um Aufgaben,
+
+11
+00:00:27.234 --> 00:00:27.914
+Kontext,
+
+12
+00:00:28.194 --> 00:00:31.234
+Einschränkungen und Ausgabeform zu steuern.
+
+13
+00:00:31.955 --> 00:00:35.825
+Der dritte Bereich ist das Verständnis der LLM Grenzen,
+
+14
+00:00:36.154 --> 00:00:37.355
+Halluzinationen,
+
+15
+00:00:37.755 --> 00:00:38.825
+Reasoning Fehler,
+
+16
+00:00:39.114 --> 00:00:39.715
+Bias,
+
+17
+00:00:40.194 --> 00:00:41.785
+Nichtdeterminismus
+
+18
+00:00:41.935 --> 00:00:44.455
+sowie Datenschutz und Sicherheit.
+
+19
+00:00:45.154 --> 00:00:48.715
+Rechts steht daraus folgend die entscheidende Kompetenz.
+
+20
+00:00:49.344 --> 00:00:53.374
+KI generierte Testmittel gegen die Testbasis prüfen
+
+21
+00:00:53.624 --> 00:00:54.635
+auf Korrektheit,
+
+22
+00:00:55.065 --> 00:00:56.145
+Vollständigkeit,
+
+23
+00:00:56.544 --> 00:00:58.014
+Rückverfolgbarkeit
+
+24
+00:00:58.145 --> 00:00:59.584
+und praktischen Nutzen.
+
+25
+00:01:00.455 --> 00:01:03.135
+Die Rollenlogik unten ist zentral.
+
+26
+00:01:03.704 --> 00:01:07.855
+Mehr Automatisierung reduziert nicht den Bedarf an Fachkompetenz.
+
+27
+00:01:08.575 --> 00:01:11.125
+Sie verschiebt ihn von manueller Erzeugung
+
+28
+00:01:11.254 --> 00:01:13.974
+zu Urteil und Qualitätskontrolle.
+
+29
+00:01:14.704 --> 00:01:16.235
+Ohne Testorakel
+
+30
+00:01:16.375 --> 00:01:19.814
+ist ein schneller Generator nur ein schneller Generator.

@@ -1,0 +1,77 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.559
+Validierte Akzeptanzkriterien für eine Park-App liegen vor.
+
+2
+00:00:04.320 --> 00:00:08.800
+Welcher Prompt unterstützt Testentwurf und Testrealisierung am besten?
+
+3
+00:00:10.189 --> 00:00:12.189
+Nutze nur die Akzeptanzkriterien,
+
+4
+00:00:12.550 --> 00:00:14.770
+leite priorisierte Testbedingungen ab
+
+5
+00:00:14.989 --> 00:00:18.750
+und strukturiere sie als Ausgangspunkt für den späteren Testentwurf.
+
+6
+00:00:20.000 --> 00:00:21.760
+Nutze die Akzeptanzkriterien,
+
+7
+00:00:22.239 --> 00:00:24.379
+erzeuge Testfälle und ergänze nicht
+
+8
+00:00:24.379 --> 00:00:27.799
+spezifizierte Geschäftsregeln anhand vergleichbarer Park-Apps.
+
+9
+00:00:28.250 --> 00:00:29.760
+Kennzeichne sie als Annahmen.
+
+10
+00:00:31.190 --> 00:00:32.950
+Nutze die Akzeptanzkriterien,
+
+11
+00:00:33.270 --> 00:00:35.389
+erzeuge Testfälle mit Vorbedingungen,
+
+12
+00:00:35.509 --> 00:00:36.869
+Eingaben und Schritten,
+
+13
+00:00:37.349 --> 00:00:40.709
+lasse die erwarteten Ergebnisse für ein späteres Review offen.
+
+14
+00:00:42.180 --> 00:00:44.220
+Nutze nur die Akzeptanzkriterien,
+
+15
+00:00:44.659 --> 00:00:46.740
+erzeuge Testfälle mit Vorbedingungen,
+
+16
+00:00:46.900 --> 00:00:47.619
+Eingaben,
+
+17
+00:00:47.779 --> 00:00:48.330
+Schritten
+
+18
+00:00:48.459 --> 00:00:50.169
+und erwarteten Ergebnissen
+
+19
+00:00:50.299 --> 00:00:52.700
+und weise die Überdeckung der Kriterien aus.

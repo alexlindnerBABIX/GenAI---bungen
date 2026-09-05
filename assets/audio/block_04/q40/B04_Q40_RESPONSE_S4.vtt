@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.035 --> 00:00:02.595
+Genau das ist der nächste RAG Schritt.
+
+2
+00:00:03.195 --> 00:00:05.954
+Die gefundenen Abschnitte werden aufbereitet und
+
+3
+00:00:05.954 --> 00:00:09.395
+dem Prompt als zusätzlicher Kontext hinzugefügt.
+
+4
+00:00:10.165 --> 00:00:14.375
+Das LLM generiert anschließend mit diesem Retrieval Kontext
+
+5
+00:00:14.595 --> 00:00:16.674
+und seinem Modellwissen die Antwort.

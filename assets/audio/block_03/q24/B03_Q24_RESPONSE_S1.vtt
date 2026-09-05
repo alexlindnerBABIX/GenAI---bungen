@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.680
+Genau diese Änderung reduziert den Rechenaufwand direkt,
+
+2
+00:00:04.038 --> 00:00:06.789
+unnötige Modellinteraktionen vermeiden
+
+3
+00:00:06.920 --> 00:00:10.920
+und nur die tatsächlich benötigten Generierungen ausführen.

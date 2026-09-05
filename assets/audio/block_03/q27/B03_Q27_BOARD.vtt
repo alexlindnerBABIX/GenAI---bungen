@@ -1,0 +1,85 @@
+WEBVTT
+
+1
+00:00:00.207 --> 00:00:05.946
+Tafel 27 erweitert die Architektur aus der vorherigen Frage um externes Wissen.
+
+2
+00:00:06.707 --> 00:00:11.227
+Links beginnt die Anfrage im Frontend und wird im Backend orchestriert.
+
+3
+00:00:11.907 --> 00:00:13.547
+Dann kommt der neue Schritt
+
+4
+00:00:13.706 --> 00:00:14.786
+Retrieval.
+
+5
+00:00:15.106 --> 00:00:18.507
+Dokumente oder Richtlinien liegen außerhalb des Modells,
+
+6
+00:00:18.907 --> 00:00:21.547
+werden aufbereitet und über Einbettungen
+
+7
+00:00:21.547 --> 00:00:24.746
+beziehungsweise semantische Suche auffindbar gemacht.
+
+8
+00:00:25.507 --> 00:00:28.596
+Zur Laufzeit wird nur der relevante Ausschnitt abgerufen.
+
+9
+00:00:29.237 --> 00:00:33.477
+Dieser Kontext wird zusammen mit der Anfrage an das LLM gegeben,
+
+10
+00:00:33.877 --> 00:00:35.676
+das daraus die Antwort generiert.
+
+11
+00:00:36.456 --> 00:00:39.996
+Der entscheidende Vorteil steht zwischen Retrieval und Modell.
+
+12
+00:00:40.596 --> 00:00:42.916
+Die Modellgewichte bleiben unverändert.
+
+13
+00:00:43.437 --> 00:00:46.316
+Dadurch eignet sich RAG besonders für Wissen,
+
+14
+00:00:46.636 --> 00:00:48.396
+das häufig aktualisiert wird,
+
+15
+00:00:48.797 --> 00:00:50.507
+extern gepflegt ist
+
+16
+00:00:50.627 --> 00:00:53.206
+oder nachvollziehbar referenziert werden soll.
+
+17
+00:00:53.856 --> 00:00:57.596
+Das Modell bekommt gewissermaßen aktuelle Unterlagen auf den Tisch,
+
+18
+00:00:58.036 --> 00:01:00.036
+ohne dafür neu trainiert zu werden.
+
+19
+00:01:00.797 --> 00:01:03.916
+Aber auch RAG ist kein Garant für Wahrheit.
+
+20
+00:01:04.636 --> 00:01:08.216
+Wenn Retrieval falsche oder unvollständige Quellen liefert,
+
+21
+00:01:08.557 --> 00:01:12.877
+wird genau dieser schlechte Kontext zur neuen Grundlage der Generierung.

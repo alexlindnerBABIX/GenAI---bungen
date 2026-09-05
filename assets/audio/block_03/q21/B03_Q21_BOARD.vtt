@@ -1,0 +1,97 @@
+WEBVTT
+
+1
+00:00:00.066 --> 00:00:04.377
+Mit Frage 20 haben wir noch die Variabilität der Ausgabe betrachtet.
+
+2
+00:00:04.816 --> 00:00:09.617
+Jetzt verschiebt sich die Perspektive vom Modellverhalten auf das Schutzgut.
+
+3
+00:00:10.297 --> 00:00:13.456
+Die Tafel beginnt deshalb links mit der Datenart.
+
+4
+00:00:14.017 --> 00:00:15.746
+Personenbezogene Daten,
+
+5
+00:00:16.106 --> 00:00:16.907
+Kontonummern,
+
+6
+00:00:17.307 --> 00:00:21.877
+Zugangsinformationen oder vertrauliche Geschäfts- und Systemdaten.
+
+7
+00:00:22.507 --> 00:00:24.517
+Danach folgt die Systemgrenze.
+
+8
+00:00:25.106 --> 00:00:28.106
+Ein Prompt ist technisch Datentransfer.
+
+9
+00:00:28.827 --> 00:00:33.147
+Sobald Produktionsdaten in einen externen Dienst eingegeben werden,
+
+10
+00:00:33.587 --> 00:00:36.426
+verlassen sie möglicherweise die kontrollierte Umgebung.
+
+11
+00:00:37.166 --> 00:00:40.166
+Erst dann bewerten wir Risiken wie Speicherung,
+
+12
+00:00:40.606 --> 00:00:41.647
+Weiterverwendung,
+
+13
+00:00:42.007 --> 00:00:44.386
+unklare Zugriffsmöglichkeiten
+
+14
+00:00:44.526 --> 00:00:45.786
+oder Offenlegung.
+
+15
+00:00:46.486 --> 00:00:48.397
+Rechts folgen die maßnahmen,
+
+16
+00:00:48.687 --> 00:00:49.846
+Daten minimieren,
+
+17
+00:00:50.286 --> 00:00:53.486
+Verantwortlichkeiten und Anbieterbedingungen klären,
+
+18
+00:00:54.047 --> 00:00:56.227
+Zugriff und Übertragung absichern.
+
+19
+00:00:57.026 --> 00:01:01.276
+Der entscheidende Übergang ist also nicht von schlechter zu guter Modellantwort,
+
+20
+00:01:01.757 --> 00:01:04.467
+sondern von intern kontrollierten Daten
+
+21
+00:01:04.676 --> 00:01:06.477
+zu externer Verarbeitung.
+
+22
+00:01:07.117 --> 00:01:09.346
+Dieselbe Gen AI-Funktion
+
+23
+00:01:09.557 --> 00:01:12.147
+kann mit synthetischen Daten unkritisch
+
+24
+00:01:12.277 --> 00:01:16.036
+und mit echten Produktionsdaten hochriskant sein,

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.047 --> 00:00:02.057
+Das beschreibt RG.
+
+2
+00:00:02.646 --> 00:00:05.876
+Externe Dokumente werden zur Laufzeit abgerufen
+
+3
+00:00:06.287 --> 00:00:09.326
+und als Kontext in die aktuelle Anfrage eingebracht.
+
+4
+00:00:09.847 --> 00:00:12.126
+Die Modellgewichte bleiben unverändert.

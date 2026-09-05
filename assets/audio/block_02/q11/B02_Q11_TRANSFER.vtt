@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.255 --> 00:00:03.774
+Bei generiertem Testentwurf immer drei Dinge prüfen
+
+2
+00:00:04.175 --> 00:00:05.694
+validierte Testbasis,
+
+3
+00:00:06.095 --> 00:00:08.554
+vollständiges erwartetes Ergebnis
+
+4
+00:00:08.694 --> 00:00:10.455
+und Rückverfolgbarkeit.
+
+5
+00:00:11.214 --> 00:00:12.354
+Fehlt eines davon,
+
+6
+00:00:12.655 --> 00:00:16.095
+ist ein sauber formatierter Testfall noch nicht belastbar.

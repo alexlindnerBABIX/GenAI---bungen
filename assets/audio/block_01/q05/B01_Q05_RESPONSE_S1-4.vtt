@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.136 --> 00:00:02.507
+Die Analyse von Anforderungen passt.
+
+2
+00:00:03.097 --> 00:00:07.987
+Die reale Testabdeckung ist dagegen eine messgröße des ausgeführten Systems.
+
+3
+00:00:08.847 --> 00:00:11.716
+Ohne Instrumentierungs- oder Messdaten
+
+4
+00:00:11.916 --> 00:00:14.966
+kann das Modell dazu höchstens Vermutungen erzeugen.
+
+5
+00:00:15.647 --> 00:00:18.087
+Die Grenze heißt hier Beobachtbarkeit.

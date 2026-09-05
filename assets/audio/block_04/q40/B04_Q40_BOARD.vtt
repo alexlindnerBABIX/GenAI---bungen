@@ -1,0 +1,109 @@
+WEBVTT
+
+1
+00:00:00.011 --> 00:00:02.851
+Die letzte Tafel schließt die technische Klammer zu
+
+2
+00:00:02.851 --> 00:00:06.171
+RG und zur Architektur aus Block 3.
+
+3
+00:00:06.891 --> 00:00:08.431
+Sie zeigt 5 Schritte.
+
+4
+00:00:09.281 --> 00:00:11.491
+Erstens kommt die Anfrage mit Ziel,
+
+5
+00:00:11.881 --> 00:00:13.571
+Rolle und Einschränkungen.
+
+6
+00:00:14.211 --> 00:00:17.330
+Zweitens erzeugt das System ein Query Embedding,
+
+7
+00:00:17.770 --> 00:00:21.450
+sucht semantisch ähnliche Chunks und rankt die Treffer.
+
+8
+00:00:22.020 --> 00:00:24.980
+Aber Retrieval allein ist noch keine Antwort.
+
+9
+00:00:25.541 --> 00:00:30.171
+Im dritten Schritt werden die gefundenen Textabschnitte als Kontext aufbereitet
+
+10
+00:00:30.340 --> 00:00:32.181
+und dem Prompt hinzugefügt,
+
+11
+00:00:32.660 --> 00:00:34.980
+gegebenenfalls mit Quellenmetadaten.
+
+12
+00:00:35.580 --> 00:00:38.220
+Erst dann folgt viertens das LLM.
+
+13
+00:00:38.580 --> 00:00:39.061
+Prompt,
+
+14
+00:00:39.300 --> 00:00:43.690
+Retrieval Kontext und Modellwissen werden zur Generierung verwendet.
+
+15
+00:00:44.381 --> 00:00:46.541
+Fünftens entsteht die Antwort,
+
+16
+00:00:46.921 --> 00:00:48.660
+die weiterhin auf Qualität,
+
+17
+00:00:49.020 --> 00:00:50.090
+Richtigkeit
+
+18
+00:00:50.260 --> 00:00:52.650
+und Vollständigkeit geprüft werden muss.
+
+19
+00:00:53.340 --> 00:00:55.141
+Der rote Bereich unten zeigt,
+
+20
+00:00:55.501 --> 00:00:57.660
+wo Qualität verloren gehen kann.
+
+21
+00:00:58.171 --> 00:00:58.821
+Chunking,
+
+22
+00:00:59.111 --> 00:01:00.020
+Einbettungen,
+
+23
+00:01:00.381 --> 00:01:00.900
+Suche,
+
+24
+00:01:01.260 --> 00:01:04.601
+Ranking und Aktualität beeinflussen bereits,
+
+25
+00:01:04.940 --> 00:01:07.690
+welchen Kontext das Modell überhaupt zieht.
+
+26
+00:01:08.500 --> 00:01:12.131
+Ein gutes LLM kann schlechten Retrieval Kontext
+
+27
+00:01:12.310 --> 00:01:14.190
+nicht zuverlässig wegzaubern.

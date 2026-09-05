@@ -1,0 +1,101 @@
+WEBVTT
+
+1
+00:00:00.102 --> 00:00:02.662
+Diese Tafel legt zwei Dinge nebeneinander,
+
+2
+00:00:02.982 --> 00:00:05.421
+die in Prüfungsfragen gerne vermischt werden.
+
+3
+00:00:06.142 --> 00:00:09.822
+Links zählt zunächst nur die Anzahl der Beispiele im Prompt.
+
+4
+00:00:10.381 --> 00:00:13.761
+Zero Shot bedeutet kein Beispiel
+
+5
+00:00:13.982 --> 00:00:17.721
+One Shot genau ein Beispiel Few Shot
+
+6
+00:00:17.822 --> 00:00:19.322
+mehrere Beispiele,
+
+7
+00:00:19.581 --> 00:00:20.622
+das ist eine Achse.
+
+8
+00:00:21.252 --> 00:00:24.861
+Rechts steht Promptverkettung als Prozessmuster.
+
+9
+00:00:25.291 --> 00:00:27.232
+Ein Prompt erzeugt ein Ergebnis.
+
+10
+00:00:27.572 --> 00:00:31.311
+Dieses Ergebnis wird Eingang für einen nächsten Verarbeitungsschritt.
+
+11
+00:00:31.911 --> 00:00:36.182
+Damit beantwortet Prompt Chaining eine andere Frage als Vw Shot.
+
+12
+00:00:36.962 --> 00:00:40.032
+Drei Beispiele innerhalb eines einzelnen Prompts
+
+13
+00:00:40.191 --> 00:00:41.521
+sind also noch keine Kette.
+
+14
+00:00:42.241 --> 00:00:45.042
+Umgekehrt kann jeder Schritt einer Kette selbst
+
+15
+00:00:45.042 --> 00:00:48.752
+Zero One oder Few Shot gestaltet sein.
+
+16
+00:00:49.481 --> 00:00:53.881
+Genau diese Orthogonalität ist der eigentliche Aha-Punkt der Tafel.
+
+17
+00:00:54.402 --> 00:00:58.352
+Bei der Aufgabe mit drei vollständig ausgefüllten Testfällen
+
+18
+00:00:58.521 --> 00:01:01.032
+zählt daher zuerst die Beispielanzahl.
+
+19
+00:01:01.572 --> 00:01:04.402
+Mehrere Beispiele führen zu Few Shot.
+
+20
+00:01:04.811 --> 00:01:06.451
+Erst danach wäre zu prüfen,
+
+21
+00:01:06.532 --> 00:01:10.691
+ob zusätzlich Zwischenergebnisse zwischen Prompts weitergereicht werden.
+
+22
+00:01:11.411 --> 00:01:14.691
+In der Praxis kommt noch eine Qualitätsdimension hinzu.
+
+23
+00:01:15.411 --> 00:01:18.731
+Few Shot wirkt nur so gut wie seine Beispiele.
+
+24
+00:01:19.252 --> 00:01:22.762
+Inkonsistente oder unrepräsentative Muster
+
+25
+00:01:22.932 --> 00:01:26.661
+können das Modell sehr effizient in die falsche Richtung vormachen.

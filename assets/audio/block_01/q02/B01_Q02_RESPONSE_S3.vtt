@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.101 --> 00:00:01.421
+Die Begriffe sind real,
+
+2
+00:00:01.960 --> 00:00:03.511
+ihre Aufgaben aber vertauscht.
+
+3
+00:00:04.220 --> 00:00:06.331
+Tokenisierung zerlegt den Text.
+
+4
+00:00:06.861 --> 00:00:09.780
+Sie legt nicht die maximale Kontextgrösse fest.
+
+5
+00:00:10.300 --> 00:00:13.780
+Das Kontextfenster ist die Kapazitätsgrenze dafür,
+
+6
+00:00:14.210 --> 00:00:17.251
+welche Tokens gemeinsam berücksichtigt werden können.

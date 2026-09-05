@@ -1,0 +1,89 @@
+WEBVTT
+
+1
+00:00:00.056 --> 00:00:03.856
+Tafel 29 legt 3 Anpassungshebel nebeneinander.
+
+2
+00:00:04.487 --> 00:00:07.327
+Links verändert Prompting die Instruktion.
+
+3
+00:00:07.926 --> 00:00:10.207
+Wir sagen demselben Modell präziser,
+
+4
+00:00:10.567 --> 00:00:11.646
+welche Aufgabe,
+
+5
+00:00:11.966 --> 00:00:13.806
+Rolle oder Grenzen gelten.
+
+6
+00:00:14.527 --> 00:00:18.097
+In der Mitte verändert RAG den Laufzeitkontext.
+
+7
+00:00:18.366 --> 00:00:20.397
+Externes Wissen wird gesucht
+
+8
+00:00:20.527 --> 00:00:22.927
+und für die aktuelle Anfrage hinzugefügt.
+
+9
+00:00:23.726 --> 00:00:26.967
+Rechts verändert Fine Tuning die Modellgewichte selbst,
+
+10
+00:00:27.326 --> 00:00:31.046
+indem das Modell mit geeigneten Beispielen weiter angepasst wird.
+
+11
+00:00:31.826 --> 00:00:35.266
+Diese drei Hebel lösen unterschiedliche Arten von Lücken.
+
+12
+00:00:35.826 --> 00:00:38.467
+Fehlt aktuelles oder häufig wechselndes Wissen,
+
+13
+00:00:38.826 --> 00:00:40.747
+ist RAG naheliegend.
+
+14
+00:00:41.506 --> 00:00:45.537
+Soll ein wiederkehrendes Verhalten oder domänenspezifisches Muster
+
+15
+00:00:45.747 --> 00:00:47.027
+stärker verankert werden,
+
+16
+00:00:47.467 --> 00:00:49.027
+kann Fine Tuning passen.
+
+17
+00:00:49.787 --> 00:00:51.927
+Ist die Aufgabe nur unklar formuliert,
+
+18
+00:00:52.347 --> 00:00:54.186
+reicht oft besseres Prompting.
+
+19
+00:00:54.876 --> 00:00:57.857
+Die Tafel verhindert damit einen verbreiteten Reflex.
+
+20
+00:00:58.546 --> 00:01:00.787
+Nicht jede Schwäche verlangt Training.
+
+21
+00:01:01.476 --> 00:01:02.376
+Erst bestimmen,
+
+22
+00:01:02.696 --> 00:01:04.537
+was überhaupt verändert werden muss,

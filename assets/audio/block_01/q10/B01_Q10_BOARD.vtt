@@ -1,0 +1,125 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:02.789
+Tafel 10 zeigt eine Prozessfolge
+
+2
+00:00:02.920 --> 00:00:06.190
+und genau die Reihenfolge schützt vor Halluzinationen
+
+3
+00:00:06.320 --> 00:00:08.159
+mit professionellem Anstrich.
+
+4
+00:00:08.840 --> 00:00:12.159
+Links beginnt die Testbasis mit einer Formulierung wie
+
+5
+00:00:12.439 --> 00:00:15.329
+niedriger Akkustand und schnell zurückkehren.
+
+6
+00:00:15.960 --> 00:00:18.440
+Der nächste Schritt ist nicht sofort ein Testfall,
+
+7
+00:00:18.840 --> 00:00:21.079
+sondern die Unklarheit sichtbar zu machen.
+
+8
+00:00:21.600 --> 00:00:22.959
+Welcher Schwellenwert,
+
+9
+00:00:23.319 --> 00:00:25.010
+welche Reaktionszeit,
+
+10
+00:00:25.520 --> 00:00:27.399
+welche Kriterien entscheiden,
+
+11
+00:00:27.719 --> 00:00:29.399
+ob das Verhalten erfüllt ist.
+
+12
+00:00:30.030 --> 00:00:33.729
+Danach kommt die Klärung über eine autorisierte fachliche Quelle,
+
+13
+00:00:34.090 --> 00:00:35.650
+etwa Product Owner,
+
+14
+00:00:35.930 --> 00:00:39.450
+Spezifikation oder andere gültige Testbasis.
+
+15
+00:00:40.049 --> 00:00:43.610
+Erst wenn konkrete beobachtbare Kriterien vorliegen,
+
+16
+00:00:43.970 --> 00:00:46.490
+können belastbare Testbedingungen entstehen.
+
+17
+00:00:47.130 --> 00:00:49.880
+Der rote Hinweis unten ist deshalb zentral
+
+18
+00:00:50.169 --> 00:00:52.090
+nicht plausible Werte erfinden.
+
+19
+00:00:52.709 --> 00:00:54.349
+Auch ein sauber dokumentierter,
+
+20
+00:00:54.470 --> 00:00:57.169
+typisch klingender Wert wie 20 %
+
+21
+00:00:57.470 --> 00:01:00.310
+bleibt ohne fachliche Bestätigung eine Annahme.
+
+22
+00:01:01.159 --> 00:01:03.479
+Gen AI kann hervorragend helfen,
+
+23
+00:01:03.599 --> 00:01:05.089
+Lücken zu identifizieren,
+
+24
+00:01:05.599 --> 00:01:07.629
+Klärungsfragen zu formulieren
+
+25
+00:01:07.879 --> 00:01:10.989
+und anschließend testbare Bedingungen abzuleiten.
+
+26
+00:01:11.699 --> 00:01:15.800
+Es darf aber fehlende Domänen Entscheidung nicht durch Statistik
+
+27
+00:01:15.970 --> 00:01:18.209
+oder Sprachplausibilität ersetzen.
+
+28
+00:01:19.050 --> 00:01:20.430
+Der technische Gewinn
+
+29
+00:01:20.690 --> 00:01:23.089
+liegt also nicht im Überspringen der Analyse,
+
+30
+00:01:23.569 --> 00:01:24.410
+sondern darin,
+
+31
+00:01:24.489 --> 00:01:27.489
+die Testbarkeit systematisch schneller herzustellen.

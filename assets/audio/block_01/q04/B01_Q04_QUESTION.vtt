@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.623 --> 00:00:05.632
+Ein Tester übergibt einem multimodalen LLM einen Screenshot eines Dashboards
+
+2
+00:00:05.882 --> 00:00:08.942
+und die zugehörigen textuellen Akzeptanzkriterien.
+
+3
+00:00:09.932 --> 00:00:14.772
+Welcher Prompt nutzt die multimodale Fähigkeit für die Testaufgabe am besten?
+
+4
+00:00:16.212 --> 00:00:19.893
+Analysiere Screenshot und Akzeptanzkriterien gemeinsam,
+
+5
+00:00:20.462 --> 00:00:22.143
+nenne visuelle Abweichungen,
+
+6
+00:00:22.582 --> 00:00:26.742
+ordne sie dem betroffenen Kriterium zu und markiere Unsicherheiten.
+
+7
+00:00:28.033 --> 00:00:30.382
+Analysiere die Akzeptanzkriterien
+
+8
+00:00:30.563 --> 00:00:33.403
+und leite daraus erwartete UI-Zustände ab.
+
+9
+00:00:34.093 --> 00:00:37.363
+Nutze den Screenshot nur zur Illustration des Ergebnisses.
+
+10
+00:00:38.572 --> 00:00:41.093
+Beschreibe den Screenshot möglichst genau
+
+11
+00:00:41.552 --> 00:00:44.503
+und leite anschließend allgemeine UI-Testideen
+
+12
+00:00:44.503 --> 00:00:46.863
+unabhängig von den Akzeptanzkriterien ab.
+
+13
+00:00:48.033 --> 00:00:51.563
+Extrahiere zunächst den sichtbaren Text aus dem Screenshot
+
+14
+00:00:51.852 --> 00:00:53.332
+und führe den Vergleich mit den
+
+15
+00:00:53.332 --> 00:00:56.962
+Akzeptanzkriterien auf Basis dieser Textextraktion durch.

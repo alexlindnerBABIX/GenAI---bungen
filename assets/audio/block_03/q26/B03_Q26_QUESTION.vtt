@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.019 --> 00:00:05.030
+Welche Komponente einer typischen LLM gestützten Testinfrastruktur
+
+2
+00:00:05.280 --> 00:00:07.139
+verarbeitet Benutzereingaben,
+
+3
+00:00:07.559 --> 00:00:10.510
+steuert Authentifizierung und Datenabruf
+
+4
+00:00:10.819 --> 00:00:13.720
+und bereitet den Prompt für das LLM vor.
+
+5
+00:00:15.409 --> 00:00:16.309
+Frontend,
+
+6
+00:00:16.629 --> 00:00:17.479
+LLM,
+
+7
+00:00:17.870 --> 00:00:18.549
+Backend.
+
+8
+00:00:19.329 --> 00:00:20.610
+Vektordatenbank.

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.296 --> 00:00:03.056
+Das ist die gesuchte Kontextmanipulation.
+
+2
+00:00:03.606 --> 00:00:06.085
+Der Angreifer gestaltet die Eingabe so,
+
+3
+00:00:06.485 --> 00:00:09.765
+dass der Kontext ausgenutzt oder überlastet wird,
+
+4
+00:00:10.245 --> 00:00:14.726
+um vertrauliche Informationen aus Modell oder Kontext hervorzurufen.

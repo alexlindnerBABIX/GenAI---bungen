@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.029 --> 00:00:01.830
+Welche zwei Aufgaben
+
+2
+00:00:02.000 --> 00:00:06.380
+entsprechen typischen Stärken von LLMs im Software Test?
+
+3
+00:00:06.880 --> 00:00:08.470
+Wähle zwei Optionen
+
+4
+00:00:08.890 --> 00:00:11.310
+aus natürlich sprachlichen Anforderungen,
+
+5
+00:00:11.319 --> 00:00:12.430
+Unklarheiten
+
+6
+00:00:12.640 --> 00:00:15.130
+und geeignete Klärungsfragen ableiten,
+
+7
+00:00:15.680 --> 00:00:18.639
+aus einem Fehlerbericht die tatsächliche technische
+
+8
+00:00:18.639 --> 00:00:22.329
+Grundursache ohne weitere Systeminformationen bestimmen.
+
+9
+00:00:23.319 --> 00:00:25.799
+Aus einer Testfallbeschreibung einen Entwurf
+
+10
+00:00:25.799 --> 00:00:28.399
+für ein automatisiertes Testskript erzeugen.
+
+11
+00:00:29.239 --> 00:00:32.479
+Die reale Testabdeckung eines laufenden Systems
+
+12
+00:00:32.479 --> 00:00:35.240
+ohne Mess- oder Instrumentierungsdaten bestimmen.
+
+13
+00:00:36.250 --> 00:00:38.650
+Den tatsächlichen Zustand eines Hardware
+
+14
+00:00:38.650 --> 00:00:41.650
+Sensors ohne angebundene Messquelle beurteilen.

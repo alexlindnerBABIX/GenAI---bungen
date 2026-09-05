@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:01.128 --> 00:00:05.548
+Eine Spezifikation für eine Paketstation beschreibt Abholung per Code,
+
+2
+00:00:05.709 --> 00:00:06.268
+öffnen,
+
+3
+00:00:06.469 --> 00:00:07.908
+schließen und verriegeln.
+
+4
+00:00:08.588 --> 00:00:11.018
+Das LLM schlägt zusätzlich den Test
+
+5
+00:00:11.228 --> 00:00:14.188
+Rücksendung mit automatischer Erstattung prüfen vor.
+
+6
+00:00:14.948 --> 00:00:16.118
+Welches Problem
+
+7
+00:00:16.308 --> 00:00:17.609
+liegt am ehesten vor?
+
+8
+00:00:18.859 --> 00:00:19.649
+Verzerrung,
+
+9
+00:00:20.158 --> 00:00:21.259
+Halluzination,
+
+10
+00:00:21.859 --> 00:00:23.069
+Reasoning Fehler,
+
+11
+00:00:23.499 --> 00:00:24.698
+Nichtdeterminismus.

@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.785 --> 00:00:04.455
+Wie wird eine systematische Tendenz eines LLM bezeichnet,
+
+2
+00:00:04.864 --> 00:00:07.665
+bestimmte Perspektiven oder Annahmen aufgrund
+
+3
+00:00:07.665 --> 00:00:09.665
+seiner Trainingsdaten zu bevorzugen?
+
+4
+00:00:10.684 --> 00:00:11.804
+Halluzination,
+
+5
+00:00:12.304 --> 00:00:13.324
+Reasoning Fehler,
+
+6
+00:00:13.764 --> 00:00:14.514
+Verzerrung,
+
+7
+00:00:14.764 --> 00:00:15.345
+Bias,
+
+8
+00:00:16.044 --> 00:00:17.285
+Nichtdeterminismus.

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.200
+Regelmäßiges Fine Tuning würde die Modellgewichte
+
+2
+00:00:03.200 --> 00:00:06.000
+nach jeder Richtlinienänderung erneut anpassen.
+
+3
+00:00:06.679 --> 00:00:10.510
+Für häufig wechselndes Wissen ist das unnötig schwergewichtig
+
+4
+00:00:10.680 --> 00:00:12.279
+und betrieblich aufwendig.

@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.881 --> 00:00:04.091
+Ein Angreifer sendet absichtlich sehr lange Anfragen,
+
+2
+00:00:04.411 --> 00:00:06.681
+um das Kontextfenster zu überlasten
+
+3
+00:00:06.890 --> 00:00:11.091
+und möglicherweise Fragmente vertraulicher Trainingsdaten hervorzurufen.
+
+4
+00:00:12.651 --> 00:00:17.991
+Welcher Angriffsvektor wird im aktuellen CT-Gen AI Lehrplan dafür verwendet?
+
+5
+00:00:19.181 --> 00:00:21.101
+Manipulation von Anfragen,
+
+6
+00:00:21.781 --> 00:00:23.550
+Kontextmanipulation,
+
+7
+00:00:24.141 --> 00:00:25.631
+Datenverunreinigung.
+
+8
+00:00:26.290 --> 00:00:28.580
+Generierung von bösartigem Code.

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:02.759
+Das Frontend ist die Benutzungsschnittstelle.
+
+2
+00:00:03.220 --> 00:00:06.239
+Es nimmt Eingaben entgegen und zeigt Ergebnisse an,
+
+3
+00:00:06.559 --> 00:00:10.199
+orchestriert aber typischerweise nicht Authentifizierung,
+
+4
+00:00:10.560 --> 00:00:14.640
+Datenabruf und Prompttaufbereitung im Hintergrund.

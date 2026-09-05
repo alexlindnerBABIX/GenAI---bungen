@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.431 --> 00:00:02.141
+Das passt zu RAG.
+
+2
+00:00:02.750 --> 00:00:06.741
+Relevante aktuelle Richtlinienabschnitte werden zur Laufzeit gesucht
+
+3
+00:00:06.911 --> 00:00:10.430
+und als zusätzlicher Kontext an das LLM gegeben.
+
+4
+00:00:11.110 --> 00:00:12.350
+Das Wissen kann wechseln,
+
+5
+00:00:12.430 --> 00:00:14.831
+ohne die Modellgewichte neu zu trainieren.

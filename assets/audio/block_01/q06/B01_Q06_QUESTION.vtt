@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.915 --> 00:00:05.755
+Ein Team braucht erstens spontane Rückfragen zu neuen Anforderungen
+
+2
+00:00:05.965 --> 00:00:07.035
+und zweitens
+
+3
+00:00:07.206 --> 00:00:09.026
+eine täglich wiederholte,
+
+4
+00:00:09.125 --> 00:00:13.526
+in die CIPipeline integrierte Generierung von Regressionstestdaten.
+
+5
+00:00:14.125 --> 00:00:15.805
+Welche Zuordnung ist am besten?
+
+6
+00:00:16.856 --> 00:00:21.136
+Beide Aufgaben werden primär über einen KIChatbot umgesetzt.
+
+7
+00:00:21.875 --> 00:00:26.765
+Die spontanen Rückfragen erfolgen über eine integrierte LLM Testanwendung,
+
+8
+00:00:26.956 --> 00:00:29.826
+die CI-Aufgabe über einen KIChatbot.
+
+9
+00:00:30.795 --> 00:00:36.456
+Beide Aufgaben werden primär über eine integrierte LLMTtanwendung umgesetzt.
+
+10
+00:00:37.216 --> 00:00:40.886
+Die spontanen Rückfragen erfolgen über einen KI-Chatbot,
+
+11
+00:00:41.316 --> 00:00:46.216
+die wiederholte CI-Aufgabe über eine integrierte LLMTtanwendung.

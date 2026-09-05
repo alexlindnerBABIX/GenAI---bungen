@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.137 --> 00:00:01.647
+Das ist Prompting
+
+2
+00:00:01.846 --> 00:00:04.217
+beziehungsweise Systemprompting.
+
+3
+00:00:04.817 --> 00:00:05.217
+Rolle,
+
+4
+00:00:05.496 --> 00:00:09.536
+Terminologie und Einschränkungen werden über Instruktionen gesteuert,
+
+5
+00:00:09.896 --> 00:00:12.457
+ohne das Modell selbst weiter zu trainieren.

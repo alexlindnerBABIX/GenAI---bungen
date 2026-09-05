@@ -1,0 +1,77 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:05.300
+Welche Kompetenzkombination ist für Tester beim produktiven Einsatz von Gen AI
+
+2
+00:00:05.440 --> 00:00:06.480
+besonders relevant?
+
+3
+00:00:07.670 --> 00:00:09.130
+Testautomatisierung,
+
+4
+00:00:09.489 --> 00:00:10.600
+Skriptsprachen,
+
+5
+00:00:10.890 --> 00:00:12.560
+CICD-Kenntnisse
+
+6
+00:00:12.890 --> 00:00:18.280
+und sichere Bedienung eines Gen AI-Chatbots für klar abgegrenzte Testaufgaben.
+
+7
+00:00:19.190 --> 00:00:21.069
+Training neuronaler Netze,
+
+8
+00:00:21.430 --> 00:00:22.909
+GPU Optimierung,
+
+9
+00:00:23.270 --> 00:00:25.500
+Aufbau eigener Foundation Modelle
+
+10
+00:00:25.709 --> 00:00:28.549
+und ergänzende Grundkenntnisse in Testverfahren.
+
+11
+00:00:29.629 --> 00:00:31.340
+Test- und Domänenwissen,
+
+12
+00:00:31.719 --> 00:00:33.060
+Prompt Engineering,
+
+13
+00:00:33.279 --> 00:00:36.389
+Verständnis von LLM Grenzen und Risiken
+
+14
+00:00:36.639 --> 00:00:38.159
+sowie fachliches Review.
+
+15
+00:00:39.380 --> 00:00:41.330
+KI-generierter Testmittel,
+
+16
+00:00:42.180 --> 00:00:43.340
+Prompt Engineering,
+
+17
+00:00:43.619 --> 00:00:45.819
+Modellbedienung und Tool-Kenntnisse,
+
+18
+00:00:46.220 --> 00:00:48.900
+verbunden mit geringerer Bedeutung von Test-
+
+19
+00:00:48.900 --> 00:00:52.220
+und Domänenwissen bei leistungsfähigen LLMs.

@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.039 --> 00:00:01.559
+Eine user story fordert.
+
+2
+00:00:02.299 --> 00:00:06.679
+Bei niedrigem Akkustand soll die Lieferdrohne schnell zur Basis zurückkehren.
+
+3
+00:00:07.429 --> 00:00:07.440
+Wie
+
+4
+00:00:07.860 --> 00:00:12.020
+sollte Gen AI in der Testanalyse am sinnvollsten eingesetzt werden?
+
+5
+00:00:13.100 --> 00:00:16.739
+Aus typischen Drohnensystemen sinnvolle Schwellenwerte ableiten,
+
+6
+00:00:17.139 --> 00:00:19.049
+diese als Annahmen dokumentieren
+
+7
+00:00:19.219 --> 00:00:21.579
+und daraus direkt Testbedingungen erzeugen.
+
+8
+00:00:22.729 --> 00:00:25.200
+Die User Story in Girkin umformulieren
+
+9
+00:00:25.409 --> 00:00:29.969
+und die Begriffe niedrig und schnell unverändert in die Szenarien übernehmen.
+
+10
+00:00:30.989 --> 00:00:33.029
+Die unklaren Begriffe identifizieren,
+
+11
+00:00:33.389 --> 00:00:37.619
+konkrete Klärungsfragen zu Schwellenwert und Reaktionszeit formulieren
+
+12
+00:00:37.869 --> 00:00:40.650
+und danach überprüfbare Testbedingungen ableiten.
+
+13
+00:00:41.650 --> 00:00:44.529
+Das Risiko eines niedrigen Akkustands bewerten
+
+14
+00:00:44.740 --> 00:00:48.419
+und aus dem vorhandenen Wortlaut priorisierte Testideen ableiten,
+
+15
+00:00:48.779 --> 00:00:50.819
+ohne die Begriffe weiter zu präzisieren.

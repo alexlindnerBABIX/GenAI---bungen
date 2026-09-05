@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.465 --> 00:00:02.365
+Nach Datenschutz und Sicherheit
+
+2
+00:00:02.584 --> 00:00:06.924
+erweitert Tafel 24 den Risikoblick auf Umweltwirkung.
+
+3
+00:00:07.514 --> 00:00:09.665
+Oben stehen 5 Treiber nebeneinander.
+
+4
+00:00:10.124 --> 00:00:11.603
+Anzahl der Aufrufe,
+
+5
+00:00:12.005 --> 00:00:13.024
+Tokenmenge,
+
+6
+00:00:13.244 --> 00:00:14.725
+verwendete Modalität,
+
+7
+00:00:15.085 --> 00:00:17.034
+Wiederholungen und Hardware.
+
+8
+00:00:17.765 --> 00:00:20.244
+Die Wirkung entsteht aus ihrem Zusammenspiel.
+
+9
+00:00:20.804 --> 00:00:24.274
+Ein einzelner kurzer Textaufruf ist etwas anderes
+
+10
+00:00:24.405 --> 00:00:27.755
+als viele wiederholte multimodale Generierungen
+
+11
+00:00:27.884 --> 00:00:29.284
+mit langen Kontexten.
+
+12
+00:00:29.884 --> 00:00:33.034
+Unten folgt deshalb keine abstrakte Forderung
+
+13
+00:00:33.185 --> 00:00:34.645
+nach einem kleineren Modell,
+
+14
+00:00:35.164 --> 00:00:37.164
+sondern eine Nutzungsregel.
+
+15
+00:00:37.534 --> 00:00:41.284
+Unnötige Interaktionen und Generierungen vermeiden.
+
+16
+00:00:42.045 --> 00:00:44.725
+Für Testteams ist das praktisch relevant.
+
+17
+00:00:45.314 --> 00:00:47.835
+Lange Projektchats blind mitzuschleppen,
+
+18
+00:00:48.234 --> 00:00:52.075
+mehrere Varianten ohne Entscheidungskriterium zu erzeugen
+
+19
+00:00:52.075 --> 00:00:54.354
+oder zusätzlich Bilder zu generieren,
+
+20
+00:00:54.674 --> 00:00:56.435
+obwohl nur Text gebraucht wird,
+
+21
+00:00:56.795 --> 00:00:58.954
+erhöht reale Rechenarbeit.
+
+22
+00:00:59.795 --> 00:01:04.225
+Kleine Effizienzgewinne können bei Tausenden automatisierten Aufrufen
+
+23
+00:01:04.515 --> 00:01:07.755
+stärker wirken als eine einmalige Optimierung.
+
+24
+00:01:08.475 --> 00:01:11.195
+Umweltwirkung wird damit zu einer Betriebsfrage.
+
+25
+00:01:11.725 --> 00:01:12.395
+Wie oft,
+
+26
+00:01:12.674 --> 00:01:16.244
+wie viel und mit welcher Modalität rechnen wir

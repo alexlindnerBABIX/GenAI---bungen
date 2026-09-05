@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.035 --> 00:00:04.395
+Tafel 39 greift unsere frühere Fehlerklassifikation wieder auf,
+
+2
+00:00:04.925 --> 00:00:07.714
+aber jetzt mit einer konkreten Abhängigkeitskette.
+
+3
+00:00:08.245 --> 00:00:11.044
+Oben ist die technische Realität eindeutig.
+
+4
+00:00:11.604 --> 00:00:14.745
+Test B benötigt erfolgreiches Test A
+
+5
+00:00:14.924 --> 00:00:17.125
+und Test C benötigt B.
+
+6
+00:00:17.754 --> 00:00:21.864
+Damit legt die Abhängigkeit zunächst die ausführbare Reihenfolge A,
+
+7
+00:00:22.245 --> 00:00:22.964
+dann B,
+
+8
+00:00:23.364 --> 00:00:24.485
+dann C fest.
+
+9
+00:00:25.125 --> 00:00:26.824
+C kann hochkritisch sein,
+
+10
+00:00:27.205 --> 00:00:30.364
+aber Kritikalität hebt keine Voraussetzung auf.
+
+11
+00:00:31.004 --> 00:00:35.745
+Unten links zeigt die falsche LLM Priorisierung genau diesen Bruch.
+
+12
+00:00:36.305 --> 00:00:37.324
+C zuerst,
+
+13
+00:00:37.784 --> 00:00:38.775
+B zuletzt.
+
+14
+00:00:39.455 --> 00:00:41.415
+Rechts wird diagnostiziert,
+
+15
+00:00:41.695 --> 00:00:42.654
+was es nicht ist.
+
+16
+00:00:43.214 --> 00:00:44.495
+Nichts wurde erfunden.
+
+17
+00:00:44.894 --> 00:00:46.534
+Also keine Halluzination.
+
+18
+00:00:47.055 --> 00:00:49.574
+Es gibt keine systematische Bevorzugung,
+
+19
+00:00:49.894 --> 00:00:51.174
+also keinen Bias.
+
+20
+00:00:51.934 --> 00:00:54.495
+Variabilität ist ebenfalls nicht der Kern.
+
+21
+00:00:55.095 --> 00:00:59.205
+Alle Fakten waren vorhanden und wurden falsch logisch verknüpft.
+
+22
+00:00:59.815 --> 00:01:01.854
+Damit ist es ein Reasoning Fehler.
+
+23
+00:01:02.574 --> 00:01:05.735
+Die Entscheidungsregel unten ist für Teststeuerung wichtig.
+
+24
+00:01:06.375 --> 00:01:08.544
+Abhängigkeiten definieren zuerst,
+
+25
+00:01:08.854 --> 00:01:09.875
+was machbar ist.
+
+26
+00:01:10.394 --> 00:01:14.075
+Kritikalität priorisiert erst innerhalb des Machbaren,

@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.650 --> 00:00:02.240
+Zwei Promptvarianten
+
+2
+00:00:02.531 --> 00:00:05.451
+sollen im Rahmen eines AB-Tests bewertet werden.
+
+3
+00:00:06.131 --> 00:00:10.370
+Welches Vorgehen entspricht dem im Lehrplan beschriebenen Verfahren am besten?
+
+4
+00:00:11.491 --> 00:00:13.440
+Mehrere Promptversionen erstellen
+
+5
+00:00:13.651 --> 00:00:16.050
+und anhand vordefinierter Metriken bewerten,
+
+6
+00:00:16.370 --> 00:00:18.850
+welche Version die besseren Ergebnisse liefert,
+
+7
+00:00:19.500 --> 00:00:21.651
+einen Basisprompt schrittweise anhand
+
+8
+00:00:21.651 --> 00:00:24.241
+der tatsächlich erzeugten Ergebnisse verändern
+
+9
+00:00:24.370 --> 00:00:25.570
+und erneut ausführen,
+
+10
+00:00:26.210 --> 00:00:30.921
+die erzeugten Ausgaben auf Unrichtigkeiten und Inkonsistenzen untersuchen
+
+11
+00:00:31.090 --> 00:00:33.611
+und daraus Änderungen am Prompt ableiten.
+
+12
+00:00:34.181 --> 00:00:37.011
+Rückmeldungen von Testern zur zweckmäßigkeit
+
+13
+00:00:37.221 --> 00:00:39.410
+und Verständlichkeit der Ausgaben sammeln
+
+14
+00:00:39.600 --> 00:00:41.411
+und für die Promptanpassung nutzen.

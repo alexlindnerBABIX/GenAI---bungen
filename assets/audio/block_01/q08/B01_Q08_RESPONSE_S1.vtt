@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.167 --> 00:00:04.316
+Drei vollständige Beispiele sind mehr als ein einzelnes Muster
+
+2
+00:00:04.607 --> 00:00:06.926
+und damit Few Shot Prompting.
+
+3
+00:00:07.697 --> 00:00:09.986
+Die Beispiele zeigen dem Modell konkret,
+
+4
+00:00:10.506 --> 00:00:14.266
+wie das unternehmensspezifische Testfallformat aussehen soll.
+
+5
+00:00:15.077 --> 00:00:17.967
+Entscheidend ist hier zunächst die Zahl der Beispiele.

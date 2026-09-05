@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.044 --> 00:00:04.593
+Welche Eigenschaft kennzeichnet einen LLM-gestützten Agenten gegenüber
+
+2
+00:00:04.593 --> 00:00:08.684
+einem reinen dialog-orientierten LLM-Assistenten am besten?
+
+3
+00:00:09.834 --> 00:00:12.353
+Er verwendet ein größeres Kontextfenster,
+
+4
+00:00:12.434 --> 00:00:16.514
+um längere Gespräche und umfangreichere Eingaben verarbeiten zu können.
+
+5
+00:00:17.413 --> 00:00:21.644
+Er nutzt typischerweise ein domänenspezifisch fing getuntes Modell,
+
+6
+00:00:22.123 --> 00:00:26.404
+während ein dialogorientierter Assistent ein Foundation Modell verwendet.
+
+7
+00:00:27.394 --> 00:00:31.614
+Er ruft vor jeder Antwort externe Dokumente über RAG ab
+
+8
+00:00:31.873 --> 00:00:34.194
+und erzeugt daraus eine einzelne Antwort.
+
+9
+00:00:34.934 --> 00:00:39.434
+Er kann definierte Aufgaben semiautonom oder autonom ausführen
+
+10
+00:00:39.684 --> 00:00:41.194
+und dabei Tools aufrufen,
+
+11
+00:00:41.284 --> 00:00:43.563
+um mit externen Systemen zu interagieren.

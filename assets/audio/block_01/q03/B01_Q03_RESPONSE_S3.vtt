@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.029 --> 00:00:04.559
+Das Szenario beschreibt genau die Zielrichtung von Instruction Tuning.
+
+2
+00:00:04.960 --> 00:00:07.429
+Ein vorhandenes Modell wird darauf abgestimmt,
+
+3
+00:00:07.840 --> 00:00:12.680
+menschliche Anweisungen und Nutzerintentionen zuverlässiger zu befolgen.
+
+4
+00:00:13.319 --> 00:00:14.420
+Wichtig bleibt:
+
+5
+00:00:14.720 --> 00:00:18.739
+Diese Eigenschaft kann mit anderen Modellmerkmalen kombiniert sein.

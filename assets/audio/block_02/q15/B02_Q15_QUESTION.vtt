@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.319
+Ein LLM erzeugt API-Testskripte.
+
+2
+00:00:04.038 --> 00:00:06.480
+Welche Metrik misst am direktesten,
+
+3
+00:00:06.880 --> 00:00:10.460
+welcher Anteil der erzeugten Artefakte in der Testumgebung
+
+4
+00:00:10.619 --> 00:00:13.520
+ohne manuelle Anpassung tatsächlich läuft?
+
+5
+00:00:14.930 --> 00:00:17.399
+Relevanz und Kontextangemessenheit,
+
+6
+00:00:17.899 --> 00:00:18.889
+Genauigkeit,
+
+7
+00:00:19.459 --> 00:00:20.399
+Vielfalt,
+
+8
+00:00:20.780 --> 00:00:22.409
+Ausführungserfolgsrate.

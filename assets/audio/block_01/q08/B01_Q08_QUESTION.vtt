@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.810 --> 00:00:03.990
+Ein Unternehmen verwendet ein eigenes Testfallformat.
+
+2
+00:00:04.530 --> 00:00:06.730
+Dem LLM werden 3 gute,
+
+3
+00:00:06.770 --> 00:00:09.209
+vollständig ausgefüllte Beispiele gezeigt,
+
+4
+00:00:09.609 --> 00:00:12.130
+bevor es einen neuen Testfall erzeugen soll.
+
+5
+00:00:12.939 --> 00:00:16.009
+Welches Prompting Verfahren wird hauptsächlich eingesetzt?
+
+6
+00:00:16.770 --> 00:00:18.160
+Few Shot Prompting,
+
+7
+00:00:18.410 --> 00:00:19.789
+One Shot Prompting
+
+8
+00:00:20.030 --> 00:00:21.599
+Zero Shot Prompting
+
+9
+00:00:21.810 --> 00:00:22.920
+Promptverkettung.

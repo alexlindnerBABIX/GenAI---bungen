@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.126 --> 00:00:05.196
+Die Vorbereitung eines Fine Tuning Datensatzes gehört zur Model Anpassung.
+
+2
+00:00:05.846 --> 00:00:08.045
+Sie kann Teil des Lebenszyklus sein,
+
+3
+00:00:08.365 --> 00:00:13.225
+beschreibt aber nicht den gesamten produktiven Betrieb einer LLM Lösung.

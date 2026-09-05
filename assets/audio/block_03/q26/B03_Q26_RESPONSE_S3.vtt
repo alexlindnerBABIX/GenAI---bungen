@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.041 --> 00:00:02.990
+Genau das ist die Backend Verantwortung,
+
+2
+00:00:03.240 --> 00:00:04.880
+Eingaben verarbeiten,
+
+3
+00:00:05.240 --> 00:00:08.720
+Authentifizierung und Datenzugriff orchestrieren,
+
+4
+00:00:09.161 --> 00:00:11.871
+benötigten Kontext zusammenstellen
+
+5
+00:00:12.001 --> 00:00:14.871
+und daraus den Modellaufruf vorbereiten.

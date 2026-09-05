@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.039 --> 00:00:01.659
+Few Shot Prompting
+
+2
+00:00:01.919 --> 00:00:06.119
+würde mehrere Beispiele in einen bereits formulierten Prompt aufnehmen.
+
+3
+00:00:06.719 --> 00:00:12.199
+Hier soll das LLM aber zuerst den Prompt selbst als Arbeitsprodukt erzeugen.

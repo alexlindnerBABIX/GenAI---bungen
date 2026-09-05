@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:02.519
+Das Kontextfenster kann bei langen Loks
+
+2
+00:00:02.519 --> 00:00:05.079
+tatsächlich zu einem Relevanzproblem werden.
+
+3
+00:00:05.639 --> 00:00:09.159
+Im Szenario ist aber zuerst etwas anderes kritisch.
+
+4
+00:00:09.600 --> 00:00:13.220
+Personenbezogene und vertrauliche Produktionsdaten
+
+5
+00:00:13.399 --> 00:00:16.120
+werden an einen externen Dienst übertragen.

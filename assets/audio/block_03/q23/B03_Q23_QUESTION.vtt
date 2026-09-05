@@ -1,0 +1,49 @@
+WEBVTT
+
+1
+00:00:00.412 --> 00:00:04.293
+Welche Maßnahmenkombination schützt sensible Testdaten beim
+
+2
+00:00:04.293 --> 00:00:07.732
+Einsatz eines externen Gen-AI-Dienstes am besten?
+
+3
+00:00:09.143 --> 00:00:11.793
+Regelmäßige Sicherheits-audits durchführen
+
+4
+00:00:11.963 --> 00:00:16.083
+und die generierten Ergebnisse vor ihrer Weiterverwendung fachlich prüfen.
+
+5
+00:00:17.323 --> 00:00:19.692
+Eine abgesicherte Cloud-Umgebung wählen
+
+6
+00:00:19.903 --> 00:00:22.973
+und sensible Testdaten dort verschlüsselt verarbeiten,
+
+7
+00:00:23.342 --> 00:00:25.662
+ohne die Datenmenge vorab zu reduzieren.
+
+8
+00:00:26.893 --> 00:00:30.202
+Verbindliche Nutzungsrichtlinien und Schulungen einführen
+
+9
+00:00:30.452 --> 00:00:34.613
+und den technischen Datenschutz dem jeweiligen Gen AI-Anbieter überlassen.
+
+10
+00:00:35.772 --> 00:00:38.533
+Daten minimieren und anonymisieren
+
+11
+00:00:38.772 --> 00:00:41.583
+oder Pseudonymisieren sowie Speicherung,
+
+12
+00:00:41.783 --> 00:00:44.543
+Übertragung und Zugriff technisch absichern.

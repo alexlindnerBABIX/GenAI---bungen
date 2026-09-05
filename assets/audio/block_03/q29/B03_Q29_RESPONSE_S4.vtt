@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.101 --> 00:00:02.981
+Auch das gehört zur RAG-Architektur.
+
+2
+00:00:03.581 --> 00:00:06.700
+Dokumente werden als Einbettungen indexiert
+
+3
+00:00:06.700 --> 00:00:08.860
+und für Ähnlichkeitssuchen genutzt.
+
+4
+00:00:09.340 --> 00:00:12.380
+Das generierende Modell bleibt dabei unverändert.

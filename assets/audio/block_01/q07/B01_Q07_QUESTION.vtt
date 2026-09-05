@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.524 --> 00:00:01.905
+In einem Prompt steht
+
+2
+00:00:02.454 --> 00:00:04.415
+Verwende anonymisierte Daten,
+
+3
+00:00:04.774 --> 00:00:07.244
+erzeuge höchstens 12 Testfälle
+
+4
+00:00:07.415 --> 00:00:10.655
+und behandle nicht belegte Annahmen als offene Punkte.
+
+5
+00:00:11.515 --> 00:00:14.814
+Welcher Promptkomponente entspricht dieser Teil am besten?
+
+6
+00:00:15.714 --> 00:00:15.735
+Rolle,
+
+7
+00:00:16.655 --> 00:00:17.994
+Ausgabeformat,
+
+8
+00:00:18.064 --> 00:00:19.094
+Eingabedaten,
+
+9
+00:00:19.415 --> 00:00:20.335
+Einschränkungen.

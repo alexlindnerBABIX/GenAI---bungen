@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.415 --> 00:00:02.625
+Ein größeres Kontextfenster verändert,
+
+2
+00:00:03.065 --> 00:00:06.224
+wie viele Tokens gemeinsam berücksichtigt werden können.
+
+3
+00:00:06.785 --> 00:00:11.334
+Es steuert aber nicht direkt die stochastische Auswahl des nächsten Tokens
+
+4
+00:00:11.785 --> 00:00:13.865
+und ist deshalb kein Temperaturersatz.

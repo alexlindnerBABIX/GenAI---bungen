@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.069 --> 00:00:03.670
+Was gehört am ehesten zum Schwerpunkt von LLMOs
+
+2
+00:00:03.670 --> 00:00:07.349
+für ein produktiv eingesetztes Gen AI Testwerkzeug?
+
+3
+00:00:08.429 --> 00:00:09.349
+Versionierung,
+
+4
+00:00:09.670 --> 00:00:12.179
+Freigabe und Wiederverwendung einzelner
+
+5
+00:00:12.179 --> 00:00:15.110
+Promptvorlagen für wiederkehrende Testaufgaben,
+
+6
+00:00:15.950 --> 00:00:19.489
+Vorbereitung und Qualitätskontrolle eines einzelnen Fine
+
+7
+00:00:19.489 --> 00:00:22.060
+Tuning Datensatzes für eine Testaufgabe,
+
+8
+00:00:22.819 --> 00:00:23.429
+Entwicklung,
+
+9
+00:00:23.709 --> 00:00:28.099
+Bereitstellung und Wartung von LLMs in Produktionsumgebungen
+
+10
+00:00:28.310 --> 00:00:30.500
+unter Berücksichtigung von Datenschutz,
+
+11
+00:00:30.750 --> 00:00:32.269
+Sicherheit und Kosten.
+
+12
+00:00:33.220 --> 00:00:33.979
+Verwaltung,
+
+13
+00:00:34.340 --> 00:00:37.420
+Ausführung und Reporting klassischer Testfälle
+
+14
+00:00:37.420 --> 00:00:39.739
+im zentralen Testmanagement Werkzeug.

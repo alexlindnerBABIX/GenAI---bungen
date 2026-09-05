@@ -1,0 +1,49 @@
+WEBVTT
+
+1
+00:00:01.092 --> 00:00:03.831
+Welche Aussage beschreibt Fine Tuning für
+
+2
+00:00:03.831 --> 00:00:07.511
+eine wiederkehrende domänenspezifische Testaufgabe korrekt?
+
+3
+00:00:08.791 --> 00:00:13.301
+Die Modellgewichte werden mit hochwertigen domänenspezifischen Beispielen
+
+4
+00:00:13.551 --> 00:00:16.551
+für die wiederkehrende Testaufgabe weiter angepasst.
+
+5
+00:00:17.372 --> 00:00:21.451
+Relevante Dokumentabschnitte werden bei jeder Anfrage abgerufen
+
+6
+00:00:21.902 --> 00:00:24.622
+und als zusätzlicher Promptkontext verwendet.
+
+7
+00:00:25.482 --> 00:00:28.292
+Ein wiederverwendbarer Systemprompt legt Rolle,
+
+8
+00:00:28.691 --> 00:00:30.932
+Terminologie und Einschränkungen fest,
+
+9
+00:00:31.292 --> 00:00:33.372
+während das Modell unverändert bleibt.
+
+10
+00:00:34.102 --> 00:00:37.512
+Domänendokumente werden als Einbettungen indexiert
+
+11
+00:00:37.682 --> 00:00:39.542
+und bei Ähnlichkeitssuchen genutzt,
+
+12
+00:00:39.841 --> 00:00:42.721
+während das generierende Modell unverändert bleibt.

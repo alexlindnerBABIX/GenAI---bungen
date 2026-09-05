@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.505 --> 00:00:03.945
+Einbettungen dienen Suche und Ähnlichkeitsvergleich.
+
+2
+00:00:04.434 --> 00:00:08.594
+Sie werden nicht einfach direkt in fertige Antwortsätze zurückdekodiert.
+
+3
+00:00:09.285 --> 00:00:13.675
+Nach dem Retrieval folgt weiterhin die Generierungsphase des LLM.

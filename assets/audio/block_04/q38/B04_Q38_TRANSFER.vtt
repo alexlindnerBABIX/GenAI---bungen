@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.006 --> 00:00:01.245
+Met Prompting
+
+2
+00:00:01.385 --> 00:00:02.946
+erkennt man dagegen daran,
+
+3
+00:00:03.305 --> 00:00:06.226
+dass das Arbeitsprodukt selbst ein Prompt ist.
+
+4
+00:00:06.915 --> 00:00:09.375
+Besonders sinnvoll wird das bei wiederholten,
+
+5
+00:00:09.775 --> 00:00:12.815
+standardisierten oder vielen ähnlichen Aufgaben.
+
+6
+00:00:13.495 --> 00:00:16.315
+Met Prompting erkennst du nicht an mehreren Schritten,
+
+7
+00:00:16.775 --> 00:00:19.095
+sondern am Typ des Zwischenergebnisses.
+
+8
+00:00:19.776 --> 00:00:23.815
+Wenn das erste Arbeitsprodukt selbst ein Prompt für die nächste Aufgabe ist,
+
+9
+00:00:24.375 --> 00:00:26.015
+liegt die Meta Ebene vor.

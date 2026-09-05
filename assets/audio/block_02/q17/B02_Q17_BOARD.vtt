@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.440
+Mit Tafel 17 beginnt die Risik Diagnose.
+
+2
+00:00:04.300 --> 00:00:07.179
+4 Fehlerbilder stehen um dieselbe Frage:
+
+3
+00:00:07.559 --> 00:00:09.960
+Was ist eigentlich problematisch?
+
+4
+00:00:10.720 --> 00:00:13.359
+Bei Halluzination liegt der Fehler im Inhalt.
+
+5
+00:00:13.720 --> 00:00:14.800
+Etwas ist falsch,
+
+6
+00:00:15.039 --> 00:00:16.879
+irrelevant oder unbelegt.
+
+7
+00:00:17.520 --> 00:00:19.030
+Beim Reasoning Fehler
+
+8
+00:00:19.239 --> 00:00:20.879
+sind Informationen vorhanden,
+
+9
+00:00:21.319 --> 00:00:23.360
+werden aber logisch falsch verknüpft.
+
+10
+00:00:24.000 --> 00:00:24.750
+Bes
+
+11
+00:00:24.870 --> 00:00:28.239
+beschreibt eine systematische Verzerrung oder Bevorzugung.
+
+12
+00:00:28.899 --> 00:00:30.850
+Nichtdeterminismus schließlich
+
+13
+00:00:30.979 --> 00:00:32.659
+bedeutet Variabilität.
+
+14
+00:00:33.180 --> 00:00:36.740
+Gleiche Eingaben können unterschiedliche Ausgaben erzeugen.
+
+15
+00:00:37.419 --> 00:00:41.580
+Diese vier Kategorien klingen in realen Antworten oft ähnlich,
+
+16
+00:00:42.029 --> 00:00:43.900
+liegen aber auf verschiedenen Ebenen.
+
+17
+00:00:44.500 --> 00:00:47.610
+Genau deshalb steht unten die Diagnosefrage:
+
+18
+00:00:47.869 --> 00:00:48.500
+Inhalt,
+
+19
+00:00:48.979 --> 00:00:49.580
+Logik,
+
+20
+00:00:50.020 --> 00:00:52.970
+systematische Tendenz oder Zufall.
+
+21
+00:00:53.750 --> 00:00:56.119
+Die Klassifikation ist nicht akademisch.
+
+22
+00:00:56.639 --> 00:00:57.389
+Sie entscheidet,
+
+23
+00:00:57.439 --> 00:00:59.360
+welche gegenmaßnahme sinnvoll ist.
+
+24
+00:01:00.040 --> 00:01:01.939
+Fehlender fachlicher Kontext
+
+25
+00:01:02.080 --> 00:01:05.519
+verlangt anderes Grounding als eine komplexe Schlussfolgerung.
+
+26
+00:01:06.040 --> 00:01:09.000
+Variabilität wird anders behandelt als Bias.
+
+27
+00:01:09.800 --> 00:01:14.709
+Wer jedes unerwünschte LLM-Ergebnis einfach Halluzination nennt,
+
+28
+00:01:15.139 --> 00:01:19.059
+verliert damit die wichtigste Information für die technische Fehlerbehandlung.
+
+29
+00:01:19.779 --> 00:01:22.459
+Für erfahrene Tester ist das besonders relevant.
+
+30
+00:01:23.190 --> 00:01:25.669
+Die gleiche sichtbare Fehlentscheidung
+
+31
+00:01:25.839 --> 00:01:29.230
+kann je nach Ursache eine völlig andere Diagnose
+
+32
+00:01:29.440 --> 00:01:32.269
+und damit eine andere Minderungsstrategie verlangen.

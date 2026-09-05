@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:03.910
+Der Skripttentwurf nutzt vorhandene Testfallinformation
+
+2
+00:00:04.080 --> 00:00:05.400
+und ist damit plausibel.
+
+3
+00:00:06.160 --> 00:00:09.400
+Der reale Sensorzustand liegt außerhalb dessen,
+
+4
+00:00:09.800 --> 00:00:12.400
+was das Modell ohne Messquelle wissen kann.
+
+5
+00:00:13.200 --> 00:00:15.760
+Die Kombination mischt also Generierung
+
+6
+00:00:15.891 --> 00:00:18.690
+mit einer unbeobachtbaren Tatsachenbehauptung.

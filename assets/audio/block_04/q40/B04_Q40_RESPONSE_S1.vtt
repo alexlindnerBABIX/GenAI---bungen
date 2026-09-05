@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:01.840
+Das wäre Fine Tuning.
+
+2
+00:00:02.480 --> 00:00:05.559
+Modellgewichte würden mit Daten weiter angepasst.
+
+3
+00:00:06.280 --> 00:00:09.439
+RG verändert die Gewichte bei der Anfrage aber nicht.
+
+4
+00:00:10.000 --> 00:00:14.119
+Die gefundenen Inhalte werden zur Laufzeit als Kontext genutzt.

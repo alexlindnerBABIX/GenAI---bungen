@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.156 --> 00:00:04.556
+Hier werden Ausgaben analysiert und daraus Verbesserungen abgeleitet.
+
+2
+00:00:05.205 --> 00:00:09.406
+Das ist Fehleranalyse als Grundlage für Prompt Refinement,
+
+3
+00:00:09.806 --> 00:00:12.406
+aber kein A-B-Test mit parallel
+
+4
+00:00:12.406 --> 00:00:16.326
+vergleichbaren Promptvarianten und vordefinierten Metriken.

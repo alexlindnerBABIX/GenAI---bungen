@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.531 --> 00:00:03.160
+Hier werden zwei reale Zustände behauptet,
+
+2
+00:00:03.531 --> 00:00:06.860
+für die keine ausreichende Beobachtungsquelle vorliegt,
+
+3
+00:00:07.351 --> 00:00:11.011
+technische Grundursache und Hardware Sensorzustand.
+
+4
+00:00:11.671 --> 00:00:14.891
+Das LLM kann mögliche Erklärungen formulieren,
+
+5
+00:00:15.250 --> 00:00:20.310
+aber ohne angebundene Daten keine dieser Aussagen belastbar feststellen.

@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:00:00.546 --> 00:00:02.645
+Ein Testmanager möchte eine komplexe
+
+2
+00:00:02.645 --> 00:00:06.236
+Testplananalyse in 3 überprüfbare Schritte zerlegen
+
+3
+00:00:06.766 --> 00:00:08.005
+Risiken analysieren,
+
+4
+00:00:08.445 --> 00:00:10.475
+daraus Prioritäten ableiten
+
+5
+00:00:10.886 --> 00:00:12.886
+und anschließend den Plan aktualisieren.
+
+6
+00:00:13.725 --> 00:00:16.205
+Welches Prompting-Verfahren passt am besten?
+
+7
+00:00:16.846 --> 00:00:18.175
+Vw-shot Prompting,
+
+8
+00:00:18.526 --> 00:00:19.725
+Promptverkettung,
+
+9
+00:00:19.766 --> 00:00:20.936
+Meta Prompting,
+
+10
+00:00:21.186 --> 00:00:22.276
+One Shot Prompting.

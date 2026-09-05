@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:03.530
+Hier bleibt die Generierung an der validierten Testbasis.
+
+2
+00:00:03.971 --> 00:00:06.100
+Die Testfälle enthalten Vorbedingungen,
+
+3
+00:00:06.411 --> 00:00:07.210
+Eingaben,
+
+4
+00:00:07.530 --> 00:00:09.530
+Schritte und erwartete Ergebnisse.
+
+5
+00:00:10.291 --> 00:00:14.051
+Zusätzlich wird die Überdeckung der Akzeptanzkriterien ausgewiesen.
+
+6
+00:00:14.651 --> 00:00:17.911
+Damit sind Vollständigkeit und Rückverfolgbarkeit
+
+7
+00:00:18.121 --> 00:00:19.681
+gemeinsam adressiert.

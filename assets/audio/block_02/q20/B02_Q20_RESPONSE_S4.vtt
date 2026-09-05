@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.416 --> 00:00:02.856
+Retrieval augmentierte Generierung
+
+2
+00:00:03.065 --> 00:00:07.095
+kann relevante externe Informationen in den Kontext holen
+
+3
+00:00:07.546 --> 00:00:08.945
+und damit Grounding verbessern.
+
+4
+00:00:09.705 --> 00:00:12.945
+Sie verändert aber nicht direkt den Sampling Mechanismus,
+
+5
+00:00:13.276 --> 00:00:15.505
+der durch die Temperatur beeinflusst wird.

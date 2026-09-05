@@ -1,0 +1,137 @@
+WEBVTT
+
+1
+00:00:00.167 --> 00:00:03.466
+Mit dieser Tafel wechseln wir von Modellgrundlagen
+
+2
+00:00:03.636 --> 00:00:05.356
+zur Prompt Konstruktion.
+
+3
+00:00:06.076 --> 00:00:07.466
+Der zentrale Gedanke:
+
+4
+00:00:07.866 --> 00:00:10.237
+Ein guter Prompt funktioniert ähnlich wie
+
+5
+00:00:10.237 --> 00:00:13.197
+eine kleine Testspezifikation für die KI.
+
+6
+00:00:14.076 --> 00:00:17.837
+Die 6 Bausteine trennen unterschiedliche Verantwortlichkeiten.
+
+7
+00:00:18.477 --> 00:00:19.356
+Die Rolle klärt,
+
+8
+00:00:19.676 --> 00:00:22.246
+aus welcher Perspektive das Modell arbeitet.
+
+9
+00:00:23.017 --> 00:00:26.097
+Kontext erklärt den fachlichen Hintergrund.
+
+10
+00:00:26.616 --> 00:00:28.807
+Aufgabe oder Instruktion
+
+11
+00:00:28.936 --> 00:00:29.767
+sagt konkret,
+
+12
+00:00:29.856 --> 00:00:31.116
+was getan werden soll.
+
+13
+00:00:31.847 --> 00:00:34.186
+Eingabedaten liefern das Material,
+
+14
+00:00:34.267 --> 00:00:35.466
+auf dem gearbeitet wird.
+
+15
+00:00:36.267 --> 00:00:38.707
+Einschränkungen setzen Leitplanken
+
+16
+00:00:38.917 --> 00:00:41.116
+und das Ausgabeformat definiert,
+
+17
+00:00:41.477 --> 00:00:43.917
+in welcher Form das Ergebnis zurückkommt.
+
+18
+00:00:44.716 --> 00:00:47.957
+Für die aktuelle Frage ist die fünfte Zeile entscheidend.
+
+19
+00:00:48.707 --> 00:00:50.176
+Anonymisierte Daten,
+
+20
+00:00:50.457 --> 00:00:52.606
+höchstens 12 Testfälle
+
+21
+00:00:52.816 --> 00:00:55.116
+und keine erfundenen Annahmen
+
+22
+00:00:55.337 --> 00:00:58.177
+beschreiben nicht das Ziel und nicht das Format,
+
+23
+00:00:58.617 --> 00:01:00.407
+sondern Grenzen der Ausführung.
+
+24
+00:01:01.377 --> 00:01:03.457
+Diese Trennung ist praktisch wertvoll.
+
+25
+00:01:04.097 --> 00:01:05.737
+Wenn ein Ergebnis schlecht ist,
+
+26
+00:01:06.136 --> 00:01:07.496
+kann man gezielt fragen,
+
+27
+00:01:07.817 --> 00:01:09.177
+ob Kontext fehlt,
+
+28
+00:01:09.576 --> 00:01:11.336
+die Instruktion unklar ist,
+
+29
+00:01:11.856 --> 00:01:13.886
+Eingabedaten schwach sind
+
+30
+00:01:14.056 --> 00:01:15.696
+oder Constraints fehlen.
+
+31
+00:01:16.526 --> 00:01:19.207
+Statt den gesamten Prompt neu zu schreiben,
+
+32
+00:01:19.647 --> 00:01:22.567
+wird die fehlerhafte Schnittstellenkomponente verändert.
+
+33
+00:01:23.336 --> 00:01:26.526
+Genau deshalb erhöht Struktur nicht nur Lesbarkeit,
+
+34
+00:01:26.987 --> 00:01:30.737
+sondern auch Diagnosefähigkeit und Wiederholbarkeit.

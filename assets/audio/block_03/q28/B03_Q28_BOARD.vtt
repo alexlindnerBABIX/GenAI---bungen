@@ -1,0 +1,97 @@
+WEBVTT
+
+1
+00:00:00.043 --> 00:00:03.083
+Nach RG zeigt Tafel 28,
+
+2
+00:00:03.363 --> 00:00:05.733
+was über reinen Wissenszugriff hinausgeht.
+
+3
+00:00:06.443 --> 00:00:09.043
+Links stehen die Bausteine eines Agenten,
+
+4
+00:00:09.522 --> 00:00:10.403
+ein Ziel,
+
+5
+00:00:10.873 --> 00:00:12.962
+Regeln und Entscheidungslogik,
+
+6
+00:00:13.363 --> 00:00:17.322
+Zustand oder Gedächtnis und verfügbare Werkzeuge.
+
+7
+00:00:17.873 --> 00:00:21.102
+In der Mitte läuft ein iterativer Handlungszyklus.
+
+8
+00:00:21.822 --> 00:00:24.583
+Der Agent beobachtet den aktuellen Zustand,
+
+9
+00:00:24.983 --> 00:00:26.502
+plant den nächsten Schritt,
+
+10
+00:00:26.983 --> 00:00:28.822
+ruft bei Bedarf ein Tool auf,
+
+11
+00:00:29.223 --> 00:00:30.763
+prüft das Ergebnis
+
+12
+00:00:30.903 --> 00:00:32.343
+und entscheidet erneut.
+
+13
+00:00:33.022 --> 00:00:35.352
+Genau dieser Kreislauf unterscheidet ihn
+
+14
+00:00:35.352 --> 00:00:38.022
+vom reinen dialogorientierten Assistenten.
+
+15
+00:00:38.742 --> 00:00:42.102
+Rechts steht deshalb Nutzen und Risiko zugleich.
+
+16
+00:00:42.653 --> 00:00:45.672
+Toolnutzung macht den Agenten leistungsfähiger,
+
+17
+00:00:46.072 --> 00:00:48.772
+erweitert aber auch seine mögliche Schadenswirkung.
+
+18
+00:00:49.392 --> 00:00:50.312
+Berechtigungen,
+
+19
+00:00:50.763 --> 00:00:52.712
+Reversibilität von Aktionen,
+
+20
+00:00:53.153 --> 00:00:55.833
+menschliche Freigaben und Protokollierung
+
+21
+00:00:56.113 --> 00:00:58.513
+werden damit zu Architekturentscheidungen.
+
+22
+00:00:59.233 --> 00:01:03.553
+Agentisch ist also nicht einfach ein besonders gutes LLM.
+
+23
+00:01:04.303 --> 00:01:06.322
+Agentisch wird das System dort,
+
+24
+00:01:06.721 --> 00:01:10.882
+wo aus Antworten selbstständige zielgerichtete Aktionen werden.

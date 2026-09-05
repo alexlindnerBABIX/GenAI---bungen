@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.019 --> 00:00:03.519
+Hier werden Einbettung und Retrieval miteinander vermischt.
+
+2
+00:00:04.159 --> 00:00:08.229
+Einbettungen speichern nicht einfach frühere Textpassagen
+
+3
+00:00:08.640 --> 00:00:12.279
+und ein Kontextfenster sucht keine relevanten Beispiele aus.
+
+4
+00:00:13.079 --> 00:00:17.760
+Wir müssen die drei Funktionen im Verarbeitungsfluss strikt auseinanderhalten.

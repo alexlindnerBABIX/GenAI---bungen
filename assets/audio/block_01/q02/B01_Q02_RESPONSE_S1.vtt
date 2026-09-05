@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.186 --> 00:00:03.885
+Tokenisierung und Einbettungen sind hier brauchbar zugeordnet,
+
+2
+00:00:04.615 --> 00:00:07.176
+aber beim Kontextfenster kippt die Aussage.
+
+3
+00:00:07.736 --> 00:00:10.656
+Es begrenzt nicht lediglich die erzeugte Ausgabe,
+
+4
+00:00:11.096 --> 00:00:12.966
+sondern den Token Kontext,
+
+5
+00:00:13.266 --> 00:00:16.936
+den das Modell bei der Verarbeitung gemeinsam berücksichtigen kann.

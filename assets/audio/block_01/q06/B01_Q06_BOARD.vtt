@@ -1,0 +1,137 @@
+WEBVTT
+
+1
+00:00:00.117 --> 00:00:03.516
+Tafel 6 unterscheidet nicht zwei Modellfähigkeiten,
+
+2
+00:00:03.876 --> 00:00:05.916
+sondern 2 Nutzungsmuster.
+
+3
+00:00:06.677 --> 00:00:09.156
+Links liegt der KI Chatbot,
+
+4
+00:00:09.596 --> 00:00:10.717
+direkter Dialog,
+
+5
+00:00:11.077 --> 00:00:12.156
+spontane Fragen,
+
+6
+00:00:12.516 --> 00:00:16.357
+Exploration und Aufgaben mit geringer Prozessintegration.
+
+7
+00:00:17.126 --> 00:00:21.096
+Rechts liegt die integrierte LLM Testanwendung,
+
+8
+00:00:21.776 --> 00:00:23.177
+wiederholbare Abläufe,
+
+9
+00:00:23.537 --> 00:00:26.137
+Einbindung in Werkzeuge oder Pipelines,
+
+10
+00:00:26.617 --> 00:00:28.247
+mehrere Datenquellen
+
+11
+00:00:28.457 --> 00:00:30.577
+und stärker kontrollierte Verarbeitung.
+
+12
+00:00:31.217 --> 00:00:33.147
+Die Achsen der Tafel machen deutlich,
+
+13
+00:00:33.497 --> 00:00:35.977
+dass das keine harte technische Mauer ist.
+
+14
+00:00:36.766 --> 00:00:40.927
+Ein Chatbot könnte theoretisch wiederkehrende Aufgaben unterstützen
+
+15
+00:00:41.496 --> 00:00:43.167
+und eine integrierte Anwendung
+
+16
+00:00:43.417 --> 00:00:46.777
+kann natürlich ebenfalls eine Oberfläche für Rückfragen besitzen.
+
+17
+00:00:47.537 --> 00:00:48.477
+Entscheidend ist,
+
+18
+00:00:48.876 --> 00:00:50.397
+was im Betrieb dominiert.
+
+19
+00:00:51.156 --> 00:00:53.397
+Je stärker eine Aufgabe standardisiert,
+
+20
+00:00:53.697 --> 00:00:54.707
+wiederkehrend
+
+21
+00:00:54.837 --> 00:00:57.277
+und in bestehende Systeme eingebettet ist,
+
+22
+00:00:57.716 --> 00:00:59.796
+desto wichtiger werden Integration,
+
+23
+00:01:00.277 --> 00:01:03.197
+Governance und reproduzierbare Abläufe.
+
+24
+00:01:03.837 --> 00:01:04.846
+Genau deshalb
+
+25
+00:01:05.037 --> 00:01:08.957
+passt die tägliche Generierung von Regressionstestdaten
+
+26
+00:01:08.957 --> 00:01:12.557
+in einer CE-Pipeline zur integrierten Anwendung.
+
+27
+00:01:13.177 --> 00:01:16.427
+Eine spontane Rückfrage zu einer neuen Anforderung
+
+28
+00:01:16.587 --> 00:01:19.236
+benötigt dagegen vor allem schnellen Dialog.
+
+29
+00:01:19.917 --> 00:01:21.386
+Die Faustregel unten
+
+30
+00:01:21.557 --> 00:01:23.156
+verbindet das mit der Praxis.
+
+31
+00:01:23.796 --> 00:01:24.957
+Sobald Wiederholung,
+
+32
+00:01:25.277 --> 00:01:26.317
+mehrere Nutzer,
+
+33
+00:01:26.677 --> 00:01:30.397
+sensible Daten oder Systemintegration eine Rolle spielen,
+
+34
+00:01:30.876 --> 00:01:36.156
+wird aus einer Chatfrage zunehmend eine Architektur und Governance Aufgabe.

@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.391 --> 00:00:03.150
+RAG vollständig als Prozess lesen,
+
+2
+00:00:03.671 --> 00:00:04.150
+finden,
+
+3
+00:00:04.591 --> 00:00:06.031
+Kontext bereitstellen,
+
+4
+00:00:06.370 --> 00:00:08.751
+generieren und Ergebnis bewerten.
+
+5
+00:00:09.441 --> 00:00:11.150
+Retrieval ist nur der Anfang.
+
+6
+00:00:11.641 --> 00:00:15.040
+Schlechte Chunks oder schlechtes Ranking können schon
+
+7
+00:00:15.040 --> 00:00:17.990
+vor dem LLM die Antwortqualität begrenzen.

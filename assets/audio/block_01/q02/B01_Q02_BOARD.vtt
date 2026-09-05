@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:00.116 --> 00:00:00.955
+Hier lohnt es sich,
+
+2
+00:00:01.036 --> 00:00:03.795
+die Tafel wie einen Verarbeitungsfluss zu lesen.
+
+3
+00:00:04.445 --> 00:00:06.925
+Links kommt zunächst Text hinein.
+
+4
+00:00:07.445 --> 00:00:10.445
+Tokenisierung zerlegt ihn in kleinere Einheiten,
+
+5
+00:00:10.725 --> 00:00:11.605
+die Tokens.
+
+6
+00:00:12.256 --> 00:00:14.675
+Das ist noch keine Bedeutungsinterpretation,
+
+7
+00:00:15.086 --> 00:00:18.406
+sondern zunächst die Segmentierung des Eingabetextes.
+
+8
+00:00:19.156 --> 00:00:22.625
+Im mittleren Schritt werden diese Tokens numerisch repräsentiert.
+
+9
+00:00:23.186 --> 00:00:25.065
+Einbettungen bilden semantische,
+
+10
+00:00:25.345 --> 00:00:29.226
+syntaktische und kontextuelle Beziehungen in Vektoren ab,
+
+11
+00:00:29.665 --> 00:00:32.906
+sodass das Modell Beziehungen rechnerisch verarbeiten kann.
+
+12
+00:00:33.775 --> 00:00:36.915
+Rechts erscheint dann eine andere Art von Begriff,
+
+13
+00:00:37.175 --> 00:00:38.696
+das Kontextfenster.
+
+14
+00:00:39.296 --> 00:00:41.525
+Es ist keine weitere Repräsentation,
+
+15
+00:00:42.016 --> 00:00:44.616
+sondern eine Kapazitätsgrenze dafür,
+
+16
+00:00:45.016 --> 00:00:48.845
+wie viel Token Kontext gemeinsam berücksichtigt werden kann.
+
+17
+00:00:49.455 --> 00:00:53.896
+Genau deshalb sind die drei Begriffe in Prüfungsfragen so leicht zu vertauschen.
+
+18
+00:00:54.646 --> 00:00:58.375
+2 beschreiben Verarbeitung beziehungsweise Repräsentation,
+
+19
+00:00:58.925 --> 00:00:59.235
+einer
+
+20
+00:00:59.375 --> 00:01:00.616
+beschreibt eine Grenze.
+
+21
+00:01:01.375 --> 00:01:05.866
+Ein größeres Kontextfenster kann längere Spezifikationen aufnehmen,
+
+22
+00:01:06.385 --> 00:01:10.025
+aber mehr Kontext ist nicht automatisch besserer Kontext.
+
+23
+00:01:10.826 --> 00:01:14.336
+Irrelevante Tokens kosten ebenfalls Verarbeitung
+
+24
+00:01:14.786 --> 00:01:18.545
+und können die nutzbare Aufmerksamkeit auf das Wesentliche erschweren.
+
+25
+00:01:19.356 --> 00:01:21.845
+Die technische Denkregel lautet deshalb
+
+26
+00:01:22.086 --> 00:01:23.286
+erst zerlegen,
+
+27
+00:01:23.726 --> 00:01:25.996
+dann numerisch repräsentieren
+
+28
+00:01:26.205 --> 00:01:27.685
+und separat prüfen,
+
+29
+00:01:27.765 --> 00:01:30.175
+was gleichzeitig in den Kontext passt.

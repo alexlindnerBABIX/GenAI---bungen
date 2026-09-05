@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.183 --> 00:00:04.134
+Eine niedrigere Temperatur und ein fester Zufallsstartwert
+
+2
+00:00:04.323 --> 00:00:06.463
+können die Variabilität reduzieren,
+
+3
+00:00:06.944 --> 00:00:09.984
+sofern die Umgebung solcher Einstellungen unterstützt.
+
+4
+00:00:10.744 --> 00:00:13.973
+Das adressiert aber primär Reproduzierbarkeit
+
+5
+00:00:14.103 --> 00:00:16.823
+und nicht direkt fehlenden Kontext
+
+6
+00:00:16.823 --> 00:00:19.573
+oder fehlerhafte komplexe Schlussfolgerungen.

@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.647 --> 00:00:04.667
+Ein Team möchte häufig geänderte interne Sicherheitsrichtlinien
+
+2
+00:00:04.667 --> 00:00:07.307
+bei der Generierung von Testfällen berücksichtigen,
+
+3
+00:00:07.747 --> 00:00:10.787
+ohne das LLM nach jeder Änderung neu zu trainieren.
+
+4
+00:00:11.717 --> 00:00:13.377
+Welcher Ansatz passt am besten?
+
+5
+00:00:15.017 --> 00:00:19.607
+Das Modell regelmäßig mit den jeweils aktuellen Richtlinien fine Tunen
+
+6
+00:00:19.776 --> 00:00:22.017
+und nach jeder Änderung neu bereitstellen.
+
+7
+00:00:23.197 --> 00:00:26.556
+Relevante Richtlinienabschnitte zur Laufzeit abrufen
+
+8
+00:00:26.806 --> 00:00:31.646
+und über Retrieval augmentierte Generierung als Kontext an das LLM geben.
+
+9
+00:00:32.977 --> 00:00:37.456
+Eine statische Zusammenfassung der Richtlinien in den Systemprompt aufnehmen
+
+10
+00:00:37.747 --> 00:00:40.627
+und diese nur bei größeren Releases aktualisieren.
+
+11
+00:00:42.017 --> 00:00:45.507
+Das vollständige Richtliniendokument bei jeder Anfrage
+
+12
+00:00:45.507 --> 00:00:47.867
+manuell in den Benutzerprompt kopieren,
+
+13
+00:00:48.306 --> 00:00:50.787
+unabhängig von der konkreten Testaufgabe.

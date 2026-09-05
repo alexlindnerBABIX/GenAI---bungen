@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.835 --> 00:00:05.755
+Welche Einstellung reduziert typischerweise die Zufälligkeit der LLM-Ausgabe,
+
+2
+00:00:06.124 --> 00:00:08.445
+indem sie die Wahrscheinlichkeitsverteilung bei
+
+3
+00:00:08.445 --> 00:00:10.445
+der Generierung stärker konzentriert.
+
+4
+00:00:11.464 --> 00:00:12.755
+Temperatur senken,
+
+5
+00:00:13.354 --> 00:00:14.994
+Kontextfenster vergrößern,
+
+6
+00:00:15.595 --> 00:00:17.315
+Few Shot-Beispiele ergänzen,
+
+7
+00:00:17.955 --> 00:00:20.555
+Retrieval augmentierte Generierung einsetzen.

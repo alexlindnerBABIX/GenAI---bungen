@@ -1,0 +1,109 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:00.000
+sondern auf die Extraktion vertraulicher
+
+2
+00:00:00.000 --> 00:00:03.800
+Informationen durch manipulierte Kontextanfragen.
+
+3
+00:00:04.640 --> 00:00:09.240
+Frage 21 hat die Systemgrenze als Datenschutzproblem eingeführt.
+
+4
+00:00:09.810 --> 00:00:11.841
+Tafel 22 zeigt nun,
+
+5
+00:00:12.200 --> 00:00:15.801
+dass auch der Kontext selbst zur Angriffsfläche werden kann.
+
+6
+00:00:16.541 --> 00:00:19.081
+Links steht die Angreifer Idee
+
+7
+00:00:19.420 --> 00:00:20.180
+gezielte,
+
+8
+00:00:20.500 --> 00:00:23.380
+sehr lange oder speziell formulierte Anfragen.
+
+9
+00:00:23.861 --> 00:00:26.180
+In der Mitte wird der Kontext ausgenutzt,
+
+10
+00:00:26.500 --> 00:00:28.570
+um Schutzmechanismen zu umgehen
+
+11
+00:00:28.700 --> 00:00:30.981
+oder Informationen hervorzurufen,
+
+12
+00:00:31.280 --> 00:00:33.261
+die nicht offengelegt werden sollten.
+
+13
+00:00:34.060 --> 00:00:35.950
+Rechts steht das Schutzgut,
+
+14
+00:00:36.380 --> 00:00:40.380
+vertrauliche Trainingsdaten oder andere sensible Informationen.
+
+15
+00:00:41.060 --> 00:00:42.500
+Die Abgrenzung ist wichtig.
+
+16
+00:00:43.070 --> 00:00:47.930
+Datenverunreinigung verändert Daten vor oder während des Lernens.
+
+17
+00:00:48.570 --> 00:00:50.560
+Bösartige Code Generierung
+
+18
+00:00:50.670 --> 00:00:52.611
+betrifft die erzeugte Ausgabe.
+
+19
+00:00:53.331 --> 00:00:54.990
+Kontextmanipulation
+
+20
+00:00:55.170 --> 00:00:59.731
+greift dagegen über die Eingabe und den verfügbaren Kontext an.
+
+21
+00:01:00.331 --> 00:01:01.450
+Deshalb reicht es nicht,
+
+22
+00:01:01.570 --> 00:01:03.130
+nur das Modell zu betrachten.
+
+23
+00:01:03.731 --> 00:01:04.971
+Auch Promptlänge,
+
+24
+00:01:05.291 --> 00:01:06.890
+Kontextzusammensetzung,
+
+25
+00:01:07.170 --> 00:01:11.831
+Berechtigungen und Ausgabegrenzen gehören zur Sicherheitsarchitektur.
+
+26
+00:01:12.721 --> 00:01:15.450
+Mehr Kontext ist eben nicht automatisch
+
+27
+00:01:15.581 --> 00:01:18.060
+besserer oder sichererer Kontext.

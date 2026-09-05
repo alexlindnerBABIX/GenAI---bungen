@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.051 --> 00:00:02.262
+Genau hier liegt das direkte Risiko.
+
+2
+00:00:02.731 --> 00:00:03.292
+Namen,
+
+3
+00:00:03.612 --> 00:00:05.922
+Kontonummern und Session Tokens
+
+4
+00:00:06.172 --> 00:00:08.612
+sind sensible Produktionsdaten.
+
+5
+00:00:09.292 --> 00:00:13.211
+Werden sie an einen externen Gen AI Dienst übertragen,
+
+6
+00:00:13.691 --> 00:00:14.812
+können Verarbeitung,
+
+7
+00:00:15.132 --> 00:00:19.371
+Speicherung und Offenlegung der eigenen Kontrolle entzogen sein.

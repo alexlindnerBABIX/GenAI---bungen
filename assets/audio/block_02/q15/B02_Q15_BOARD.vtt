@@ -1,0 +1,113 @@
+WEBVTT
+
+1
+00:00:00.019 --> 00:00:03.220
+Links stellt die Tafel nur eine Qualitätsfrage:
+
+2
+00:00:03.680 --> 00:00:07.030
+Läuft das generierte Artefakt ohne manuelle Anpassung?
+
+3
+00:00:07.599 --> 00:00:10.529
+Genau das misst die Ausführungserfolgsrate.
+
+4
+00:00:11.079 --> 00:00:14.800
+Bei API Testskripten kann sie beispielsweise zeigen,
+
+5
+00:00:15.199 --> 00:00:19.399
+welcher Anteil direkt in der vorgesehenen Umgebung ausführbar ist.
+
+6
+00:00:20.159 --> 00:00:22.959
+Rechts stehen andere Qualitätsdimensionen.
+
+7
+00:00:23.479 --> 00:00:24.719
+Genauigkeit fragt,
+
+8
+00:00:25.000 --> 00:00:27.159
+ob der Inhalt fachlich korrekt ist.
+
+9
+00:00:27.620 --> 00:00:28.750
+Relevanz prüft,
+
+10
+00:00:28.989 --> 00:00:30.430
+ob er zur Aufgabe passt.
+
+11
+00:00:30.950 --> 00:00:32.389
+Überdeckung betrachtet,
+
+12
+00:00:32.750 --> 00:00:36.229
+ob die relevanten Anforderungen ausreichend erfasst werden.
+
+13
+00:00:36.950 --> 00:00:37.939
+Vielfalt
+
+14
+00:00:38.110 --> 00:00:42.349
+fragt nach unterschiedlichen sinnvollen Perspektiven oder Varianten.
+
+15
+00:00:42.990 --> 00:00:47.509
+Der gelbe Pfeil zwischen beiden Bereichen warnt vor der Einmetrik Falle.
+
+16
+00:00:48.110 --> 00:00:51.619
+Eine hohe Ausführungserfolgsrate ist technisch attraktiv,
+
+17
+00:00:52.139 --> 00:00:53.130
+beweist aber nicht,
+
+18
+00:00:53.459 --> 00:00:55.700
+dass die Tests fachlich richtig,
+
+19
+00:00:55.959 --> 00:00:58.299
+relevant oder vollständig sind.
+
+20
+00:00:59.080 --> 00:01:01.630
+Umgekehrt kann ein fachlich guter Test
+
+21
+00:01:01.799 --> 00:01:04.110
+wegen einer kleinen technischen Anpassung
+
+22
+00:01:04.239 --> 00:01:05.480
+zunächst nicht laufen.
+
+23
+00:01:06.120 --> 00:01:07.830
+Die Metrik ist also nicht schlecht,
+
+24
+00:01:08.199 --> 00:01:10.360
+sondern bewusst eindimensional.
+
+25
+00:01:10.959 --> 00:01:13.879
+Gute Evaluation beginnt deshalb mit der Frage,
+
+26
+00:01:14.400 --> 00:01:17.720
+welche Qualitätseigenschaft überhaupt gemessen werden soll,
+
+27
+00:01:18.199 --> 00:01:21.110
+und kombiniert bei Bedarf mehrere Metriken
+
+28
+00:01:21.239 --> 00:01:24.430
+statt einer einzigen Zahl zu viel Bedeutung zu geben,

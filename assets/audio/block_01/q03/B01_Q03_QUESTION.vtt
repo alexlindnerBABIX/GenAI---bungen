@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.646 --> 00:00:03.366
+Für einen Testassistenten ist besonders wichtig,
+
+2
+00:00:03.767 --> 00:00:05.167
+dass er vorgegebene Rollen,
+
+3
+00:00:05.326 --> 00:00:09.086
+Instruktionen und Ausgabeformate zuverlässig befolgt.
+
+4
+00:00:10.106 --> 00:00:13.307
+Welcher LLM-Typ passt zu diesem Schwerpunkt am besten?
+
+5
+00:00:14.387 --> 00:00:15.747
+Foundation LLM,
+
+6
+00:00:16.586 --> 00:00:17.716
+Reasoning LLM.
+
+7
+00:00:18.567 --> 00:00:20.256
+Instruction-tuned LLM.
+
+8
+00:00:21.116 --> 00:00:22.656
+Multimodales LLM.

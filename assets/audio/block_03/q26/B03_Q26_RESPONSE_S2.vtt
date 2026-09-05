@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.534 --> 00:00:05.134
+Das LLM verarbeitet den vorbereiteten Prompt und erzeugt eine Ausgabe.
+
+2
+00:00:05.654 --> 00:00:08.064
+Die Koordination von Benutzereingabe,
+
+3
+00:00:08.455 --> 00:00:09.574
+Zugriffskontrolle,
+
+4
+00:00:09.865 --> 00:00:12.255
+Datenquellen und Modellaufruf
+
+5
+00:00:12.414 --> 00:00:15.865
+gehört nicht zu seiner eigentlichen Infrastrukturrolle.

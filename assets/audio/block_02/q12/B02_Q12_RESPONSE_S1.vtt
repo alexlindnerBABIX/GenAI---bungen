@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.237 --> 00:00:02.718
+Das ist die passende Grenze für Self-healing.
+
+2
+00:00:03.317 --> 00:00:06.077
+Die technische Kopplung an das UI wird repariert,
+
+3
+00:00:06.528 --> 00:00:09.638
+die fachliche Assertion bleibt unverändert und die
+
+4
+00:00:09.638 --> 00:00:13.037
+vorgeschlagene Anpassung wird vor der Übernahme verifiziert.
+
+5
+00:00:13.767 --> 00:00:17.388
+Wartung ohne heimliches Umschreiben des Testorakels.

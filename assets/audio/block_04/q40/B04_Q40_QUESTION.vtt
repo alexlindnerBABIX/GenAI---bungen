@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.860 --> 00:00:02.941
+Ein RAG-System hat zu einer
+
+2
+00:00:02.941 --> 00:00:06.461
+Testfrage mehrere semantisch passende Dokumentabschnitte
+
+3
+00:00:06.670 --> 00:00:08.641
+aus einer Vektordatenbank abgerufen.
+
+4
+00:00:09.551 --> 00:00:12.040
+Was geschieht typischerweise als Nächstes,
+
+5
+00:00:12.400 --> 00:00:14.400
+damit das LLM davon profitiert?
+
+6
+00:00:15.610 --> 00:00:17.731
+Die abgerufenen Abschnitte werden zur
+
+7
+00:00:17.731 --> 00:00:20.640
+Laufzeit als Fine Tuning Datensatz verwendet
+
+8
+00:00:21.091 --> 00:00:23.491
+und verändern vor der Antwort die Modellgewichte.
+
+9
+00:00:24.250 --> 00:00:28.011
+Nur die Ähnlichkeitswerte der Treffer werden an das LLM übergeben.
+
+10
+00:00:28.650 --> 00:00:31.451
+Die Textabschnitte verbleiben in der Vektordatenbank.
+
+11
+00:00:32.210 --> 00:00:33.991
+Die Einbettungen der Treffer werden
+
+12
+00:00:33.991 --> 00:00:36.911
+direkt in natürlichsprachliche Antwortsätze dekodiert,
+
+13
+00:00:37.390 --> 00:00:39.951
+ohne das generierende LLM aufzurufen.
+
+14
+00:00:40.911 --> 00:00:45.890
+Die abgerufenen Abschnitte werden als zusätzlicher Kontext an das LLM übergeben
+
+15
+00:00:46.180 --> 00:00:49.900
+und gemeinsam mit dessen Modellwissen zur Antwortgenerierung genutzt.

@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:00:00.091 --> 00:00:03.572
+Auf dieser Tafel treffen zwei Informationsquellen aufeinander.
+
+2
+00:00:04.252 --> 00:00:07.211
+Links steht der visuelle Ist Zustand.
+
+3
+00:00:07.642 --> 00:00:08.521
+Screenshot,
+
+4
+00:00:08.761 --> 00:00:09.922
+UI Zustand,
+
+5
+00:00:10.201 --> 00:00:10.871
+Layout,
+
+6
+00:00:10.992 --> 00:00:11.521
+Farbe,
+
+7
+00:00:11.761 --> 00:00:14.762
+Position und sichtbare Abweichungen.
+
+8
+00:00:15.481 --> 00:00:18.481
+Rechts steht der textuelle Soll-Zustand,
+
+9
+00:00:18.801 --> 00:00:20.361
+Akzeptanzkriterien,
+
+10
+00:00:20.681 --> 00:00:21.962
+erwartetes Verhalten,
+
+11
+00:00:22.402 --> 00:00:24.762
+fachliche Bedingungen und Geschäftsregeln.
+
+12
+00:00:25.291 --> 00:00:28.402
+Multimodal wird die Testaufgabe nicht schon dadurch,
+
+13
+00:00:28.722 --> 00:00:31.391
+dass beides irgendwo imprompt vorkommt.
+
+14
+00:00:32.122 --> 00:00:34.122
+Der entscheidende Übergang liegt in der Mitte.
+
+15
+00:00:34.712 --> 00:00:37.701
+Das Modell muss beide Modalitäten gemeinsam
+
+16
+00:00:37.701 --> 00:00:40.271
+für dieselbe fachliche Analyse verwenden.
+
+17
+00:00:40.951 --> 00:00:45.502
+Dann kann es beispielsweise eine sichtbare Abweichung im Dashboard erkennen
+
+18
+00:00:45.672 --> 00:00:49.471
+und sie einem konkreten Akzeptanzkriterium zuordnen.
+
+19
+00:00:50.282 --> 00:00:53.221
+Unten entsteht daraus ein fachliches Ergebnis:
+
+20
+00:00:53.551 --> 00:00:54.871
+Abweichung benennen,
+
+21
+00:00:55.352 --> 00:00:57.782
+betroffenes Kriterium zuordnen
+
+22
+00:00:57.911 --> 00:00:59.792
+und Unsicherheit markieren.
+
+23
+00:01:00.312 --> 00:01:03.432
+Genau deshalb ist reine OCR hier zu wenig.
+
+24
+00:01:04.002 --> 00:01:07.252
+Textextraktion kann Schrift aus dem Bild holen,
+
+25
+00:01:07.691 --> 00:01:11.892
+verliert aber eigenständige visuelle Information wie Position,
+
+26
+00:01:13.032 --> 00:01:14.731
+Farbe oder Layout Zustand.
+
+27
+00:01:15.422 --> 00:01:17.621
+Die Ingenieursfrage lautet also
+
+28
+00:01:18.072 --> 00:01:20.062
+liefert das Bild Information,
+
+29
+00:01:20.432 --> 00:01:22.632
+die für die Entscheidung selbst gebraucht wird?
+
+30
+00:01:23.471 --> 00:01:24.072
+Wenn ja,
+
+31
+00:01:24.392 --> 00:01:29.051
+entsteht der Mehrwert aus der gemeinsamen Verarbeitung von Bild und Text
+
+32
+00:01:29.231 --> 00:01:31.752
+nicht aus zwei getrennten Analysen.

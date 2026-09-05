@@ -1,0 +1,109 @@
+WEBVTT
+
+1
+00:00:00.340 --> 00:00:04.419
+Die Tafel baut bewusst einen Pfeil zwischen zwei Tätigkeiten.
+
+2
+00:00:04.980 --> 00:00:05.529
+Links
+
+3
+00:00:05.700 --> 00:00:07.500
+steht Testüberwachung,
+
+4
+00:00:07.939 --> 00:00:09.340
+Fehlerraten steigen,
+
+5
+00:00:09.619 --> 00:00:11.099
+Terminverzug droht,
+
+6
+00:00:11.540 --> 00:00:14.060
+Trends und Abweichungen werden sichtbar.
+
+7
+00:00:14.610 --> 00:00:16.389
+Das beantwortet die Frage:
+
+8
+00:00:16.649 --> 00:00:18.320
+Was beobachten wir
+
+9
+00:00:18.810 --> 00:00:20.930
+in der Mitte steht deshalb provokant
+
+10
+00:00:21.250 --> 00:00:22.130
+So what?
+
+11
+00:00:22.779 --> 00:00:26.850
+Erst wenn aus dieser Information eine begründete Veränderung folgt,
+
+12
+00:00:27.249 --> 00:00:29.569
+sind wir rechts bei der Teststeuerung.
+
+13
+00:00:30.170 --> 00:00:32.710
+Dort werden Qualitätsrisiken priorisiert,
+
+14
+00:00:33.130 --> 00:00:34.850
+Tests neu priorisiert,
+
+15
+00:00:35.210 --> 00:00:38.569
+der Testplan angepasst oder Ressourcen umverteilt.
+
+16
+00:00:39.259 --> 00:00:41.619
+Genau deshalb kann derselbe Messwert in
+
+17
+00:00:41.619 --> 00:00:44.619
+zwei Projekten zu unterschiedlichen maßnahmen führen.
+
+18
+00:00:45.179 --> 00:00:49.130
+Ein hohes Fehlerrisiko kurz vor einem regulatorischen Release
+
+19
+00:00:49.380 --> 00:00:54.619
+kann andere Konsequenzen haben als derselbe Wert in einem explorativen Prototyp.
+
+20
+00:00:55.340 --> 00:01:00.460
+Gen AI kann hier große Datenmengen verdichten und Optionen vorschlagen,
+
+21
+00:01:00.899 --> 00:01:04.660
+aber die Qualität der Steuerung hängt weiterhin von Risiko,
+
+22
+00:01:04.980 --> 00:01:07.619
+Zeit und verfügbaren Ressourcen ab.
+
+23
+00:01:08.289 --> 00:01:09.520
+Merke also nicht
+
+24
+00:01:09.689 --> 00:01:12.049
+Dashboard gleich Steuerung.
+
+25
+00:01:12.490 --> 00:01:14.670
+Das Dashboard liefert die Lage.
+
+26
+00:01:14.929 --> 00:01:16.600
+Teststeuerung entscheidet,
+
+27
+00:01:16.990 --> 00:01:19.890
+was sich wegen dieser Lage konkret ändern soll.

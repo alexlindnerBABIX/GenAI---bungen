@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.214 --> 00:00:01.665
+Genauigkeit bewertet,
+
+2
+00:00:01.985 --> 00:00:06.345
+ob der erzeugte Inhalt fachlich beziehungsweise sachlich korrekt ist.
+
+3
+00:00:07.074 --> 00:00:09.435
+Ein korrekt wirkendes Testskript
+
+4
+00:00:09.645 --> 00:00:11.364
+kann trotzdem wegen Imports,
+
+5
+00:00:11.724 --> 00:00:14.554
+Syntaxdetails oder Umgebungsannahmen
+
+6
+00:00:14.685 --> 00:00:15.964
+nicht lauffähig sein.

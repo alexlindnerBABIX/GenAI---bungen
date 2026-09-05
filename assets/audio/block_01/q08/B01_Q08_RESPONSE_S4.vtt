@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.279 --> 00:00:03.759
+Mehrere Beispiele allein bilden noch keine Prompt Verkettung.
+
+2
+00:00:04.240 --> 00:00:06.160
+Für eine Kette müsste ein Ergebnis aus
+
+3
+00:00:06.160 --> 00:00:08.960
+einem Schritt in einen folgenden Prompt einfließen.
+
+4
+00:00:09.560 --> 00:00:11.560
+Hier bleibt die entscheidende Information.
+
+5
+00:00:12.119 --> 00:00:15.519
+Drei Beispiele innerhalb desselben Prompt Kontexts.

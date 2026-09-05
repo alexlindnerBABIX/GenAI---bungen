@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.196 --> 00:00:04.116
+Beide gewählten Aufgaben liegen außerhalb der verfügbaren Beobachtung,
+
+2
+00:00:04.796 --> 00:00:09.076
+reale Testabdeckung und tatsächlicher Sensorzustand.
+
+3
+00:00:10.046 --> 00:00:12.917
+Ohne Messdaten kann ein LLM darüber sprechen,
+
+4
+00:00:13.237 --> 00:00:14.156
+aber nicht messen.
+
+5
+00:00:14.796 --> 00:00:17.667
+Die entscheidende Ingenieursfrage lautet deshalb:
+
+6
+00:00:17.997 --> 00:00:20.067
+Woher kommt die Information?

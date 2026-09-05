@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.545 --> 00:00:03.736
+Ein automatisierter Testskript Entwurf passt gut
+
+2
+00:00:03.736 --> 00:00:05.935
+zur generativen Stärke des Modells.
+
+3
+00:00:06.535 --> 00:00:11.645
+Die tatsächliche Testabdeckung gehört dagegen zur beobachteten Ausführung
+
+4
+00:00:11.816 --> 00:00:14.935
+und benötigt Mess- oder Instrumentierungsdaten.
+
+5
+00:00:15.696 --> 00:00:19.416
+Genau diese Informationsgrenze trennt die beiden Aufgaben.

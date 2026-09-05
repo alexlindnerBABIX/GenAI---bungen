@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:04.230
+Welches Szenario ist ein typisches Beispiel für Schatten-KI im Testteam?
+
+2
+00:00:05.909 --> 00:00:09.170
+Ein Team nutzt einen freigegebenen Unternehmensassistenten,
+
+3
+00:00:09.609 --> 00:00:13.289
+weicht aber bei einer Aufgabe von der empfohlenen Promptvorlage ab.
+
+4
+00:00:14.510 --> 00:00:18.680
+Ein Tester verwendet ohne Freigabe einen öffentlichen Gene AI-Dienst
+
+5
+00:00:18.889 --> 00:00:21.770
+und lädt interne Defektprotokolle zur Analyse hoch.
+
+6
+00:00:23.020 --> 00:00:25.989
+Ein Projekt erprobt einen neuen Gene AI-Dienst
+
+7
+00:00:26.200 --> 00:00:28.790
+nach zeitlich begrenzter formaler Freigabe
+
+8
+00:00:28.920 --> 00:00:30.879
+in einer isolierten Pilotumgebung.
+
+9
+00:00:32.118 --> 00:00:36.249
+Ein genehmigtes Testwerkzeug aktiviert eine Gene-AI-Funktion
+
+10
+00:00:36.499 --> 00:00:39.339
+unter den bestehenden Datenschutz- und Governance-Regeln.

@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.371 --> 00:00:02.980
+Hier geht es um Reichweite und Gültigkeitsdauer.
+
+2
+00:00:03.501 --> 00:00:06.771
+Oben steht der Systemprompt als übergreifender Rahmen.
+
+3
+00:00:07.271 --> 00:00:08.130
+Er kann Rolle,
+
+4
+00:00:08.380 --> 00:00:09.060
+Verhalten,
+
+5
+00:00:09.390 --> 00:00:10.521
+allgemeine Regeln,
+
+6
+00:00:10.820 --> 00:00:13.181
+Kontext und Constraints festlegen,
+
+7
+00:00:13.541 --> 00:00:16.140
+die über viele Anfragen hinweg gelten sollen.
+
+8
+00:00:16.660 --> 00:00:18.541
+Unten steht der Benutzer prompt.
+
+9
+00:00:19.100 --> 00:00:21.971
+Er beschreibt die konkrete aktuelle Aufgabe
+
+10
+00:00:22.140 --> 00:00:26.221
+und bringt die jeweils benötigten zusätzlichen Informationen mit.
+
+11
+00:00:26.861 --> 00:00:29.541
+Der Pfeil zwischen beiden Ebenen ist entscheidend.
+
+12
+00:00:30.100 --> 00:00:32.341
+Der Systemprompt bildet den Rahmen,
+
+13
+00:00:32.701 --> 00:00:36.140
+innerhalb dessen einzelne Benutzeranfragen bearbeitet werden.
+
+14
+00:00:36.760 --> 00:00:40.570
+Deshalb gehören eine dauerhaft gewünschte Testanalystenrolle
+
+15
+00:00:40.780 --> 00:00:44.620
+und feste Datenschutzleitplanken primär auf die Systemebene.
+
+16
+00:00:45.420 --> 00:00:48.191
+Würden sie nur in jeder Benutzeranfrage wiederholt,
+
+17
+00:00:48.581 --> 00:00:51.501
+entstünden unnötige Redundanz und mehr
+
+18
+00:00:51.501 --> 00:00:54.261
+Möglichkeiten für inkonsistente Varianten.
+
+19
+00:00:54.981 --> 00:00:57.780
+Gleichzeitig ist der Benutzer prompt nicht unwichtig.
+
+20
+00:00:58.361 --> 00:01:00.941
+Er präzisiert die aktuelle Aufgabe
+
+21
+00:01:01.221 --> 00:01:05.820
+kann zusätzlichen Kontext und aufgabenspezifische Constraints enthalten.
+
+22
+00:01:06.560 --> 00:01:10.570
+Die Auswahlregel ist deshalb nicht einfach wichtig gegen unwichtig,
+
+23
+00:01:11.070 --> 00:01:13.261
+sondern übergreifend gegen aktuell.
+
+24
+00:01:14.060 --> 00:01:17.541
+Man kann sich die Tafel als Konfigurationshierarchie merken.
+
+25
+00:01:18.140 --> 00:01:20.151
+Stabile Verhaltensregeln nach oben,
+
+26
+00:01:20.661 --> 00:01:23.130
+wechselnde Arbeitsaufträge nach unten

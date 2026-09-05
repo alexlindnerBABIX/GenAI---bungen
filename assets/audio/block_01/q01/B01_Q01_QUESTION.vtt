@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.029 --> 00:00:03.039
+Welche Aussage grenzt klassisches maschinelles
+
+2
+00:00:03.039 --> 00:00:06.309
+Lernen innerhalb des KI-Spektrums am besten
+
+3
+00:00:06.480 --> 00:00:08.119
+von den anderen Ansätzen ab?
+
+4
+00:00:09.010 --> 00:00:12.619
+Es bildet Wissen in expliziten Regeln und Symbolen ab
+
+5
+00:00:12.800 --> 00:00:14.720
+und leitet daraus Entscheidungen ab.
+
+6
+00:00:15.359 --> 00:00:17.709
+Es lernt aus aufbereiteten Daten
+
+7
+00:00:17.879 --> 00:00:21.840
+und nutzt häufig bewusst ausgewählte Merkmale für das Modelltraining.
+
+8
+00:00:22.680 --> 00:00:24.829
+Es nutzt tiefe neuronale Netze,
+
+9
+00:00:25.229 --> 00:00:28.629
+die Merkmale weitgehend automatisch aus den Daten lernen.
+
+10
+00:00:29.450 --> 00:00:31.040
+Es erzeugt neue Inhalte,
+
+11
+00:00:31.360 --> 00:00:35.349
+indem es gelernte Muster aus Trainingsdaten zur Generierung verwendet.

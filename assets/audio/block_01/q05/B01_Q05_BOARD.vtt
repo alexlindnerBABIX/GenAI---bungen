@@ -1,0 +1,129 @@
+WEBVTT
+
+1
+00:00:00.550 --> 00:00:02.870
+Die Tafel zieht eine technische Grenze,
+
+2
+00:00:03.269 --> 00:00:07.639
+die für fast alle späteren Gen AI Aufgaben wichtig bleibt.
+
+3
+00:00:07.949 --> 00:00:09.440
+Beobachtbarkeit.
+
+4
+00:00:09.949 --> 00:00:11.490
+Links stehen Aufgaben,
+
+5
+00:00:11.550 --> 00:00:16.139
+bei denen ein LLM aus bereitgestellter Information interpretieren
+
+6
+00:00:16.350 --> 00:00:18.710
+oder neue Artefakte erzeugen kann,
+
+7
+00:00:19.270 --> 00:00:21.710
+Anforderungen sprachlich analysieren,
+
+8
+00:00:22.149 --> 00:00:23.630
+Unklarheiten erkennen,
+
+9
+00:00:24.110 --> 00:00:26.139
+Klärungsfragen formulieren
+
+10
+00:00:26.309 --> 00:00:30.020
+oder aus einer Testbeschreibung einen Skripttentwurf erzeugen.
+
+11
+00:00:30.820 --> 00:00:32.539
+Rechts stehen Aussagen,
+
+12
+00:00:32.880 --> 00:00:36.660
+die ohne zusätzliche Daten oder Tools nicht belastbar sind,
+
+13
+00:00:37.460 --> 00:00:39.419
+reale technische Grundursachen,
+
+14
+00:00:39.820 --> 00:00:41.770
+tatsächliche Testabdeckung
+
+15
+00:00:41.940 --> 00:00:44.539
+oder ein physischer Sensorzustand.
+
+16
+00:00:45.389 --> 00:00:48.460
+In der Mitte steht deshalb nicht Intelligenz als Grenze,
+
+17
+00:00:48.899 --> 00:00:50.500
+sondern Beobachtbarkeit.
+
+18
+00:00:51.179 --> 00:00:53.500
+Der Datenfluss unten macht das konkret.
+
+19
+00:00:55.029 --> 00:00:57.649
+Prompt Daten und gegebenenfalls Tools
+
+20
+00:00:57.779 --> 00:01:00.179
+liefern Information an das LLM.
+
+21
+00:01:00.779 --> 00:01:03.690
+Erst daraus entsteht die mögliche Aussagekraft.
+
+22
+00:01:04.509 --> 00:01:05.259
+Wenn Loks,
+
+23
+00:01:05.539 --> 00:01:08.139
+Messwerte oder Instrumentierung fehlen,
+
+24
+00:01:08.580 --> 00:01:10.860
+kann das Modell Hypothesen formulieren,
+
+25
+00:01:11.339 --> 00:01:13.820
+aber keine reale Beobachtung ersetzen.
+
+26
+00:01:14.619 --> 00:01:16.800
+Das ist im Test besonders kritisch,
+
+27
+00:01:17.220 --> 00:01:20.440
+weil sprachliche Sicherheit leicht wie Evidenz wirkt.
+
+28
+00:01:21.259 --> 00:01:22.740
+Ein plausibler Wert
+
+29
+00:01:22.910 --> 00:01:25.070
+bleibt eben nur ein plausibler Wert.
+
+30
+00:01:25.820 --> 00:01:29.580
+Vor jeder Gen AI-Aussage über den Systemzustand
+
+31
+00:01:29.800 --> 00:01:31.889
+sollte deshalb zuerst geklärt werden:
+
+32
+00:01:32.520 --> 00:01:36.399
+Welche Quelle macht diesen Zustand tatsächlich beobachtbar?

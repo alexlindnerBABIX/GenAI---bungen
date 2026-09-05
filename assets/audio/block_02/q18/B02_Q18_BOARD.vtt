@@ -1,0 +1,113 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.630
+Diese Tafel macht die Trennung zwischen Halluzination
+
+2
+00:00:03.839 --> 00:00:05.389
+und Reasoning Fehler
+
+3
+00:00:05.559 --> 00:00:08.050
+zu einer einzigen Diagnosefrage.
+
+4
+00:00:08.640 --> 00:00:11.039
+War die benötigte Information vorhanden.
+
+5
+00:00:11.720 --> 00:00:14.010
+Links lautet die Antwort Nein,
+
+6
+00:00:14.479 --> 00:00:17.239
+fehlt die Information und ergänzt das Modell
+
+7
+00:00:17.239 --> 00:00:20.040
+trotzdem eine konkrete Behauptung oder Funktion,
+
+8
+00:00:20.399 --> 00:00:22.120
+entsteht eine Halluzination.
+
+9
+00:00:22.840 --> 00:00:27.159
+Die erfundene Rücksendung der Paketstation ist genauso ein Fall.
+
+10
+00:00:27.600 --> 00:00:29.739
+Es gibt keine fachliche Basis dafür.
+
+11
+00:00:30.399 --> 00:00:32.299
+Rechts lautet die Antwort
+
+12
+00:00:32.520 --> 00:00:32.880
+Ja,
+
+13
+00:00:33.479 --> 00:00:35.840
+Fakten und Abhängigkeiten liegen vor,
+
+14
+00:00:36.200 --> 00:00:38.159
+aber das Modell verknüpft sie falsch.
+
+15
+00:00:38.619 --> 00:00:40.880
+Dann sprechen wir von einem Reasoning Fehler.
+
+16
+00:00:41.520 --> 00:00:43.159
+Diese Unterscheidung ist wichtig,
+
+17
+00:00:43.560 --> 00:00:46.639
+weil die technische Reaktion unterschiedlich ausfällt.
+
+18
+00:00:47.319 --> 00:00:50.240
+Bei fehlender Information hilft besseres
+
+19
+00:00:50.240 --> 00:00:53.639
+Grounding oder zusätzlicher relevanter Kontext.
+
+20
+00:00:54.360 --> 00:00:55.610
+Bei vorhandener,
+
+21
+00:00:55.930 --> 00:01:01.130
+aber falsch verarbeiteter Information braucht man eher eine klarere Zerlegung,
+
+22
+00:01:01.610 --> 00:01:03.509
+explizite Zwischenschritte
+
+23
+00:01:03.689 --> 00:01:06.209
+oder andere Unterstützung der Schlussfolgerung.
+
+24
+00:01:06.849 --> 00:01:09.449
+Die kurze Formel unten bringt es auf den Punkt
+
+25
+00:01:09.809 --> 00:01:12.279
+fehlend führt in Richtung Grounding
+
+26
+00:01:12.610 --> 00:01:13.370
+vorhanden,
+
+27
+00:01:13.650 --> 00:01:16.730
+aber falsch verknüpft führt in Richtung Reasoning.
+
+28
+00:01:17.410 --> 00:01:21.209
+Damit wird aus einer Fehlerbezeichnung direkt eine Diagnoseilfe.

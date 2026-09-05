@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.094 --> 00:00:03.095
+Die Anforderungsanalyse ist eine typische Stärke.
+
+2
+00:00:03.636 --> 00:00:06.406
+Bei der technischen Grundursache wird jedoch
+
+3
+00:00:06.406 --> 00:00:09.016
+aus einem Fehlerbericht mehr Sicherheit verlangt,
+
+4
+00:00:09.296 --> 00:00:11.455
+als die Informationslage hergibt.
+
+5
+00:00:12.016 --> 00:00:14.776
+Ein LLM kann Hypothesen formulieren,
+
+6
+00:00:15.136 --> 00:00:17.845
+aber ohne zusätzliche Systemdaten
+
+7
+00:00:18.056 --> 00:00:21.016
+keine tatsächliche root cause feststellen.

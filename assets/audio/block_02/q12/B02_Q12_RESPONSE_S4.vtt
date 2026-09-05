@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.273 --> 00:00:02.722
+Die Tests aus der Regression zu entfernen,
+
+2
+00:00:03.082 --> 00:00:05.122
+reduziert zunächst die Überdeckung.
+
+3
+00:00:05.762 --> 00:00:08.632
+Eine komplette Neugenerierung im nächsten Sprint
+
+4
+00:00:08.803 --> 00:00:13.282
+ist zudem viel gröber als die gezielte Reparatur einer technischen Bindung.
+
+5
+00:00:14.012 --> 00:00:16.043
+Self-healing soll stabilisieren,
+
+6
+00:00:16.442 --> 00:00:18.203
+nicht Regression aufschieben.

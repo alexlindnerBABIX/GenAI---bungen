@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:00.009 --> 00:00:03.250
+Bei Frage 8 haben wir bereits Beispielanzahl
+
+2
+00:00:03.400 --> 00:00:05.340
+und Prozessverkettung getrennt.
+
+3
+00:00:06.000 --> 00:00:08.279
+Hier wird diese Unterscheidung praktisch.
+
+4
+00:00:08.760 --> 00:00:10.970
+Die Tafel macht aus Promptverkettung
+
+5
+00:00:11.079 --> 00:00:13.100
+einen sichtbaren Datenfluss.
+
+6
+00:00:13.760 --> 00:00:17.670
+Schritt eins analysiert Anforderungen oder Risiken
+
+7
+00:00:17.799 --> 00:00:19.760
+und erzeugt ein Zwischenergebnis.
+
+8
+00:00:20.440 --> 00:00:23.079
+Dieses Ergebnis wird nicht einfach abgelegt,
+
+9
+00:00:23.479 --> 00:00:26.799
+sondern als Input an Schritt zwei weitergereicht.
+
+10
+00:00:27.450 --> 00:00:30.280
+Dort werden beispielsweise Testbedingungen
+
+11
+00:00:30.409 --> 00:00:32.490
+oder Prioritäten abgeleitet.
+
+12
+00:00:33.169 --> 00:00:34.689
+Wieder entsteht ein Output,
+
+13
+00:00:35.009 --> 00:00:36.610
+der in den nächsten Schritt fließt,
+
+14
+00:00:37.009 --> 00:00:39.840
+etwa zur Generierung konkreter Testfälle.
+
+15
+00:00:40.610 --> 00:00:44.560
+Im letzten Schritt kann das Ergebnis bewertet oder verfeinert werden.
+
+16
+00:00:45.279 --> 00:00:48.400
+Das entscheidende Merkmal steht also zwischen den Kästen.
+
+17
+00:00:48.919 --> 00:00:50.959
+Output wird Input.
+
+18
+00:00:51.680 --> 00:00:55.599
+Unten grenzt die Tafel das von anderen Prompting Techniken ab.
+
+19
+00:00:56.290 --> 00:00:58.419
+Fewshot und One Shot
+
+20
+00:00:58.639 --> 00:01:01.880
+sagen etwas über Beispiele innerhalb eines Prompts.
+
+21
+00:01:02.520 --> 00:01:06.680
+Met Prompting arbeitet mit Prompts auf einer höheren Ebene.
+
+22
+00:01:07.300 --> 00:01:08.750
+Promptverkettung
+
+23
+00:01:08.900 --> 00:01:12.400
+beschreibt dagegen den Prozess über mehrere Schritte hinweg.
+
+24
+00:01:13.000 --> 00:01:15.160
+Der Vorteil ist Prüfbarkeit.
+
+25
+00:01:15.769 --> 00:01:18.160
+Zwischenergebnisse können kontrolliert werden,
+
+26
+00:01:18.480 --> 00:01:20.519
+bevor ein Fehler weiterwandert.
+
+27
+00:01:21.080 --> 00:01:23.440
+Genau darin liegt aber auch das Risiko.
+
+28
+00:01:24.120 --> 00:01:25.910
+Schlechte Zwischenergebnisse
+
+29
+00:01:26.160 --> 00:01:30.389
+können wie ein schiefer Staffelstab in die folgenden Schritte übernommen werden.

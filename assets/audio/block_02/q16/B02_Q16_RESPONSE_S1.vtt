@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.194 --> 00:00:03.264
+Das beschreibt einen kontrollierten AB-Test,
+
+2
+00:00:03.593 --> 00:00:06.633
+mehrere Promptvarianten für dieselbe Aufgabe,
+
+3
+00:00:07.033 --> 00:00:11.514
+möglichst stabile Randbedingungen und vorher festgelegte Metriken.
+
+4
+00:00:12.213 --> 00:00:15.103
+Erst dann lässt sich ein beobachteter Unterschied
+
+5
+00:00:15.313 --> 00:00:17.913
+sinnvoll der Promptänderung zuordnen.

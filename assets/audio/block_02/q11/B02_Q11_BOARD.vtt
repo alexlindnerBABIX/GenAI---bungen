@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:00.298 --> 00:00:04.709
+In der vorherigen Frage haben wir die Testbasis erst testbar gemacht.
+
+2
+00:00:05.418 --> 00:00:07.628
+Jetzt geht die Kette einen Schritt weiter.
+
+3
+00:00:08.308 --> 00:00:11.529
+Die Tafel zeigt die Kette vom validierten Verständnis
+
+4
+00:00:11.709 --> 00:00:13.689
+zum prüfbaren Testfall.
+
+5
+00:00:14.389 --> 00:00:16.668
+Links steht die Testbasis.
+
+6
+00:00:17.198 --> 00:00:19.189
+Sie muss ausreichend geklärt sein,
+
+7
+00:00:19.478 --> 00:00:22.948
+bevor Gen AI daraus Testartefakte ableitet.
+
+8
+00:00:23.668 --> 00:00:25.628
+Danach entstehen Testbedingungen.
+
+9
+00:00:26.158 --> 00:00:27.518
+Was soll geprüft werden,
+
+10
+00:00:27.838 --> 00:00:29.548
+unter welchen Voraussetzungen
+
+11
+00:00:29.679 --> 00:00:32.079
+und mit welchen relevanten Abhängigkeiten?
+
+12
+00:00:32.868 --> 00:00:34.948
+Erst im nächsten Schritt wird daraus ein
+
+13
+00:00:34.948 --> 00:00:38.179
+konkreter Testfall mit Schritten und Eingabedaten.
+
+14
+00:00:38.859 --> 00:00:41.268
+Rechts kommt das erwartete Ergebnis hinzu.
+
+15
+00:00:41.868 --> 00:00:44.308
+Genau dort wird aus einer bloßen Ausführung
+
+16
+00:00:44.308 --> 00:00:48.399
+eine überprüfbare Aussage über richtig oder falsch.
+
+17
+00:00:49.109 --> 00:00:51.398
+Die Linie unten ist ebenso wichtig
+
+18
+00:00:51.508 --> 00:00:53.148
+wie die Prozesspfeile oben.
+
+19
+00:00:53.948 --> 00:00:56.989
+Rückverfolgbarkeit führt jeden Testfall zurück
+
+20
+00:00:56.989 --> 00:00:59.228
+auf seine legitimierte Testbasis.
+
+21
+00:01:00.029 --> 00:01:01.258
+So lässt sich prüfen,
+
+22
+00:01:01.308 --> 00:01:03.058
+warum der Test existiert
+
+23
+00:01:03.549 --> 00:01:05.349
+und welches Kriterium er abdeckt.
+
+24
+00:01:06.148 --> 00:01:10.308
+Der Warnhinweis unten verhindert einen typischen Gen-AI-Fehler.
+
+25
+00:01:10.989 --> 00:01:15.948
+Nicht spezifizierte Fachregeln dürfen nicht einfach plausibel ergänzt werden.
+
+26
+00:01:16.508 --> 00:01:18.868
+Bei Unklarheiten wird zurückgefragt
+
+27
+00:01:19.068 --> 00:01:21.029
+oder die Testbasis ergänzt.
+
+28
+00:01:21.668 --> 00:01:23.538
+Gute Formatierung ist hilfreich,
+
+29
+00:01:23.909 --> 00:01:27.868
+aber sie kann fehlende fachliche Autorisierung nicht ersetzen.

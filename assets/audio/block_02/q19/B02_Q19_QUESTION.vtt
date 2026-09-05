@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.730 --> 00:00:04.660
+Welche Maßnahme aus dem Lehrplan mindert Halluzinationen und
+
+2
+00:00:04.660 --> 00:00:08.340
+Reasoning Fehler bei einer komplexen Testaufgabe am direktesten?
+
+3
+00:00:09.461 --> 00:00:10.971
+Die Temperatur senken
+
+4
+00:00:11.181 --> 00:00:13.620
+und einen festen Zufallsstartwert verwenden,
+
+5
+00:00:13.901 --> 00:00:16.211
+um Ausgaben reproduzierbarer zu machen.
+
+6
+00:00:17.151 --> 00:00:21.590
+Mehrere gute Beispiele des gewünschten Ausgabeformats in den Prompt aufnehmen,
+
+7
+00:00:22.031 --> 00:00:23.911
+damit die Struktur konsistenter wird.
+
+8
+00:00:24.721 --> 00:00:27.361
+Relevanten Kontext vollständig bereitstellen,
+
+9
+00:00:27.801 --> 00:00:30.031
+Eingabedaten klar strukturieren
+
+10
+00:00:30.241 --> 00:00:33.680
+und komplexe Aufgaben bei Bedarf in Teilaufgaben zerlegen,
+
+11
+00:00:34.400 --> 00:00:35.790
+das Kontextfenster
+
+12
+00:00:36.001 --> 00:00:39.721
+möglichst vollständig mit verfügbaren Projektdokumenten füllen,
+
+13
+00:00:40.081 --> 00:00:43.241
+damit dem Modell maximal viele Informationen vorliegen.

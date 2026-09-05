@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.042 --> 00:00:03.892
+Das vollständige Richtliniendokument jedes Mal manuell einzufügen,
+
+2
+00:00:04.162 --> 00:00:05.441
+wäre technisch möglich,
+
+3
+00:00:05.842 --> 00:00:08.802
+aber ungezielt und kontextineffizient.
+
+4
+00:00:09.401 --> 00:00:14.081
+RAG ruft nur die für die aktuelle Anfrage relevanten Abschnitte ab.

@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.005 --> 00:00:03.396
+Hier würde der Tester weitgehend zum Modellentwickler.
+
+2
+00:00:03.765 --> 00:00:05.486
+Training neuronaler Netze,
+
+3
+00:00:05.845 --> 00:00:09.435
+GPU Optimierung und eigene Foundation Modelle
+
+4
+00:00:09.646 --> 00:00:11.886
+sind nicht der Kern der Testerrolle
+
+5
+00:00:12.046 --> 00:00:14.406
+im produktiven Gen AI-Einsatz.

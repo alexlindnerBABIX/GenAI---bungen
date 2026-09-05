@@ -1,0 +1,101 @@
+WEBVTT
+
+1
+00:00:00.056 --> 00:00:04.736
+Tafel 33 macht aus der Strategie eine konkrete Auswahlentscheidung.
+
+2
+00:00:05.376 --> 00:00:07.515
+Links steht das Szenario
+
+3
+00:00:07.776 --> 00:00:09.765
+Domänenspezifische Aufgabe,
+
+4
+00:00:10.096 --> 00:00:14.416
+eigene Beispiele und sehr häufige automatisierte Aufrufe.
+
+5
+00:00:15.056 --> 00:00:18.096
+Danach werden diese Hinweise in Kriterien übersetzt.
+
+6
+00:00:18.816 --> 00:00:21.816
+Eigene Beispiele machen Anpassbarkeit interessant.
+
+7
+00:00:22.285 --> 00:00:22.846
+Aber nur,
+
+8
+00:00:22.886 --> 00:00:24.166
+wenn Datenqualität,
+
+9
+00:00:24.566 --> 00:00:25.886
+Repräsentativität,
+
+10
+00:00:26.325 --> 00:00:27.566
+Label Konsistenz,
+
+11
+00:00:27.926 --> 00:00:29.886
+Datenschutz und Rechte stimmen.
+
+12
+00:00:30.566 --> 00:00:33.685
+Hohe Nutzungsfrequenz verschiebt den Blick in den Betrieb.
+
+13
+00:00:34.206 --> 00:00:36.606
+Kosten pro Aufruf oder Token,
+
+14
+00:00:37.005 --> 00:00:37.685
+Latenz,
+
+15
+00:00:38.005 --> 00:00:40.405
+Durchsatz und Skalierung werden relevant.
+
+16
+00:00:41.246 --> 00:00:42.496
+Rechts steht bewusst,
+
+17
+00:00:42.856 --> 00:00:44.856
+was nicht automatisch entscheidet,
+
+18
+00:00:45.416 --> 00:00:46.685
+größte Community,
+
+19
+00:00:47.176 --> 00:00:49.325
+maximales Kontextfenster
+
+20
+00:00:49.526 --> 00:00:51.565
+oder schlicht das größte Modell.
+
+21
+00:00:52.306 --> 00:00:54.156
+Die Ingenieursregel lautet deshalb,
+
+22
+00:00:54.496 --> 00:00:57.675
+Kriterien aus dem Nutzungskontext abzuleiten.
+
+23
+00:00:58.466 --> 00:01:01.906
+Ein Modell kann im Allgemeinen Benchmark hervorragend sein
+
+24
+00:01:02.356 --> 00:01:04.436
+und wirtschaftlich trotzdem die falsche Wahl
+
+25
+00:01:04.436 --> 00:01:08.016
+für eine millionenfach wiederholte kleine Testaufgabe.

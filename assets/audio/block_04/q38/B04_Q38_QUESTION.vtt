@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.019 --> 00:00:02.740
+Ein Team möchte zunächst durch ein LLM
+
+2
+00:00:02.960 --> 00:00:04.920
+einen hochwertigen Prompt für eine
+
+3
+00:00:04.920 --> 00:00:08.310
+neue Klasse von Sicherheitstestaufgaben erzeugen lassen
+
+4
+00:00:08.640 --> 00:00:12.000
+und diesen Prompt anschließend für konkrete Fälle verwenden.
+
+5
+00:00:12.800 --> 00:00:15.279
+Welches Prompting-Verfahren passt am besten?
+
+6
+00:00:16.340 --> 00:00:17.899
+Fewshot Prompting,
+
+7
+00:00:18.340 --> 00:00:19.639
+Promptverkettung,
+
+8
+00:00:20.020 --> 00:00:21.340
+Meta Prompting,
+
+9
+00:00:21.940 --> 00:00:23.209
+One Shot prompting.
