@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="ctgenai-build" content="3.10">
-<meta name="ctgenai-sync" content="visual-gated-3.10">
-<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.10</title>
+<meta name="ctgenai-build" content="3.11">
+<meta name="ctgenai-sync" content="visual-gated-3.11">
+<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.11</title>
 <style>
 :root {
   --navy:#102538; --navy2:#17364f; --bg:#eef2f5; --paper:#fff; --line:#d6dde4;
@@ -143,13 +143,13 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 .review-chip{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid #d9e7ea;color:#55717a;font-size:10px;font-weight:750}
 
 
-/* v3.10 · Audio/UX synchronization gates */
+/* v3.11 · Audio/UX synchronization gates */
 #questionCard{scroll-margin-top:88px}
 #feedback{scroll-margin-top:92px}
 .board-media-frame{scroll-margin-top:88px}
 .board-status.waiting{color:#f5e8b8}
 
-/* Version 3.10 · vollständiges Tafelbild im natürlichen Seitenfluss */
+/* Version 3.11 · vollständiges Tafelbild im natürlichen Seitenfluss */
 .real-board{
   margin-top:22px;padding-top:18px;border-top:1px solid #e6ecef;
   scroll-margin-top:22px
@@ -370,7 +370,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
  .option:hover,.navq:hover{background:inherit}
 }
 
-/* Version 3.10 · geführter Tipp statt Kartenraster */
+/* Version 3.11 · geführter Tipp statt Kartenraster */
 .hint{
   border-left:0;border-color:#e0e7ea;border-radius:13px;background:#fff;
   box-shadow:0 9px 28px rgba(16,37,56,.07)
@@ -478,7 +478,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.10 · Konsistenz + Fragen-UX */
+/* Version 3.11 · Konsistenz + Fragen-UX */
 .ui-line-icon,.tip-svg{
   width:20px;height:20px;display:block;stroke:currentColor;fill:none
 }
@@ -593,7 +593,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.10 · Antwortoptionen ohne A/B/C/D/E */
+/* Version 3.11 · Antwortoptionen ohne A/B/C/D/E */
 .option-content{
   display:block;
 }
@@ -602,7 +602,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.10 · Audio + zeitgesteuerte Tafelmedien */
+/* Version 3.11 · Audio + zeitgesteuerte Tafelmedien */
 .audio-always{min-height:38px;display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(255,255,255,.24);border-radius:9px;background:rgba(255,255,255,.07);color:#fff;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap}
 .audio-always svg{width:18px;height:18px;stroke:currentColor}.audio-always .audio-icon-off{display:none}.audio-always.off{opacity:.78}.audio-always.off .audio-icon-on{display:none}.audio-always.off .audio-icon-off{display:block}
 .audio-unlock{position:fixed;right:18px;top:78px;z-index:70;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #bfd9e2;border-radius:999px;background:#fff;color:#24596c;font:700 12px/1 system-ui;box-shadow:0 8px 25px rgba(20,55,70,.18);cursor:pointer}.audio-unlock[hidden]{display:none}.audio-unlock-dot{width:8px;height:8px;border-radius:50%;background:#4aa4b6;box-shadow:0 0 0 4px #e5f5f7}
@@ -619,13 +619,54 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 
 
 .board-overlay-media{position:relative;display:inline-block;min-width:100%;line-height:0}.board-overlay-media img{display:block;width:100%;height:auto}.overlay-laser{z-index:8}.board-overlay-dynamic{position:absolute;inset:0;pointer-events:none}
+
+/* v3.11 · readable board status + completed-state feedback */
+.board-status{
+  position:absolute;
+  left:14px;
+  top:14px;
+  z-index:14;
+  display:inline-flex;
+  align-items:center;
+  max-width:min(78%,520px);
+  min-height:32px;
+  padding:7px 11px;
+  border-radius:999px;
+  background:rgba(8,24,28,.88);
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:0 5px 18px rgba(0,0,0,.28);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  font-size:12px;
+  line-height:1.25;
+  font-weight:800;
+  letter-spacing:.01em;
+  text-shadow:0 1px 2px rgba(0,0,0,.5);
+  pointer-events:none
+}
+.board-status[hidden]{display:none !important}
+.board-status.playing{background:rgba(7,70,73,.92)}
+.board-status.dwell{background:rgba(52,61,25,.92)}
+.board-status.waiting{background:rgba(72,52,18,.92);color:#fff !important}
+.board-status.completed{background:rgba(25,73,48,.92);color:#fff !important}
+@media(max-width:700px){
+  .board-status{
+    left:9px;top:9px;
+    max-width:82%;
+    min-height:28px;
+    padding:6px 9px;
+    font-size:11px
+  }
+}
+
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
     <div class="title">CT-GenAI 1.1 · Lernquiz</div>
-    <div class="sub">Version 3.10 · 40 Aufgaben · vollständige LO-Abdeckung</div>
+    <div class="sub">Version 3.11 · 40 Aufgaben · vollständige LO-Abdeckung</div>
   </div>
   <div class="global-actions">
     <div class="mode"><span>Modus</span><strong>Prüfungsnah + Lernfeedback</strong></div>
@@ -1054,6 +1095,7 @@ const audioEngine=new Audio(); audioEngine.preload="auto";
 let activeSegment=null, pendingAutoplay=null, audioUnlocked=false, lastNarratedQuestion=null;
 let activeBoard=null, mediaRAF=null, boardObserver=null, dwellTimer=null, boardVisible=false, lastScrollAt=0;
 let mediaFlowEpoch=0, questionNarrationPending=null, responseFlowQuestion=null, boardEngagedQuestion=null;
+const boardCompleted=new Set();
 
 
 function visibleRatio(el){
@@ -1086,6 +1128,21 @@ function setBoardStatus(i,text,cls="waiting"){
   const s=$(`boardStatus-${i}`);if(!s)return;
   s.hidden=false;s.className=`board-status ${cls}`;s.textContent=text;
 }
+function markBoardCompleted(i){
+  boardCompleted.add(i);
+  boardEngagedQuestion=null;
+  if(activeBoard===i)activeBoard=null;
+  clearTimeout(dwellTimer);dwellTimer=null;
+  clearTimeout(window.__boardScrollResume);
+  const s=$(`boardStatus-${i}`);
+  if(s){s.hidden=false;s.className="board-status completed";s.textContent="Tafelerklärung abgeschlossen";}
+  updateBoardPlayButton(i);
+  setTimeout(()=>{const x=$(`boardStatus-${i}`);if(x&&boardCompleted.has(i))x.hidden=true;},1800);
+}
+function boardMayAutoStart(i){
+  return !boardCompleted.has(i)&&boardEngagedQuestion===i&&boardVisible&&boardFocusRatio(i)>=.72&&
+         responseFlowQuestion!==i&&!activeSegment&&audioEnabled;
+}
 
 function mediaPlayIcon(paused=true){return paused?`<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5 11 7-11 7Z"/></svg>`:`<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14M16 5v14"/></svg>`;}
 function updateAudioUI(){
@@ -1097,6 +1154,7 @@ function updateAudioUI(){
 function segment(id){return AUDIO_INDEX[id]||null;}
 function stopMedia(resetBoard=true){
   mediaFlowEpoch++; questionNarrationPending=null; responseFlowQuestion=null; boardEngagedQuestion=null;
+  clearTimeout(window.__boardScrollResume);
   audioEngine.pause(); audioEngine.removeAttribute('src'); audioEngine.load(); activeSegment=null; pendingAutoplay=null;
   cancelAnimationFrame(mediaRAF); mediaRAF=null;
   if(resetBoard && activeBoard!==null)resetBoardMedia(activeBoard);
@@ -1147,15 +1205,13 @@ function playResponseFor(i){
 }
 function scheduleBoardDwell(i){
   clearTimeout(dwellTimer); dwellTimer=null;
-  if(!audioEnabled||i!==state.index||!boardHasAudio(i)||!boardVisible)return;
-  if(boardEngagedQuestion!==i)return;
-  if(responseFlowQuestion===i||activeSegment)return;
-  if(boardFocusRatio(i)<.72)return;
+  if(i!==state.index||!boardHasAudio(i)||boardCompleted.has(i))return;
+  if(!boardMayAutoStart(i))return;
   setBoardStatus(i,"3 s auf der Tafel bleiben · Erklärung startet","dwell");
   const epoch=mediaFlowEpoch;
   dwellTimer=setTimeout(()=>{
-    if(epoch===mediaFlowEpoch&&i===state.index&&boardVisible&&boardEngagedQuestion===i&&
-       boardFocusRatio(i)>=.72&&Date.now()-lastScrollAt>=2850&&audioEnabled&&!activeSegment){
+    if(epoch===mediaFlowEpoch&&i===state.index&&!boardCompleted.has(i)&&boardMayAutoStart(i)&&
+       Date.now()-lastScrollAt>=2850){
       startBoardMedia(i,false);
     }
   },3000);
@@ -1165,6 +1221,10 @@ function setupBoardDwell(i){
   const el=$(`boardFrame-${i}`); if(!el)return;
   boardObserver=new IntersectionObserver(entries=>{
     const e=entries[0];boardVisible=e.isIntersecting&&visibleRatio(el)>=.72;
+    if(boardCompleted.has(i)){
+      clearTimeout(dwellTimer);dwellTimer=null;
+      return;
+    }
     if(boardVisible){
       if(boardEngagedQuestion===i){
         if(responseFlowQuestion===i||activeSegment)setBoardStatus(i,"Audioauswertung läuft · Tafel wartet","waiting");
@@ -1180,35 +1240,73 @@ function setupBoardDwell(i){
 function onUserScroll(){
   lastScrollAt=Date.now();
   const i=state.index,frame=$(`boardFrame-${i}`),ratio=visibleRatio(frame);
+
+  if(boardCompleted.has(i)){
+    clearTimeout(dwellTimer);dwellTimer=null;
+    clearTimeout(window.__boardScrollResume);
+    boardEngagedQuestion=null;
+    return;
+  }
+
   if(state.checked[i]&&frame&&ratio>=.20)boardEngagedQuestion=i;
   if(!boardVisible&&ratio<.72)return;
+
   clearTimeout(dwellTimer);dwellTimer=null;
   const status=$(`boardStatus-${i}`); if(status && activeBoard!==i){status.hidden=true;}
+
   if(activeBoard===i && !audioEngine.paused)audioEngine.pause();
+
   clearTimeout(window.__boardScrollResume);
   window.__boardScrollResume=setTimeout(()=>{
-    if(boardVisible&&activeBoard===i&&audioEnabled&&boardFocusRatio(i)>=.72){audioEngine.play().catch(()=>{});}
-    else if(boardVisible&&activeBoard!==i&&boardEngagedQuestion===i)scheduleBoardDwell(i);
+    if(boardCompleted.has(i))return;
+    if(boardVisible&&activeBoard===i&&audioEnabled&&boardFocusRatio(i)>=.72&&activeSegment===MEDIA_TIMELINE[String(i+1)]?.boardSegment){
+      audioEngine.play().catch(()=>{});
+    }else if(boardMayAutoStart(i)){
+      scheduleBoardDwell(i);
+    }
   },900);
 }
 function manualToggleBoard(i){
   if(!audioEnabled)return;
-  if(activeBoard===i&&activeSegment===MEDIA_TIMELINE[String(i+1)].boardSegment){if(audioEngine.paused)audioEngine.play().catch(()=>{});else audioEngine.pause();updateBoardPlayButton(i);return;}
+  const tl=MEDIA_TIMELINE[String(i+1)];
+  if(activeBoard===i&&activeSegment===tl.boardSegment){
+    if(audioEngine.paused)audioEngine.play().catch(()=>{});else audioEngine.pause();
+    updateBoardPlayButton(i);return;
+  }
+  if(boardCompleted.has(i))boardCompleted.delete(i);
+  boardEngagedQuestion=i;
   startBoardMedia(i,true);
 }
 function startBoardMedia(i,manual){
   if(!audioEnabled||!audioBlockFor(i))return; clearTimeout(dwellTimer); dwellTimer=null;
   const tl=MEDIA_TIMELINE[String(i+1)]; if(!tl)return;
-  if(!manual&&(responseFlowQuestion===i||activeSegment||boardEngagedQuestion!==i||boardFocusRatio(i)<.72))return;
+  if(!manual&&(boardCompleted.has(i)||!boardMayAutoStart(i)))return;
   if(manual&&activeSegment){audioEngine.pause();activeSegment=null;responseFlowQuestion=null;}
-  activeBoard=i; resetBoardMedia(i); const status=$(`boardStatus-${i}`);if(status){status.hidden=false;status.className='board-status playing';status.textContent='Tafelerklärung läuft';}
+
+  activeBoard=i;
+  resetBoardMedia(i);
+  setBoardStatus(i,"Tafelerklärung läuft","playing");
+
   requestPlay(tl.boardSegment,{onEnded:()=>{
     finishBoardMedia(i);
-    const s=$(`boardStatus-${i}`);if(s){s.hidden=false;s.className='board-status waiting';s.textContent='Transfer …';}
-    setTimeout(()=>{if(i===state.index&&audioEnabled)requestPlay(tl.transferSegment,{onEnded:()=>{const x=$(`boardStatus-${i}`);if(x)x.hidden=true;}});},450);
+    setBoardStatus(i,"Transfer …","waiting");
+
+    const epoch=mediaFlowEpoch;
+    setTimeout(()=>{
+      if(epoch!==mediaFlowEpoch||i!==state.index||!audioEnabled){
+        markBoardCompleted(i);
+        return;
+      }
+      requestPlay(tl.transferSegment,{onEnded:()=>markBoardCompleted(i)});
+    },450);
   }}).then(ok=>{if(ok){updateBoardPlayButton(i);mediaLoop(i);}});
 }
-function finishBoardMedia(i){cancelAnimationFrame(mediaRAF);mediaRAF=null;const l=$(`laser-${i}`);if(l)l.classList.remove('active');const p=$(`boardProgress-${i}`);if(p)p.style.width='100%';const s=$(`boardStatus-${i}`);if(s){s.textContent='Erklärung abgeschlossen';setTimeout(()=>{if(s)s.hidden=true},1600);}updateBoardPlayButton(i);}
+function finishBoardMedia(i){
+  cancelAnimationFrame(mediaRAF);mediaRAF=null;
+  const l=$(`laser-${i}`);if(l)l.classList.remove('active');
+  const p=$(`boardProgress-${i}`);if(p)p.style.width='100%';
+  updateBoardPlayButton(i);
+}
 function resetBoardMedia(i){const l=$(`laser-${i}`);if(l)l.classList.remove('active');const p=$(`boardProgress-${i}`);if(p)p.style.width='0';const o=$(`boardOverlayLayer-${i}`);if(o)o.innerHTML='';const s=$(`boardStatus-${i}`);if(s)s.hidden=true;updateBoardPlayButton(i);}
 function updateBoardPlayButton(i){const b=document.querySelector(`[data-board-play="${i}"]`);if(b)b.innerHTML=mediaPlayIcon(!(activeBoard===i&&!audioEngine.paused));}
 function positionLaser(i,cue){
@@ -1230,7 +1328,7 @@ function mediaLoop(i){
   const p=$(`boardProgress-${i}`);if(p)p.style.width=Math.min(100,t/d*100)+'%';renderOverlayCues(i,t);updateBoardPlayButton(i);
   mediaRAF=requestAnimationFrame(()=>mediaLoop(i));
 }
-function setAudioEnabled(v){audioEnabled=!!v;localStorage.setItem(AUDIO_PREF_KEY,audioEnabled?'1':'0');updateAudioUI();if(!audioEnabled){stopMedia(false);$("audioUnlock").hidden=true;document.querySelectorAll('.laser-pointer').forEach(x=>x.classList.remove('active'));}else{lastNarratedQuestion=null;maybeNarrateQuestion(state.index);if(boardVisible&&state.checked[state.index]&&boardEngagedQuestion===state.index)scheduleBoardDwell(state.index);}}
+function setAudioEnabled(v){audioEnabled=!!v;localStorage.setItem(AUDIO_PREF_KEY,audioEnabled?'1':'0');updateAudioUI();if(!audioEnabled){stopMedia(false);$("audioUnlock").hidden=true;document.querySelectorAll('.laser-pointer').forEach(x=>x.classList.remove('active'));}else{lastNarratedQuestion=null;maybeNarrateQuestion(state.index);if(boardVisible&&state.checked[state.index]&&boardEngagedQuestion===state.index&&!boardCompleted.has(state.index))scheduleBoardDwell(state.index);}}
 function render() {
   const q=current(), i=state.index;
   markSeen(i);
@@ -1292,6 +1390,7 @@ function selectOption(oi) {
 $("checkBtn").onclick=()=>{
   const i=state.index,q=current();
   if(selectedFor(i).length!==q.select) return;
+  boardCompleted.delete(i);
   stopMedia(false); lastNarratedQuestion=i; responseFlowQuestion=i; boardEngagedQuestion=null;
   state.checked[i]=true; save(); render();
   requestAnimationFrame(()=>playResponseFor(i));
