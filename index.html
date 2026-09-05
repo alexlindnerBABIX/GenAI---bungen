@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="ctgenai-build" content="3.8">
-<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.8</title>
+<meta name="ctgenai-build" content="3.9">
+<meta name="ctgenai-sync" content="visual-gated-3.9">
+<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.9</title>
 <style>
 :root {
   --navy:#102538; --navy2:#17364f; --bg:#eef2f5; --paper:#fff; --line:#d6dde4;
@@ -141,7 +142,14 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 .feedback-memory .memory-label{margin-bottom:8px}
 .review-chip{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid #d9e7ea;color:#55717a;font-size:10px;font-weight:750}
 
-/* Version 3.8 · vollständiges Tafelbild im natürlichen Seitenfluss */
+
+/* v3.9 · Audio/UX synchronization gates */
+#questionCard{scroll-margin-top:88px}
+#feedback{scroll-margin-top:92px}
+.board-media-frame{scroll-margin-top:88px}
+.board-status.waiting{color:#f5e8b8}
+
+/* Version 3.9 · vollständiges Tafelbild im natürlichen Seitenfluss */
 .real-board{
   margin-top:22px;padding-top:18px;border-top:1px solid #e6ecef;
   scroll-margin-top:22px
@@ -362,7 +370,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
  .option:hover,.navq:hover{background:inherit}
 }
 
-/* Version 3.8 · geführter Tipp statt Kartenraster */
+/* Version 3.9 · geführter Tipp statt Kartenraster */
 .hint{
   border-left:0;border-color:#e0e7ea;border-radius:13px;background:#fff;
   box-shadow:0 9px 28px rgba(16,37,56,.07)
@@ -470,7 +478,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.8 · Konsistenz + Fragen-UX */
+/* Version 3.9 · Konsistenz + Fragen-UX */
 .ui-line-icon,.tip-svg{
   width:20px;height:20px;display:block;stroke:currentColor;fill:none
 }
@@ -585,7 +593,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.8 · Antwortoptionen ohne A/B/C/D/E */
+/* Version 3.9 · Antwortoptionen ohne A/B/C/D/E */
 .option-content{
   display:block;
 }
@@ -594,7 +602,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.8 · Audio + zeitgesteuerte Tafelmedien */
+/* Version 3.9 · Audio + zeitgesteuerte Tafelmedien */
 .audio-always{min-height:38px;display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(255,255,255,.24);border-radius:9px;background:rgba(255,255,255,.07);color:#fff;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap}
 .audio-always svg{width:18px;height:18px;stroke:currentColor}.audio-always .audio-icon-off{display:none}.audio-always.off{opacity:.78}.audio-always.off .audio-icon-on{display:none}.audio-always.off .audio-icon-off{display:block}
 .audio-unlock{position:fixed;right:18px;top:78px;z-index:70;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #bfd9e2;border-radius:999px;background:#fff;color:#24596c;font:700 12px/1 system-ui;box-shadow:0 8px 25px rgba(20,55,70,.18);cursor:pointer}.audio-unlock[hidden]{display:none}.audio-unlock-dot{width:8px;height:8px;border-radius:50%;background:#4aa4b6;box-shadow:0 0 0 4px #e5f5f7}
@@ -617,7 +625,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 <header class="topbar">
   <div class="brand">
     <div class="title">CT-GenAI 1.1 · Lernquiz</div>
-    <div class="sub">Version 3.8 · 40 Aufgaben · vollständige LO-Abdeckung</div>
+    <div class="sub">Version 3.9 · 40 Aufgaben · vollständige LO-Abdeckung</div>
   </div>
   <div class="global-actions">
     <div class="mode"><span>Modus</span><strong>Prüfungsnah + Lernfeedback</strong></div>
@@ -770,7 +778,7 @@ function renderSidebar() {
     if(state.flags[i]) cls += " flagged";
     return `<button class="${cls}" data-i="${i}" title="${q.lo}"><span>${i+1}</span><span>${q.points} P.</span></button>`;
   }).join("");
-  document.querySelectorAll(".navq").forEach(b=>b.onclick=()=>{state.index=+b.dataset.i;save();render();});
+  document.querySelectorAll(".navq").forEach(b=>b.onclick=()=>goToQuestion(+b.dataset.i,true));
   $("sideCount").textContent = `${answeredCount()}/40`;
 }
 
@@ -1045,6 +1053,40 @@ let audioEnabled=localStorage.getItem(AUDIO_PREF_KEY)!=="0";
 const audioEngine=new Audio(); audioEngine.preload="auto";
 let activeSegment=null, pendingAutoplay=null, audioUnlocked=false, lastNarratedQuestion=null;
 let activeBoard=null, mediaRAF=null, boardObserver=null, dwellTimer=null, boardVisible=false, lastScrollAt=0;
+let mediaFlowEpoch=0, questionNarrationPending=null, responseFlowQuestion=null, boardEngagedQuestion=null, suppressBoardArmUntil=0;
+
+
+function visibleRatio(el){
+  if(!el)return 0;
+  const r=el.getBoundingClientRect(),vh=window.innerHeight||document.documentElement.clientHeight;
+  if(r.height<=0||vh<=0)return 0;
+  const vis=Math.max(0,Math.min(r.bottom,vh)-Math.max(r.top,0));
+  return Math.max(0,Math.min(1,vis/Math.min(r.height,vh)));
+}
+function scrollElementIntoFocus(el,block="start"){
+  if(!el)return;
+  if(visibleRatio(el)>=.62)return;
+  suppressBoardArmUntil=Date.now()+1800;
+  try{el.scrollIntoView({behavior:"smooth",block,inline:"nearest"});}catch(e){el.scrollIntoView();}
+}
+function waitForVisualReady(el,{minRatio=.62,idleMs=320,maxWait=4200}={}){
+  const epoch=mediaFlowEpoch,start=performance.now();
+  return new Promise(resolve=>{
+    const tick=()=>{
+      if(epoch!==mediaFlowEpoch)return resolve(false);
+      const ratio=visibleRatio(el),idle=Date.now()-lastScrollAt>=idleMs;
+      if(ratio>=minRatio&&idle&&!document.hidden)return resolve(true);
+      if(performance.now()-start>=maxWait)return resolve(false);
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+}
+function boardFocusRatio(i){return visibleRatio($(`boardFrame-${i}`));}
+function setBoardStatus(i,text,cls="waiting"){
+  const s=$(`boardStatus-${i}`);if(!s)return;
+  s.hidden=false;s.className=`board-status ${cls}`;s.textContent=text;
+}
 
 function mediaPlayIcon(paused=true){return paused?`<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5 11 7-11 7Z"/></svg>`:`<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14M16 5v14"/></svg>`;}
 function updateAudioUI(){
@@ -1055,6 +1097,7 @@ function updateAudioUI(){
 }
 function segment(id){return AUDIO_INDEX[id]||null;}
 function stopMedia(resetBoard=true){
+  mediaFlowEpoch++; questionNarrationPending=null; responseFlowQuestion=null; boardEngagedQuestion=null;
   audioEngine.pause(); audioEngine.removeAttribute('src'); audioEngine.load(); activeSegment=null; pendingAutoplay=null;
   cancelAnimationFrame(mediaRAF); mediaRAF=null;
   if(resetBoard && activeBoard!==null)resetBoardMedia(activeBoard);
@@ -1064,7 +1107,7 @@ function setAudioSource(id){const meta=segment(id);if(!meta)return false;activeS
 function requestPlay(id,{allowGate=true,onEnded=null}={}){
   if(!audioEnabled||!segment(id))return Promise.resolve(false);
   if(activeSegment!==id){audioEngine.pause();if(!setAudioSource(id))return Promise.resolve(false);}
-  audioEngine.onended=()=>{if(onEnded)onEnded();};
+  audioEngine.onended=()=>{if(activeSegment===id)activeSegment=null;if(onEnded)onEnded();};
   const p=audioEngine.play();
   if(p&&p.catch)return p.then(()=>{audioUnlocked=true;$("audioUnlock").hidden=true;return true}).catch(()=>{if(allowGate){pendingAutoplay={id,onEnded};$("audioUnlock").hidden=false;}return false;});
   return Promise.resolve(true);
@@ -1072,12 +1115,20 @@ function requestPlay(id,{allowGate=true,onEnded=null}={}){
 function unlockPendingAudio(){
   if(!audioEnabled||!pendingAutoplay)return;
   const p=pendingAutoplay; pendingAutoplay=null; $("audioUnlock").hidden=true;
-  if(activeSegment!==p.id)setAudioSource(p.id); audioEngine.onended=()=>{if(p.onEnded)p.onEnded();};
+  if(activeSegment!==p.id)setAudioSource(p.id); audioEngine.onended=()=>{if(activeSegment===p.id)activeSegment=null;if(p.onEnded)p.onEnded();};
   audioEngine.play().then(()=>audioUnlocked=true).catch(()=>{$("audioUnlock").hidden=false;pendingAutoplay=p;});
 }
 function maybeNarrateQuestion(i){
-  if(!audioEnabled||!audioBlockFor(i)||lastNarratedQuestion===i)return;
-  const p=segmentPrefixFor(i); lastNarratedQuestion=i; requestPlay(`${p}_QUESTION`);
+  if(!audioEnabled||!audioBlockFor(i)||lastNarratedQuestion===i||questionNarrationPending===i)return;
+  const card=$("questionCard"),p=segmentPrefixFor(i),epoch=mediaFlowEpoch;
+  if(!card||!p)return;
+  questionNarrationPending=i;
+  waitForVisualReady(card,{minRatio:.72,idleMs:300,maxWait:4500}).then(ok=>{
+    if(questionNarrationPending===i)questionNarrationPending=null;
+    if(!ok||epoch!==mediaFlowEpoch||i!==state.index||!audioEnabled||state.checked[i])return;
+    lastNarratedQuestion=i;
+    requestPlay(`${p}_QUESTION`,{onEnded:()=>{if(boardVisible&&boardEngagedQuestion===i&&state.checked[i])scheduleBoardDwell(i);}});
+  });
 }
 function responseIdFor(i){
   const p=segmentPrefixFor(i); if(!p)return null;
@@ -1086,27 +1137,60 @@ function responseIdFor(i){
 }
 function playResponseFor(i){
   if(!audioEnabled||!audioBlockFor(i))return; clearTimeout(dwellTimer);dwellTimer=null;
-  const id=responseIdFor(i); if(!segment(id))return;
-  requestPlay(id,{onEnded:()=>{activeSegment=null;if(boardVisible)scheduleBoardDwell(i);}});
+  const id=responseIdFor(i),feedback=$("feedback"),epoch=mediaFlowEpoch;
+  if(!segment(id)||!feedback)return;
+  responseFlowQuestion=i; boardEngagedQuestion=null;
+  scrollElementIntoFocus(feedback,"start");
+  waitForVisualReady(feedback,{minRatio:.55,idleMs:340,maxWait:4800}).then(ok=>{
+    if(!ok||epoch!==mediaFlowEpoch||i!==state.index||!audioEnabled){if(responseFlowQuestion===i)responseFlowQuestion=null;return;}
+    requestPlay(id,{onEnded:()=>{responseFlowQuestion=null;if(boardVisible&&boardEngagedQuestion===i)scheduleBoardDwell(i);}});
+  });
 }
 function scheduleBoardDwell(i){
   clearTimeout(dwellTimer); dwellTimer=null;
   if(!audioEnabled||i!==state.index||!boardHasAudio(i)||!boardVisible)return;
-  if(activeSegment&&activeSegment.includes('_RESPONSE_'))return;
-  const status=$(`boardStatus-${i}`); if(status){status.hidden=false;status.className='board-status dwell';status.textContent='Erklärung startet …';}
-  dwellTimer=setTimeout(()=>{if(boardVisible&&Date.now()-lastScrollAt>=2850&&audioEnabled)startBoardMedia(i,false);},3000);
+  if(boardEngagedQuestion!==i)return;
+  if(responseFlowQuestion===i||activeSegment)return;
+  if(boardFocusRatio(i)<.72)return;
+  setBoardStatus(i,"3 s auf der Tafel bleiben · Erklärung startet","dwell");
+  const epoch=mediaFlowEpoch;
+  dwellTimer=setTimeout(()=>{
+    if(epoch===mediaFlowEpoch&&i===state.index&&boardVisible&&boardEngagedQuestion===i&&
+       boardFocusRatio(i)>=.72&&Date.now()-lastScrollAt>=2850&&audioEnabled&&!activeSegment){
+      startBoardMedia(i,false);
+    }
+  },3000);
 }
 function setupBoardDwell(i){
   if(boardObserver)boardObserver.disconnect(); clearTimeout(dwellTimer); dwellTimer=null; boardVisible=false;
-  const el=$(`boardSticky-${i}`); if(!el)return;
-  boardObserver=new IntersectionObserver(entries=>{const e=entries[0];boardVisible=e.isIntersecting&&e.intersectionRatio>=.55;if(boardVisible)scheduleBoardDwell(i);else{clearTimeout(dwellTimer);dwellTimer=null;if(activeBoard===i&&!audioEngine.paused)audioEngine.pause();}}, {threshold:[0,.35,.55,.75,1]});
+  const el=$(`boardFrame-${i}`); if(!el)return;
+  boardObserver=new IntersectionObserver(entries=>{
+    const e=entries[0];boardVisible=e.isIntersecting&&visibleRatio(el)>=.72;
+    if(boardVisible){
+      if(boardEngagedQuestion===i){
+        if(responseFlowQuestion===i||activeSegment)setBoardStatus(i,"Audioauswertung läuft · Tafel wartet","waiting");
+        else scheduleBoardDwell(i);
+      }
+    }else{
+      clearTimeout(dwellTimer);dwellTimer=null;
+      if(activeBoard===i&&!audioEngine.paused)audioEngine.pause();
+    }
+  }, {threshold:[0,.25,.5,.72,.9,1]});
   boardObserver.observe(el);
 }
 function onUserScroll(){
-  lastScrollAt=Date.now(); if(!boardVisible)return; clearTimeout(dwellTimer);dwellTimer=null;
-  const i=state.index,status=$(`boardStatus-${i}`); if(status && activeBoard!==i){status.hidden=true;}
+  lastScrollAt=Date.now();
+  const i=state.index,frame=$(`boardFrame-${i}`),ratio=visibleRatio(frame);
+  if(Date.now()>=suppressBoardArmUntil&&state.checked[i]&&frame&&ratio>=.20)boardEngagedQuestion=i;
+  if(!boardVisible&&ratio<.72)return;
+  clearTimeout(dwellTimer);dwellTimer=null;
+  const status=$(`boardStatus-${i}`); if(status && activeBoard!==i){status.hidden=true;}
   if(activeBoard===i && !audioEngine.paused)audioEngine.pause();
-  clearTimeout(window.__boardScrollResume); window.__boardScrollResume=setTimeout(()=>{if(boardVisible&&activeBoard===i&&audioEnabled){audioEngine.play().catch(()=>{});}else if(boardVisible&&activeBoard!==i)scheduleBoardDwell(i);},650);
+  clearTimeout(window.__boardScrollResume);
+  window.__boardScrollResume=setTimeout(()=>{
+    if(boardVisible&&activeBoard===i&&audioEnabled&&boardFocusRatio(i)>=.72){audioEngine.play().catch(()=>{});}
+    else if(boardVisible&&activeBoard!==i&&boardEngagedQuestion===i)scheduleBoardDwell(i);
+  },900);
 }
 function manualToggleBoard(i){
   if(!audioEnabled)return;
@@ -1116,9 +1200,17 @@ function manualToggleBoard(i){
 function startBoardMedia(i,manual){
   if(!audioEnabled||!audioBlockFor(i))return; clearTimeout(dwellTimer); dwellTimer=null;
   const tl=MEDIA_TIMELINE[String(i+1)]; if(!tl)return;
-  if(activeSegment&&activeSegment.includes('_RESPONSE_'))audioEngine.pause();
-  activeBoard=i; resetBoardMedia(i); const status=$(`boardStatus-${i}`);if(status){status.hidden=false;status.className='board-status playing';status.textContent='Erklärung läuft';}
-  requestPlay(tl.boardSegment,{onEnded:()=>{finishBoardMedia(i);requestPlay(tl.transferSegment,{onEnded:()=>{activeSegment=null;}});}}).then(ok=>{if(ok){updateBoardPlayButton(i);mediaLoop(i);}});
+  if(!manual&&(responseFlowQuestion===i||activeSegment||boardEngagedQuestion!==i||boardFocusRatio(i)<.72))return;
+  if(manual){
+    mediaFlowEpoch++;questionNarrationPending=null;responseFlowQuestion=null;
+    if(activeSegment){audioEngine.pause();activeSegment=null;}
+  }
+  activeBoard=i; resetBoardMedia(i); const status=$(`boardStatus-${i}`);if(status){status.hidden=false;status.className='board-status playing';status.textContent='Tafelerklärung läuft';}
+  requestPlay(tl.boardSegment,{onEnded:()=>{
+    finishBoardMedia(i);
+    const s=$(`boardStatus-${i}`);if(s){s.hidden=false;s.className='board-status waiting';s.textContent='Transfer …';}
+    setTimeout(()=>{if(i===state.index&&audioEnabled)requestPlay(tl.transferSegment,{onEnded:()=>{const x=$(`boardStatus-${i}`);if(x)x.hidden=true;}});},450);
+  }}).then(ok=>{if(ok){updateBoardPlayButton(i);mediaLoop(i);}});
 }
 function finishBoardMedia(i){cancelAnimationFrame(mediaRAF);mediaRAF=null;const l=$(`laser-${i}`);if(l)l.classList.remove('active');const p=$(`boardProgress-${i}`);if(p)p.style.width='100%';const s=$(`boardStatus-${i}`);if(s){s.textContent='Erklärung abgeschlossen';setTimeout(()=>{if(s)s.hidden=true},1600);}updateBoardPlayButton(i);}
 function resetBoardMedia(i){const l=$(`laser-${i}`);if(l)l.classList.remove('active');const p=$(`boardProgress-${i}`);if(p)p.style.width='0';const o=$(`boardOverlayLayer-${i}`);if(o)o.innerHTML='';const s=$(`boardStatus-${i}`);if(s)s.hidden=true;updateBoardPlayButton(i);}
@@ -1142,7 +1234,7 @@ function mediaLoop(i){
   const p=$(`boardProgress-${i}`);if(p)p.style.width=Math.min(100,t/d*100)+'%';renderOverlayCues(i,t);updateBoardPlayButton(i);
   mediaRAF=requestAnimationFrame(()=>mediaLoop(i));
 }
-function setAudioEnabled(v){audioEnabled=!!v;localStorage.setItem(AUDIO_PREF_KEY,audioEnabled?'1':'0');updateAudioUI();if(!audioEnabled){stopMedia(false);$("audioUnlock").hidden=true;document.querySelectorAll('.laser-pointer').forEach(x=>x.classList.remove('active'));}else{lastNarratedQuestion=null;maybeNarrateQuestion(state.index);if(boardVisible&&state.checked[state.index])scheduleBoardDwell(state.index);}}
+function setAudioEnabled(v){audioEnabled=!!v;localStorage.setItem(AUDIO_PREF_KEY,audioEnabled?'1':'0');updateAudioUI();if(!audioEnabled){stopMedia(false);$("audioUnlock").hidden=true;document.querySelectorAll('.laser-pointer').forEach(x=>x.classList.remove('active'));}else{lastNarratedQuestion=null;maybeNarrateQuestion(state.index);if(boardVisible&&state.checked[state.index]&&boardEngagedQuestion===state.index)scheduleBoardDwell(state.index);}}
 function render() {
   const q=current(), i=state.index;
   markSeen(i);
@@ -1204,6 +1296,7 @@ function selectOption(oi) {
 $("checkBtn").onclick=()=>{
   const i=state.index,q=current();
   if(selectedFor(i).length!==q.select) return;
+  stopMedia(false); lastNarratedQuestion=i; responseFlowQuestion=i; boardEngagedQuestion=null;
   state.checked[i]=true; save(); render();
   requestAnimationFrame(()=>playResponseFor(i));
 };
@@ -1213,19 +1306,19 @@ $("hintBtn").onclick=()=>{
 $("flagBtn").onclick=()=>{
   const i=state.index; state.flags[i]=!state.flags[i]; save(); render();
 };
+function goToQuestion(target,smooth=false){
+  target=Math.max(0,Math.min(questions.length-1,target));
+  stopMedia(); if(boardObserver)boardObserver.disconnect(); lastNarratedQuestion=null;
+  state.index=target;save();render();
+  suppressBoardArmUntil=Date.now()+(smooth?1800:350);
+  requestAnimationFrame(()=>window.scrollTo({top:0,behavior:smooth?"smooth":"auto"}));
+}
 function goNextQuestion(smooth=false){
-  if(state.index<questions.length-1){
-    stopMedia(); if(boardObserver)boardObserver.disconnect(); lastNarratedQuestion=null;
-    state.index++;save();render();
-    requestAnimationFrame(()=>window.scrollTo({top:0,behavior:smooth?"smooth":"auto"}));
-  }else{ stopMedia(); showSummary(); }
+  if(state.index<questions.length-1)goToQuestion(state.index+1,smooth);
+  else{ stopMedia(); showSummary(); }
 }
 function goPrevQuestion(smooth=false){
-  if(state.index>0){
-    stopMedia(); if(boardObserver)boardObserver.disconnect(); lastNarratedQuestion=null;
-    state.index--;save();render();
-    requestAnimationFrame(()=>window.scrollTo({top:0,behavior:smooth?"smooth":"auto"}));
-  }
+  if(state.index>0)goToQuestion(state.index-1,smooth);
 }
 $("prevBtn").onclick=()=>goPrevQuestion(true);
 $("nextBtn").onclick=()=>goNextQuestion(true);
