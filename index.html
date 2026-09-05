@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="ctgenai-build" content="3.9">
-<meta name="ctgenai-sync" content="visual-gated-3.9">
-<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.9</title>
+<meta name="ctgenai-build" content="3.10">
+<meta name="ctgenai-sync" content="visual-gated-3.10">
+<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.10</title>
 <style>
 :root {
   --navy:#102538; --navy2:#17364f; --bg:#eef2f5; --paper:#fff; --line:#d6dde4;
@@ -143,13 +143,13 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 .review-chip{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid #d9e7ea;color:#55717a;font-size:10px;font-weight:750}
 
 
-/* v3.9 · Audio/UX synchronization gates */
+/* v3.10 · Audio/UX synchronization gates */
 #questionCard{scroll-margin-top:88px}
 #feedback{scroll-margin-top:92px}
 .board-media-frame{scroll-margin-top:88px}
 .board-status.waiting{color:#f5e8b8}
 
-/* Version 3.9 · vollständiges Tafelbild im natürlichen Seitenfluss */
+/* Version 3.10 · vollständiges Tafelbild im natürlichen Seitenfluss */
 .real-board{
   margin-top:22px;padding-top:18px;border-top:1px solid #e6ecef;
   scroll-margin-top:22px
@@ -370,7 +370,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
  .option:hover,.navq:hover{background:inherit}
 }
 
-/* Version 3.9 · geführter Tipp statt Kartenraster */
+/* Version 3.10 · geführter Tipp statt Kartenraster */
 .hint{
   border-left:0;border-color:#e0e7ea;border-radius:13px;background:#fff;
   box-shadow:0 9px 28px rgba(16,37,56,.07)
@@ -478,7 +478,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.9 · Konsistenz + Fragen-UX */
+/* Version 3.10 · Konsistenz + Fragen-UX */
 .ui-line-icon,.tip-svg{
   width:20px;height:20px;display:block;stroke:currentColor;fill:none
 }
@@ -593,7 +593,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.9 · Antwortoptionen ohne A/B/C/D/E */
+/* Version 3.10 · Antwortoptionen ohne A/B/C/D/E */
 .option-content{
   display:block;
 }
@@ -602,12 +602,12 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.9 · Audio + zeitgesteuerte Tafelmedien */
+/* Version 3.10 · Audio + zeitgesteuerte Tafelmedien */
 .audio-always{min-height:38px;display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(255,255,255,.24);border-radius:9px;background:rgba(255,255,255,.07);color:#fff;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap}
 .audio-always svg{width:18px;height:18px;stroke:currentColor}.audio-always .audio-icon-off{display:none}.audio-always.off{opacity:.78}.audio-always.off .audio-icon-on{display:none}.audio-always.off .audio-icon-off{display:block}
 .audio-unlock{position:fixed;right:18px;top:78px;z-index:70;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #bfd9e2;border-radius:999px;background:#fff;color:#24596c;font:700 12px/1 system-ui;box-shadow:0 8px 25px rgba(20,55,70,.18);cursor:pointer}.audio-unlock[hidden]{display:none}.audio-unlock-dot{width:8px;height:8px;border-radius:50%;background:#4aa4b6;box-shadow:0 0 0 4px #e5f5f7}
 .board-head-actions{display:flex;align-items:center;gap:7px}.board-audio-control{width:34px;height:31px;border:1px solid #cadadf;background:#fff;color:#3d6874;border-radius:8px;display:grid;place-items:center;cursor:pointer}.board-audio-control svg{width:17px;height:17px;stroke:currentColor}
-.board-cinema-shell{position:relative;min-height:calc(100vh + clamp(190px,28vh,330px))}.board-cinema-sticky{position:sticky;top:82px;z-index:4;padding-bottom:10px}
+.board-cinema-shell{position:relative;min-height:0;padding-bottom:clamp(34px,6vh,72px)}.board-cinema-sticky{position:sticky;top:82px;z-index:4;padding-bottom:8px}
 .board-media-frame{position:relative;display:flex;justify-content:center;align-items:center;overflow:hidden;border-radius:13px;background:#0f372d;border:1px solid #b9cbc6;box-shadow:0 12px 30px rgba(22,57,51,.15);cursor:zoom-in}
 .board-media-frame .board-image{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100vh - 185px);object-fit:contain;user-select:none;-webkit-user-drag:none}
 .board-progress{position:absolute;left:0;right:0;bottom:0;height:4px;background:rgba(255,255,255,.12);pointer-events:none}.board-progress-fill{height:100%;width:0;background:rgba(105,224,213,.9);transition:width .08s linear}
@@ -615,7 +615,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 .board-media-overlay{position:absolute;inset:0;pointer-events:none;z-index:5}.media-callout{position:absolute;transform:translate(-50%,-50%);max-width:42%;padding:7px 10px;border-radius:8px;background:rgba(8,28,25,.88);color:#fff;font-size:12px;line-height:1.35;border:1px solid rgba(255,255,255,.18)}
 .board-status{position:absolute;left:12px;bottom:13px;z-index:7;padding:6px 9px;border-radius:999px;background:rgba(5,25,21,.78);color:#edf5f2;font-size:10px;font-weight:750;backdrop-filter:blur(4px);pointer-events:none}.board-status.dwell{color:#d8f2ef}.board-status.playing{color:#fff}
 @media(max-width:980px){.audio-always span{display:none}.audio-always{width:42px;height:42px;padding:0;justify-content:center}.board-cinema-sticky{top:72px}.board-media-frame .board-image{max-height:calc(100vh - 155px)}}
-@media(max-width:700px){.board-cinema-shell{min-height:calc(100vh + 150px)}.board-cinema-sticky{top:68px}.board-media-frame{border-radius:10px}.board-media-frame .board-image{max-height:calc(100vh - 145px)}.board-status{font-size:9px;left:8px;bottom:10px}.laser-pointer{width:13px;height:13px}}
+@media(max-width:700px){.board-cinema-shell{min-height:0;padding-bottom:32px}.board-cinema-sticky{top:68px}.board-media-frame{border-radius:10px}.board-media-frame .board-image{max-height:calc(100vh - 145px)}.board-status{font-size:9px;left:8px;bottom:10px}.laser-pointer{width:13px;height:13px}}
 
 
 .board-overlay-media{position:relative;display:inline-block;min-width:100%;line-height:0}.board-overlay-media img{display:block;width:100%;height:auto}.overlay-laser{z-index:8}.board-overlay-dynamic{position:absolute;inset:0;pointer-events:none}
@@ -625,7 +625,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 <header class="topbar">
   <div class="brand">
     <div class="title">CT-GenAI 1.1 · Lernquiz</div>
-    <div class="sub">Version 3.9 · 40 Aufgaben · vollständige LO-Abdeckung</div>
+    <div class="sub">Version 3.10 · 40 Aufgaben · vollständige LO-Abdeckung</div>
   </div>
   <div class="global-actions">
     <div class="mode"><span>Modus</span><strong>Prüfungsnah + Lernfeedback</strong></div>
@@ -1053,7 +1053,7 @@ let audioEnabled=localStorage.getItem(AUDIO_PREF_KEY)!=="0";
 const audioEngine=new Audio(); audioEngine.preload="auto";
 let activeSegment=null, pendingAutoplay=null, audioUnlocked=false, lastNarratedQuestion=null;
 let activeBoard=null, mediaRAF=null, boardObserver=null, dwellTimer=null, boardVisible=false, lastScrollAt=0;
-let mediaFlowEpoch=0, questionNarrationPending=null, responseFlowQuestion=null, boardEngagedQuestion=null, suppressBoardArmUntil=0;
+let mediaFlowEpoch=0, questionNarrationPending=null, responseFlowQuestion=null, boardEngagedQuestion=null;
 
 
 function visibleRatio(el){
@@ -1066,7 +1066,6 @@ function visibleRatio(el){
 function scrollElementIntoFocus(el,block="start"){
   if(!el)return;
   if(visibleRatio(el)>=.62)return;
-  suppressBoardArmUntil=Date.now()+1800;
   try{el.scrollIntoView({behavior:"smooth",block,inline:"nearest"});}catch(e){el.scrollIntoView();}
 }
 function waitForVisualReady(el,{minRatio=.62,idleMs=320,maxWait=4200}={}){
@@ -1181,7 +1180,7 @@ function setupBoardDwell(i){
 function onUserScroll(){
   lastScrollAt=Date.now();
   const i=state.index,frame=$(`boardFrame-${i}`),ratio=visibleRatio(frame);
-  if(Date.now()>=suppressBoardArmUntil&&state.checked[i]&&frame&&ratio>=.20)boardEngagedQuestion=i;
+  if(state.checked[i]&&frame&&ratio>=.20)boardEngagedQuestion=i;
   if(!boardVisible&&ratio<.72)return;
   clearTimeout(dwellTimer);dwellTimer=null;
   const status=$(`boardStatus-${i}`); if(status && activeBoard!==i){status.hidden=true;}
@@ -1201,10 +1200,7 @@ function startBoardMedia(i,manual){
   if(!audioEnabled||!audioBlockFor(i))return; clearTimeout(dwellTimer); dwellTimer=null;
   const tl=MEDIA_TIMELINE[String(i+1)]; if(!tl)return;
   if(!manual&&(responseFlowQuestion===i||activeSegment||boardEngagedQuestion!==i||boardFocusRatio(i)<.72))return;
-  if(manual){
-    mediaFlowEpoch++;questionNarrationPending=null;responseFlowQuestion=null;
-    if(activeSegment){audioEngine.pause();activeSegment=null;}
-  }
+  if(manual&&activeSegment){audioEngine.pause();activeSegment=null;responseFlowQuestion=null;}
   activeBoard=i; resetBoardMedia(i); const status=$(`boardStatus-${i}`);if(status){status.hidden=false;status.className='board-status playing';status.textContent='Tafelerklärung läuft';}
   requestPlay(tl.boardSegment,{onEnded:()=>{
     finishBoardMedia(i);
@@ -1310,7 +1306,6 @@ function goToQuestion(target,smooth=false){
   target=Math.max(0,Math.min(questions.length-1,target));
   stopMedia(); if(boardObserver)boardObserver.disconnect(); lastNarratedQuestion=null;
   state.index=target;save();render();
-  suppressBoardArmUntil=Date.now()+(smooth?1800:350);
   requestAnimationFrame(()=>window.scrollTo({top:0,behavior:smooth?"smooth":"auto"}));
 }
 function goNextQuestion(smooth=false){
