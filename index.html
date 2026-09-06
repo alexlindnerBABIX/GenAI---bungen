@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="ctgenai-build" content="4.3">
-<meta name="ctgenai-sync" content="modern-media-sfx-slides-4.3">
-<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 4.3</title>
+<meta name="ctgenai-build" content="4.4">
+<meta name="ctgenai-sync" content="modern-media-sfx-slides-4.4">
+<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 4.4</title>
 <style>
 :root {
   --navy:#102538; --navy2:#17364f; --bg:#eef2f5; --paper:#fff; --line:#d6dde4;
@@ -1106,13 +1106,112 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 @media(max-width:700px){.slide-card{flex-basis:78vw;max-width:310px}.slide-rail-shell:after{width:18px}.slide-stage-actions{width:100%;align-items:stretch;flex-direction:column;gap:6px}.slide-stage-foot{padding-bottom:max(12px,env(safe-area-inset-bottom));overflow:hidden}.slide-stage-audio{order:2;align-self:flex-start;max-width:100%}.slide-stage-status{order:1;width:100%;min-width:0;white-space:normal;flex-wrap:wrap}.slide-stage-title{max-width:100%}.slide-stage-image{max-width:calc(100vw - 16px)!important}.slide-stage-count{margin-left:auto}}
 @media(prefers-reduced-motion:reduce){.slide-stage-pointer{transition:none!important}}
 
+
+/* v4.4 · Progressive disclosure: Antwort → Originalfolien → Tafelbild */
+.feedback-learning-sequence{margin-top:26px}
+.slide-learning-rail{
+  margin:0;
+  padding:18px;
+  border:1px solid #dbe5ea;
+  border-radius:15px;
+  background:linear-gradient(180deg,#f9fbfc,#f4f8fa);
+  box-shadow:0 7px 18px rgba(22,47,62,.05)
+}
+.slide-learning-head{align-items:center;margin-bottom:12px}
+.slide-learning-kicker{display:flex;align-items:center;gap:7px;color:#2b6f8d}
+.slide-learning-kicker:before{
+  content:"2";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;
+  background:#e2f0f5;color:#16677f;font-size:10px;font-weight:900;letter-spacing:0
+}
+.slide-learning-title{font-size:15px}
+.slide-learning-head-side{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.slide-learning-count,.slide-learning-lo{
+  font-size:10px;color:#60717d;background:#fff;border:1px solid #dbe3e8;
+  border-radius:999px;padding:4px 8px;white-space:nowrap
+}
+.slide-learning-count{font-weight:800;color:#246b81}
+.slide-rail{gap:10px;padding-bottom:11px}
+.slide-card{flex-basis:clamp(200px,24vw,244px);box-shadow:0 4px 12px rgba(16,37,56,.045)}
+.slide-card[data-slide-primary="true"]{flex-basis:clamp(248px,29vw,300px)}
+.slide-card-thumb{background:#fff}
+.slide-card-meta{min-height:58px}
+.slide-rail-note{margin-top:2px}
+.slide-rail-note:before{content:"↔"}
+.slide-rail-note strong{color:#385b68;font-weight:760}
+
+.board-phase{
+  margin:14px 0 2px;
+  border:1px solid #dde5e9;
+  border-radius:15px;
+  background:#fff;
+  overflow:hidden
+}
+.board-phase-gate{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:18px;
+  padding:16px 18px
+}
+.board-phase-copy{min-width:0}
+.board-phase-kicker{
+  display:flex;align-items:center;gap:7px;
+  font-size:10px;letter-spacing:.09em;text-transform:uppercase;font-weight:850;color:#5d6d76
+}
+.board-phase-kicker:before{
+  content:"3";display:grid;place-items:center;width:22px;height:22px;border-radius:50%;
+  background:#e9f2ed;color:#315d48;font-size:10px;font-weight:900;letter-spacing:0
+}
+.board-phase-title{margin-top:4px;font-size:14px;font-weight:760;color:#233a45}
+.board-phase-note{margin-top:3px;font-size:11px;line-height:1.45;color:#71808a}
+.board-phase-open{
+  border:1px solid #9ebfb2;background:#f0f7f3;color:#2c5d49;border-radius:10px;
+  min-height:40px;padding:0 14px;font-weight:760;font-size:12px;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:7px
+}
+.board-phase-open:hover,.board-phase-open:focus-visible{
+  background:#e4f2ea;border-color:#7da994;outline:none
+}
+.board-phase.is-revealed{border:0;background:transparent;overflow:visible}
+.board-phase.is-revealed .real-board{margin-top:0}
+
+body.slide-viewing .real-board{
+  visibility:hidden!important;
+  pointer-events:none!important
+}
+
+.slide-stage-head{
+  background:linear-gradient(180deg,#112635,#0d1d29)
+}
+.slide-stage-kicker:after{
+  content:" · Tafelbild pausiert";
+  color:#9db0bb;font-weight:690;letter-spacing:.03em;text-transform:none
+}
+.slide-stage-foot{background:#0d1d29}
+.slide-stage-status{color:#aebdc5}
+.slide-stage-safety{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:10px;color:#9db0bb
+}
+.slide-stage-safety:before{
+  content:"";width:7px;height:7px;border-radius:50%;background:#7fb6a0
+}
+
+@media(max-width:760px){
+  .slide-learning-rail{padding:14px 12px 12px;margin-left:-2px;margin-right:-2px}
+  .slide-learning-head{gap:8px}
+  .slide-learning-head-side{justify-content:flex-start}
+  .slide-card{flex-basis:72vw;max-width:286px}
+  .slide-card[data-slide-primary="true"]{flex-basis:82vw;max-width:318px}
+  .board-phase-gate{grid-template-columns:1fr;padding:14px;gap:12px}
+  .board-phase-open{width:100%}
+  .slide-stage-kicker:after{display:none}
+}
+
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
     <div class="title">CT-GenAI 1.1 · Lernquiz</div>
-    <div class="sub">Version 4.2 · 40 Aufgaben · Originalfolien-Lernspur</div>
+    <div class="sub">Version 4.4 · 40 Aufgaben · Originalfolien + Tafelbild getrennt</div>
   </div>
   <div class="global-actions">
     <div class="mode"><span>Modus</span><strong>Prüfungsnah + Lernfeedback</strong></div>
@@ -1509,29 +1608,70 @@ function feedbackTrajectory(i,good){
 
 
 
-/* v4.3 · learning rail, swipeable slide stage and dormant moderated-slide media engine. */
+/* v4.4 · learning rail + hard separation from board stage and board audio. */
 function slideItemsFor(i){return SLIDE_QUESTION_MAP[String(i+1)]||[];}
 function slideRailHtml(q,i){
   const items=slideItemsFor(i);if(!items.length)return "";
   return `<section class="slide-learning-rail" aria-label="Originalfolien zum Lernziel ${escapeHtml(q.lo)}">
-    <div class="slide-learning-head"><div class="slide-learning-copy"><div class="slide-learning-kicker">Originalfolien · Lernspur</div><div class="slide-learning-title">${escapeHtml(q.hintGoal)}</div></div><span class="slide-learning-lo">${escapeHtml(q.lo)}</span></div>
+    <div class="slide-learning-head">
+      <div class="slide-learning-copy"><div class="slide-learning-kicker">Originalfolien · Vertiefung</div><div class="slide-learning-title">${escapeHtml(q.hintGoal)}</div></div>
+      <div class="slide-learning-head-side"><span class="slide-learning-count">${items.length} ${items.length===1?'Folie':'Folien'}</span><span class="slide-learning-lo">${escapeHtml(q.lo)}</span></div>
+    </div>
     <div class="slide-rail-shell">
       <button class="slide-rail-nav prev" type="button" data-slide-scroll="${i}:-1" aria-label="Folienreihe nach links">‹</button>
       <div class="slide-rail" id="slideRail-${i}" tabindex="0">${items.map((sl,pos)=>`<button class="slide-card" type="button" data-slide-open="${i}:${pos}" data-slide-role="${escapeHtml(sl.role||'Vertiefung')}" data-slide-primary="${pos===0?'true':'false'}" aria-label="${escapeHtml(sl.role||'Folie')}: ${escapeHtml(sl.slideId)} öffnen"><span class="slide-card-role">${escapeHtml(sl.role||'Vertiefung')}</span><span class="slide-card-thumb"><img src="${sl.src}" alt="${escapeHtml(sl.slideId)}" loading="lazy" decoding="async"></span><span class="slide-card-meta"><span class="slide-card-id">Kapitel ${sl.chapter} · Folie ${sl.slide}</span><span class="slide-card-title">${escapeHtml(sl.title)}</span><span class="slide-card-pos">${pos+1}/${items.length}</span></span></button>`).join("")}</div>
       <button class="slide-rail-nav next" type="button" data-slide-scroll="${i}:1" aria-label="Folienreihe nach rechts">›</button>
     </div>
-    <div class="slide-rail-note">Original-Foliensatz · nach Frage und Lernziel kuratiert · antippen für Großansicht</div>
+    <div class="slide-rail-note"><strong>Wähle nur die Folien, die du vertiefen möchtest.</strong> Antippen öffnet die ruhige Großansicht.</div>
   </section>`;
 }
 let slideOverlayState=null,slideOverlayReturnFocus=null,slideOverlayReturnToken=null,slideAudioResume=null,slideSwipeStart=null,slideMediaRAF=null;
+let slideViewingActive=false,boardPausedForSlides=null;
+const boardRevealed=new Set();
+function boardAudioOwner(segmentId){
+  if(!segmentId)return null;
+  for(let i=0;i<questions.length;i++){
+    const tl=MEDIA_TIMELINE[String(i+1)];
+    if(tl&&(segmentId===tl.boardSegment||segmentId===tl.transferSegment))return i;
+  }
+  return null;
+}
+function suspendBoardForSlides(){
+  slideViewingActive=true;document.body.classList.add("slide-viewing");
+  clearTimeout(dwellTimer);dwellTimer=null;clearTimeout(window.__boardScrollResume);
+  if(boardStartingQuestion!==null){boardStartingQuestion=null;stopUiSfx();}
+  const owner=boardAudioOwner(activeSegment);
+  if(owner!==null){
+    boardPausedForSlides=owner;
+    try{audioEngine.pause();}catch(e){}
+    if(activeBoard===owner)setBoardChromeVisible(owner,true,false);
+    setBoardStatus(owner,"Tafelerklärung pausiert · Originalfolien geöffnet","waiting");
+    updateBoardPlayButton(owner);
+  }
+}
+function releaseBoardAfterSlides(){
+  slideViewingActive=false;document.body.classList.remove("slide-viewing");
+  if(boardPausedForSlides!==null){
+    const i=boardPausedForSlides;boardPausedForSlides=null;
+    if(boardRevealed.has(i)&&i===state.index){
+      setBoardStatus(i,"Tafelerklärung pausiert · zum Fortsetzen Start drücken","waiting");
+      updateBoardPlayButton(i);
+    }
+  }
+}
 const slideAudioEngine=new Audio();slideAudioEngine.preload="metadata";
 function pauseSpeechForSlide(){
   slideAudioResume=null;
+  const owner=boardAudioOwner(activeSegment);
+  if(owner!==null){
+    if(!audioEngine.paused){try{audioEngine.pause();}catch(e){}}
+    return;
+  }
   if(activeSegment&&!audioEngine.paused){slideAudioResume={epoch:mediaFlowEpoch,segment:activeSegment};try{audioEngine.pause();}catch(e){}}
 }
 function resumeSpeechAfterSlide(){
   const r=slideAudioResume;slideAudioResume=null;
-  if(r&&audioEnabled&&r.epoch===mediaFlowEpoch&&activeSegment===r.segment&&audioEngine.paused){audioEngine.play().catch(()=>{});}
+  if(r&&audioEnabled&&!slideViewingActive&&boardAudioOwner(r.segment)===null&&r.epoch===mediaFlowEpoch&&activeSegment===r.segment&&audioEngine.paused){audioEngine.play().catch(()=>{});}
 }
 function currentSlideItem(){if(!slideOverlayState)return null;return slideItemsFor(slideOverlayState.question)[slideOverlayState.pos]||null;}
 function currentSlideMedia(){const sl=currentSlideItem();return sl?(SLIDE_MEDIA_INDEX[sl.slideId]||null):null;}
@@ -1573,7 +1713,8 @@ function updateSlideStage(direction=0){
   const next=items[(pos+1)%items.length],prev=items[(pos-1+items.length)%items.length];[next,prev].forEach(x=>{if(x){const pre=new Image();pre.src=x.src;}});
 }
 function openSlide(question,pos,returnEl){
-  const items=slideItemsFor(question);if(!items[pos])return;slideOverlayReturnFocus=returnEl||document.activeElement;slideOverlayReturnToken=returnEl&&returnEl.dataset?returnEl.dataset.slideOpen:null;slideOverlayState={question,pos};pauseSpeechForSlide();
+  const items=slideItemsFor(question);if(!items[pos])return;slideOverlayReturnFocus=returnEl||document.activeElement;slideOverlayReturnToken=returnEl&&returnEl.dataset?returnEl.dataset.slideOpen:null;slideOverlayState={question,pos};
+  suspendBoardForSlides();pauseSpeechForSlide();
   const ov=$("slideOverlay");ov.classList.add("show");ov.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";updateSlideStage(0);requestAnimationFrame(()=>$("slideStageClose").focus({preventScroll:true}));
 }
 function closeSlide(){
@@ -1583,7 +1724,8 @@ function closeSlide(){
   ov.addEventListener("transitionend",refocus,{once:true});
   stopSlideMedia(true);ov.classList.remove("show");
   if(document.activeElement&&ov.contains(document.activeElement))document.activeElement.blur();
-  ov.setAttribute("aria-hidden","true");$("slideStageImg").removeAttribute("src");document.body.style.overflow="";slideOverlayState=null;slideOverlayReturnToken=null;slideOverlayReturnFocus=null;resumeSpeechAfterSlide();
+  ov.setAttribute("aria-hidden","true");$("slideStageImg").removeAttribute("src");document.body.style.overflow="";slideOverlayState=null;slideOverlayReturnToken=null;slideOverlayReturnFocus=null;
+  releaseBoardAfterSlides();resumeSpeechAfterSlide();
   if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)queueMicrotask(refocus);else setTimeout(refocus,280);
 }
 function stepSlide(dir){if(!slideOverlayState)return;const items=slideItemsFor(slideOverlayState.question);if(items.length<2)return;slideOverlayState.pos=(slideOverlayState.pos+dir+items.length)%items.length;updateSlideStage(dir);}
@@ -1596,6 +1738,33 @@ $("slideOverlay").addEventListener("click",e=>{if(e.target===$("slideOverlay"))c
 $("slideStageMedia").addEventListener('pointerdown',e=>{if(e.pointerType==='mouse')return;slideSwipeStart={x:e.clientX,y:e.clientY};},{passive:true});
 $("slideStageMedia").addEventListener('pointerup',e=>{if(!slideSwipeStart)return;const dx=e.clientX-slideSwipeStart.x,dy=e.clientY-slideSwipeStart.y;slideSwipeStart=null;if(Math.abs(dx)>58&&Math.abs(dx)>Math.abs(dy)*1.25)stepSlide(dx<0?1:-1);},{passive:true});
 document.addEventListener("keydown",e=>{if(!$("slideOverlay").classList.contains("show"))return;if(e.key==="Escape"){e.preventDefault();closeSlide();}else if(e.key==="ArrowLeft"){e.preventDefault();stepSlide(-1);}else if(e.key==="ArrowRight"){e.preventDefault();stepSlide(1);}else if(e.key==="Tab"){const f=[...$("slideStage").querySelectorAll('button:not([hidden]):not(:disabled)')];if(!f.length)return;const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+
+
+function boardPhaseHtml(i){
+  if(boardRevealed.has(i))return `<section class="board-phase is-revealed" id="boardPhase-${i}">${realBoardHtml(i)}</section>`;
+  return `<section class="board-phase" id="boardPhase-${i}" aria-label="Nächster Lernschritt Tafelbild">
+    <div class="board-phase-gate">
+      <div class="board-phase-copy">
+        <div class="board-phase-kicker">Tafelbild · nächster Lernschritt</div>
+        <div class="board-phase-title">Von den Originalfolien zur moderierten Erklärung</div>
+        <div class="board-phase-note">Das Tafelbild wird erst nach deiner bewussten Auswahl eingeblendet. Erst dann kann die Tafelerklärung starten.</div>
+      </div>
+      <button class="board-phase-open" type="button" data-board-reveal="${i}">Zum Tafelbild <span aria-hidden="true">→</span></button>
+    </div>
+  </section>`;
+}
+function revealBoard(i){
+  if(slideViewingActive||i!==state.index)return;
+  boardRevealed.add(i);
+  const phase=$(`boardPhase-${i}`);if(!phase)return;
+  phase.classList.add("is-revealed");phase.innerHTML=realBoardHtml(i);wireBoard(i);
+  requestAnimationFrame(()=>{scrollElementIntoFocus(phase,"start");});
+}
+function wireBoardPhase(i){
+  if(boardRevealed.has(i)){wireBoard(i);return;}
+  const b=document.querySelector(`[data-board-reveal="${i}"]`);
+  if(b)b.onclick=()=>revealBoard(i);
+}
 
 function audioBlockFor(i){return i<10?"B01":(i<20?"B02":(i<30?"B03":(i<40?"B04":null)));}
 function segmentPrefixFor(i){const b=audioBlockFor(i);return b?`${b}_Q${String(i+1).padStart(2,"0")}`:null;}
@@ -1710,8 +1879,10 @@ function feedbackHtml(q,i,good){
       <div class="flipchart">${boardHtml(q)}</div>
       <div class="memory-excursus"><span class="excursus-label">Exkurs über den Kurs hinaus</span><span class="excursus-sub">In der Praxis hängt es zusätzlich davon ab:</span>${decorateGlossaryHtml(inlineFormat(q.engineering))}</div>
     </div>
-    ${slideRailHtml(q,i)}
-    ${realBoardHtml(i)}`;
+    <div class="feedback-learning-sequence">
+      ${slideRailHtml(q,i)}
+      ${boardPhaseHtml(i)}
+    </div>`;
 }
 
 const AUDIO_PREF_KEY="ctgenai_audio_enabled";
@@ -1860,7 +2031,7 @@ function markBoardCompleted(i){
   setTimeout(()=>{const x=$(`boardStatus-${i}`);if(x&&boardCompleted.has(i))x.hidden=true;},1800);
 }
 function boardMayAutoStart(i){
-  return !boardCompleted.has(i)&&boardEngagedQuestion===i&&boardVisible&&boardFocusRatio(i)>=.72&&
+  return !slideViewingActive&&boardRevealed.has(i)&&!boardCompleted.has(i)&&boardEngagedQuestion===i&&boardVisible&&boardFocusRatio(i)>=.72&&
          responseFlowQuestion!==i&&!activeSegment&&!activeUiSfx&&boardStartingQuestion!==i&&audioEnabled&&!$("slideOverlay")?.classList.contains("show");
 }
 
@@ -1933,7 +2104,7 @@ function playResponseFor(i,answerGood=null){
 }
 function scheduleBoardDwell(i){
   clearTimeout(dwellTimer); dwellTimer=null;
-  if(i!==state.index||!boardHasAudio(i)||boardCompleted.has(i))return;
+  if(slideViewingActive||!boardRevealed.has(i)||i!==state.index||!boardHasAudio(i)||boardCompleted.has(i))return;
   if(!boardMayAutoStart(i))return;
   setBoardStatus(i,"3 s auf der Tafel bleiben · Erklärung startet","dwell");
   const epoch=mediaFlowEpoch;
@@ -1945,6 +2116,7 @@ function scheduleBoardDwell(i){
   },3000);
 }
 function setupBoardDwell(i){
+  if(!boardRevealed.has(i)||slideViewingActive)return;
   if(boardObserver)boardObserver.disconnect(); clearTimeout(dwellTimer); dwellTimer=null; boardVisible=false;
   const el=$(`boardFrame-${i}`); if(!el)return;
   boardObserver=new IntersectionObserver(entries=>{
@@ -1967,6 +2139,7 @@ function setupBoardDwell(i){
 }
 function onUserScroll(){
   lastScrollAt=Date.now();
+  if(slideViewingActive){clearTimeout(dwellTimer);dwellTimer=null;clearTimeout(window.__boardScrollResume);return;}
   const i=state.index,frame=$(`boardFrame-${i}`),ratio=visibleRatio(frame);
 
   if(boardCompleted.has(i)){
@@ -1999,7 +2172,7 @@ function onUserScroll(){
   },900);
 }
 function manualToggleBoard(i){
-  if(!audioEnabled)return;
+  if(!audioEnabled||slideViewingActive||!boardRevealed.has(i))return;
   const tl=MEDIA_TIMELINE[String(i+1)];
   if(activeBoard===i&&activeSegment===tl.boardSegment){
     if(audioEngine.paused){
@@ -2014,7 +2187,7 @@ function manualToggleBoard(i){
   startBoardMedia(i,true);
 }
 function startBoardMedia(i,manual){
-  if(!audioEnabled||!audioBlockFor(i))return; clearTimeout(dwellTimer); dwellTimer=null;
+  if(!audioEnabled||slideViewingActive||!boardRevealed.has(i)||!audioBlockFor(i))return; clearTimeout(dwellTimer); dwellTimer=null;
   const tl=MEDIA_TIMELINE[String(i+1)]; if(!tl)return;
   if(!manual&&(boardCompleted.has(i)||!boardMayAutoStart(i)))return;
   if(boardStartingQuestion===i)return;
@@ -2028,7 +2201,7 @@ function startBoardMedia(i,manual){
   setBoardChromeVisible(i,true,true);
 
   playUiSfx("boardStart").then(()=>{
-    if(epoch!==mediaFlowEpoch||i!==state.index||!audioEnabled||activeBoard!==i){
+    if(epoch!==mediaFlowEpoch||i!==state.index||!audioEnabled||slideViewingActive||!boardRevealed.has(i)||activeBoard!==i){
       if(boardStartingQuestion===i)boardStartingQuestion=null;
       return;
     }
@@ -2095,7 +2268,7 @@ function mediaLoop(i){
   const p=$(`boardProgress-${i}`);if(p)p.style.width=Math.min(100,t/d*100)+'%';renderOverlayCues(i,t);updateBoardPlayButton(i);
   mediaRAF=requestAnimationFrame(()=>mediaLoop(i));
 }
-function setAudioEnabled(v){audioEnabled=!!v;localStorage.setItem(AUDIO_PREF_KEY,audioEnabled?'1':'0');updateAudioUI();if(!audioEnabled){stopMedia(false);stopSlideMedia(true);$("audioUnlock").hidden=true;document.querySelectorAll('.laser-pointer').forEach(x=>x.classList.remove('active'));}else{lastNarratedQuestion=null;maybeNarrateQuestion(state.index);if($("slideOverlay").classList.contains("show"))updateSlideMediaUi();if(boardVisible&&state.checked[state.index]&&boardEngagedQuestion===state.index&&!boardCompleted.has(state.index))scheduleBoardDwell(state.index);}}
+function setAudioEnabled(v){audioEnabled=!!v;localStorage.setItem(AUDIO_PREF_KEY,audioEnabled?'1':'0');updateAudioUI();if(!audioEnabled){stopMedia(false);stopSlideMedia(true);$("audioUnlock").hidden=true;document.querySelectorAll('.laser-pointer').forEach(x=>x.classList.remove('active'));}else{lastNarratedQuestion=null;maybeNarrateQuestion(state.index);if($("slideOverlay").classList.contains("show"))updateSlideMediaUi();if(!slideViewingActive&&boardRevealed.has(state.index)&&boardVisible&&state.checked[state.index]&&boardEngagedQuestion===state.index&&!boardCompleted.has(state.index))scheduleBoardDwell(state.index);}}
 function render() {
   const q=current(), i=state.index;
   markSeen(i);
@@ -2133,7 +2306,7 @@ function render() {
     $("feedbackTitle").innerHTML = good
       ? `<span class="feedback-icon">✓</span><div><div class="feedback-kicker">Auswertung</div><div class="feedback-main">Richtig</div><div class="feedback-lead">Jetzt die Abgrenzung kurz festigen – nicht nur den Treffer registrieren.</div></div>`
       : `<span class="feedback-icon">↺</span><div><div class="feedback-kicker">Auswertung</div><div class="feedback-main">Nicht richtig</div><div class="feedback-lead">Korrekt: ${key} · Die fachliche Abgrenzung steht direkt darunter.</div></div>`;
-    $("feedbackContent").innerHTML=feedbackHtml(q,i,good); requestAnimationFrame(()=>{wireSlideRail(i);wireBoard(i);});
+    $("feedbackContent").innerHTML=feedbackHtml(q,i,good); requestAnimationFrame(()=>{wireSlideRail(i);wireBoardPhase(i);});
   }
   $("prevBtn").disabled=i===0;
   $("nextBtn").textContent=i===questions.length-1?"✓":"›";
@@ -2158,7 +2331,7 @@ $("checkBtn").onclick=()=>{
   const i=state.index,q=current();
   if(selectedFor(i).length!==q.select) return;
   const good=eqSet(selectedFor(i),q.correct);
-  boardCompleted.delete(i);
+  boardCompleted.delete(i);boardRevealed.delete(i);
   stopMedia(false); lastNarratedQuestion=i; responseFlowQuestion=i; boardEngagedQuestion=null;
   state.checked[i]=true; save(); render();
   requestAnimationFrame(()=>playResponseFor(i,good));
@@ -2243,7 +2416,7 @@ $("closeSummary").onclick=()=>$("summary").classList.remove("show");
 function restartExam(){
   if(!confirm("Prüfung neu starten? Dein aktueller Fortschritt wird gelöscht."))return;
   stopMedia(); lastNarratedQuestion=null; localStorage.removeItem(KEY);localStorage.removeItem(UI_SFX_MEMORY_KEY);
-  uiSfxMemory={hintSeen:{}};answerSfxPlayed.clear();pendingQuestionTransition=null;
+  uiSfxMemory={hintSeen:{}};answerSfxPlayed.clear();pendingQuestionTransition=null;boardRevealed.clear();slideViewingActive=false;boardPausedForSlides=null;document.body.classList.remove("slide-viewing");
   state={index:0,selected:{},checked:{},flags:{},hint:{},seen:[]};
   $("summary").classList.remove("show");
   closeBoard();
