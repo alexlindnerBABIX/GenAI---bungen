@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="ctgenai-build" content="3.11">
-<meta name="ctgenai-sync" content="visual-gated-3.11">
-<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 3.11</title>
+<meta name="ctgenai-build" content="4.0">
+<meta name="ctgenai-sync" content="modern-media-4.0">
+<title>CT-GenAI V1.1 · Interaktives Lernquiz · Version 4.0</title>
 <style>
 :root {
   --navy:#102538; --navy2:#17364f; --bg:#eef2f5; --paper:#fff; --line:#d6dde4;
@@ -143,13 +143,13 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 .review-chip{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid #d9e7ea;color:#55717a;font-size:10px;font-weight:750}
 
 
-/* v3.11 · Audio/UX synchronization gates */
+/* v4.0 · Audio/UX synchronization gates */
 #questionCard{scroll-margin-top:88px}
 #feedback{scroll-margin-top:92px}
 .board-media-frame{scroll-margin-top:88px}
 .board-status.waiting{color:#f5e8b8}
 
-/* Version 3.11 · vollständiges Tafelbild im natürlichen Seitenfluss */
+/* Version 4.0 · vollständiges Tafelbild im natürlichen Seitenfluss */
 .real-board{
   margin-top:22px;padding-top:18px;border-top:1px solid #e6ecef;
   scroll-margin-top:22px
@@ -370,7 +370,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
  .option:hover,.navq:hover{background:inherit}
 }
 
-/* Version 3.11 · geführter Tipp statt Kartenraster */
+/* Version 4.0 · geführter Tipp statt Kartenraster */
 .hint{
   border-left:0;border-color:#e0e7ea;border-radius:13px;background:#fff;
   box-shadow:0 9px 28px rgba(16,37,56,.07)
@@ -478,7 +478,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.11 · Konsistenz + Fragen-UX */
+/* Version 4.0 · Konsistenz + Fragen-UX */
 .ui-line-icon,.tip-svg{
   width:20px;height:20px;display:block;stroke:currentColor;fill:none
 }
@@ -593,7 +593,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.11 · Antwortoptionen ohne A/B/C/D/E */
+/* Version 4.0 · Antwortoptionen ohne A/B/C/D/E */
 .option-content{
   display:block;
 }
@@ -602,7 +602,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 }
 
 
-/* Version 3.11 · Audio + zeitgesteuerte Tafelmedien */
+/* Version 4.0 · Audio + zeitgesteuerte Tafelmedien */
 .audio-always{min-height:38px;display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(255,255,255,.24);border-radius:9px;background:rgba(255,255,255,.07);color:#fff;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap}
 .audio-always svg{width:18px;height:18px;stroke:currentColor}.audio-always .audio-icon-off{display:none}.audio-always.off{opacity:.78}.audio-always.off .audio-icon-on{display:none}.audio-always.off .audio-icon-off{display:block}
 .audio-unlock{position:fixed;right:18px;top:78px;z-index:70;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #bfd9e2;border-radius:999px;background:#fff;color:#24596c;font:700 12px/1 system-ui;box-shadow:0 8px 25px rgba(20,55,70,.18);cursor:pointer}.audio-unlock[hidden]{display:none}.audio-unlock-dot{width:8px;height:8px;border-radius:50%;background:#4aa4b6;box-shadow:0 0 0 4px #e5f5f7}
@@ -620,7 +620,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 
 .board-overlay-media{position:relative;display:inline-block;min-width:100%;line-height:0}.board-overlay-media img{display:block;width:100%;height:auto}.overlay-laser{z-index:8}.board-overlay-dynamic{position:absolute;inset:0;pointer-events:none}
 
-/* v3.11 · readable board status + completed-state feedback */
+/* v4.0 · readable board status + completed-state feedback */
 .board-status{
   position:absolute;
   left:14px;
@@ -660,13 +660,381 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
   }
 }
 
+
+/* ==========================================================
+   v4.0 · Modern Guided Board Player
+   Design target: compact inline-first educational media
+   ========================================================== */
+
+.real-board.has-media{
+  margin-top:20px;
+  padding-top:16px
+}
+.real-board.has-media .real-board-head{
+  margin-bottom:9px
+}
+.real-board.has-media .real-board-title{
+  font-size:11px;
+  color:#5a7079;
+  letter-spacing:.01em
+}
+.real-board.has-media .chalk-dot{
+  width:7px;height:7px;box-shadow:none;background:#5aa9b4
+}
+
+/* Desktop retains sticky guided-view behavior; mobile becomes inline. */
+.board-cinema-shell{
+  min-height:0;
+  padding-bottom:clamp(20px,3vh,40px)
+}
+.board-cinema-sticky{
+  top:78px;
+  padding-bottom:4px
+}
+
+.board-media-frame{
+  isolation:isolate;
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  border:1px solid rgba(20,55,62,.16);
+  border-radius:18px;
+  background:#071b1f;
+  box-shadow:0 12px 32px rgba(15,43,50,.14);
+  cursor:default;
+  outline:none
+}
+.board-media-frame:focus-within{
+  box-shadow:0 0 0 3px rgba(77,157,175,.20),0 12px 32px rgba(15,43,50,.14)
+}
+.board-media-frame .board-image{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  max-height:min(68vh,720px);
+  object-fit:contain;
+  margin:auto;
+  background:#082b25
+}
+
+/* Persistent, nonintrusive playback state. */
+.board-status{
+  left:12px;
+  top:12px;
+  bottom:auto;
+  min-height:28px;
+  max-width:min(70%,430px);
+  padding:6px 10px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:rgba(5,20,24,.78);
+  color:#fff !important;
+  box-shadow:0 3px 12px rgba(0,0,0,.18);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  font-size:11px;
+  font-weight:760;
+  line-height:1.15;
+  text-shadow:none;
+  z-index:18
+}
+.board-status.playing::before,
+.board-status.dwell::before,
+.board-status.waiting::before,
+.board-status.completed::before{
+  content:"";
+  width:6px;height:6px;border-radius:50%;
+  margin-right:7px;
+  flex:0 0 auto;
+  background:#76d5df
+}
+.board-status.dwell::before{background:#efd27a}
+.board-status.waiting::before{background:#e9a765}
+.board-status.completed::before{background:#76c99b}
+
+/* Contextual player chrome. */
+.board-player-chrome{
+  position:absolute;
+  inset:0;
+  z-index:15;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .18s ease;
+  background:
+    linear-gradient(to bottom,rgba(0,0,0,.34),transparent 24%),
+    linear-gradient(to top,rgba(0,0,0,.28),transparent 26%)
+}
+.board-media-frame.controls-visible .board-player-chrome,
+.board-media-frame:not(.is-playing) .board-player-chrome{
+  opacity:1
+}
+.board-player-top{
+  position:absolute;
+  top:9px;left:10px;right:9px;
+  display:flex;justify-content:flex-end;align-items:center;
+  pointer-events:none
+}
+.board-player-label{
+  position:absolute;
+  left:2px;
+  top:2px;
+  display:none; /* desktop already has external title */
+  color:#fff;
+  font-size:11px;
+  font-weight:800;
+  text-shadow:0 1px 3px rgba(0,0,0,.55)
+}
+.board-player-fullscreen,
+.board-player-toggle{
+  appearance:none;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(7,23,28,.62);
+  color:#fff;
+  box-shadow:0 4px 18px rgba(0,0,0,.20);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  pointer-events:auto;
+  transition:transform .15s ease,background .15s ease,opacity .15s ease
+}
+.board-player-fullscreen:hover,
+.board-player-toggle:hover{
+  background:rgba(7,23,28,.80)
+}
+.board-player-fullscreen:focus-visible,
+.board-player-toggle:focus-visible{
+  outline:3px solid rgba(133,220,232,.58);
+  outline-offset:2px
+}
+.board-player-fullscreen{
+  width:44px;height:44px;border-radius:50%
+}
+.board-player-fullscreen svg{
+  width:19px;height:19px;stroke:currentColor
+}
+.board-player-toggle{
+  position:absolute;
+  left:50%;top:50%;
+  width:58px;height:58px;
+  transform:translate(-50%,-50%);
+  border-radius:50%
+}
+.board-player-toggle:hover{transform:translate(-50%,-50%) scale(1.035)}
+.board-player-toggle svg{
+  width:25px;height:25px;stroke:currentColor
+}
+.board-media-frame.is-playing:not(.controls-visible) .board-player-toggle{
+  opacity:0;
+  pointer-events:none
+}
+
+/* Progress is visible without additional chrome. */
+.board-progress{
+  left:10px;right:10px;bottom:8px;
+  height:3px;
+  border-radius:999px;
+  overflow:hidden;
+  background:rgba(255,255,255,.22);
+  z-index:17
+}
+.board-progress-fill{
+  background:#8bd9e1;
+  border-radius:inherit
+}
+.laser-pointer{z-index:12}
+.board-media-overlay{z-index:11}
+
+/* Compact handoff to next question. */
+.real-board.has-media .board-continue{
+  margin-top:10px;
+  padding-top:10px
+}
+
+/* Fullscreen / expanded viewer: fit content, never force 920px on mobile. */
+.board-overlay{
+  background:rgba(3,12,15,.94);
+  padding:max(8px,env(safe-area-inset-top,0))
+          max(8px,env(safe-area-inset-right,0))
+          max(8px,env(safe-area-inset-bottom,0))
+          max(8px,env(safe-area-inset-left,0))
+}
+.board-overlay.show{
+  grid-template-rows:auto minmax(0,1fr) auto
+}
+.board-overlay-head{
+  min-height:50px;
+  width:min(1400px,100%);
+  margin:0 auto 4px;
+  padding:0 2px
+}
+.board-overlay-title{
+  font-size:12px;
+  font-weight:780
+}
+.board-overlay-close{
+  width:48px;height:48px;
+  font-size:24px;
+  background:rgba(255,255,255,.09);
+  border-color:rgba(255,255,255,.18)
+}
+.board-overlay-scroll{
+  position:relative;
+  width:min(1400px,100%);
+  height:100%;
+  overflow:hidden;
+  border-radius:14px;
+  background:#061c1a
+}
+.board-overlay-media{
+  width:100%;
+  height:100%;
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+.board-overlay-scroll img{
+  width:100%;
+  height:100%;
+  min-width:0;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain
+}
+.board-overlay-controls{
+  width:min(1400px,100%);
+  min-height:56px;
+  margin:4px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  color:#fff
+}
+.board-overlay-play{
+  width:48px;height:48px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.09);
+  color:#fff;
+  display:grid;place-items:center;
+  cursor:pointer
+}
+.board-overlay-play svg{width:21px;height:21px;stroke:currentColor}
+.board-overlay-state{
+  min-width:0;
+  max-width:60vw;
+  font-size:11px;
+  font-weight:720;
+  color:rgba(255,255,255,.86);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+
+/* Mobile: inline-first, compact, low chrome. */
+@media(max-width:700px){
+  .real-board.has-media{
+    margin-top:14px;
+    padding-top:12px
+  }
+  .real-board.has-media .real-board-head{
+    display:none
+  }
+  .board-cinema-shell{
+    padding-bottom:14px
+  }
+  .board-cinema-sticky{
+    position:relative;
+    top:auto;
+    z-index:4;
+    padding-bottom:0
+  }
+  .board-media-frame{
+    border-radius:14px;
+    border-color:rgba(20,55,62,.13);
+    box-shadow:0 7px 22px rgba(14,40,47,.12)
+  }
+  .board-media-frame .board-image{
+    width:100%;
+    height:auto;
+    max-height:min(42svh,360px);
+    object-fit:contain
+  }
+  .board-player-label{
+    display:block
+  }
+  .board-player-fullscreen{
+    width:48px;height:48px
+  }
+  .board-player-toggle{
+    width:56px;height:56px
+  }
+  .board-status{
+    left:9px;
+    top:9px;
+    min-height:26px;
+    max-width:64%;
+    padding:5px 8px;
+    font-size:10px
+  }
+  .board-status:not([hidden]) + .board-player-chrome .board-player-label{
+    opacity:0
+  }
+  .board-progress{
+    left:8px;right:8px;bottom:6px;
+    height:3px
+  }
+  .real-board.has-media .board-continue{
+    margin-top:7px;
+    padding-top:8px
+  }
+  .board-next-inline{
+    min-height:44px
+  }
+  .board-overlay{
+    padding:max(4px,env(safe-area-inset-top,0))
+            max(4px,env(safe-area-inset-right,0))
+            max(4px,env(safe-area-inset-bottom,0))
+            max(4px,env(safe-area-inset-left,0))
+  }
+  .board-overlay-head{
+    min-height:48px;
+    margin-bottom:2px;
+    padding:0 4px
+  }
+  .board-overlay-scroll{
+    border-radius:10px
+  }
+  .board-overlay-scroll img{
+    min-width:0 !important;
+    width:100%;
+    height:100%;
+    object-fit:contain
+  }
+  .board-overlay-controls{
+    min-height:54px
+  }
+}
+
+/* Accessibility: honor reduced motion. */
+@media(prefers-reduced-motion:reduce){
+  .board-player-chrome,
+  .board-player-toggle,
+  .laser-pointer{
+    transition:none !important
+  }
+}
+
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
     <div class="title">CT-GenAI 1.1 · Lernquiz</div>
-    <div class="sub">Version 3.11 · 40 Aufgaben · vollständige LO-Abdeckung</div>
+    <div class="sub">Version 4.0 · 40 Aufgaben · vollständige LO-Abdeckung</div>
   </div>
   <div class="global-actions">
     <div class="mode"><span>Modus</span><strong>Prüfungsnah + Lernfeedback</strong></div>
@@ -735,7 +1103,7 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
 <div class="board-overlay" id="boardOverlay" aria-hidden="true">
   <div class="board-overlay-head">
     <div class="board-overlay-title" id="boardOverlayTitle">Tafelbild</div>
-    <button class="board-overlay-close" id="boardOverlayClose" aria-label="Tafelbild schließen">×</button>
+    <button class="board-overlay-close" id="boardOverlayClose" aria-label="Vollbild schließen">×</button>
   </div>
   <div class="board-overlay-scroll" id="boardOverlayScroll">
     <div class="board-overlay-media" id="boardOverlayMedia">
@@ -743,6 +1111,10 @@ button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:tran
       <div class="laser-pointer overlay-laser" id="boardOverlayLaser" aria-hidden="true"><span></span></div>
       <div class="board-media-overlay" id="boardOverlayDynamic" aria-hidden="true"></div>
     </div>
+  </div>
+  <div class="board-overlay-controls" id="boardOverlayControls">
+    <button class="board-overlay-play" id="boardOverlayPlay" type="button" aria-label="Tafelerklärung starten oder pausieren"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button>
+    <div class="board-overlay-state" id="boardOverlayState">Tafelerklärung</div>
   </div>
 </div>
 
@@ -1031,41 +1403,96 @@ function feedbackTrajectory(i,good){
 function audioBlockFor(i){return i<10?"B01":(i<20?"B02":(i<30?"B03":(i<40?"B04":null)));}
 function segmentPrefixFor(i){const b=audioBlockFor(i);return b?`${b}_Q${String(i+1).padStart(2,"0")}`:null;}
 function boardHasAudio(i){const p=segmentPrefixFor(i);return !!(p&&AUDIO_INDEX[`${p}_BOARD`]);}
+function fullscreenIcon(){
+  return `<svg class="ui-line-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5"/><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M16 21h5v-5"/></svg>`;
+}
 function realBoardHtml(i){
   const isLast=i===questions.length-1, hasAudio=boardHasAudio(i);
   return `<div class="real-board ${hasAudio?'has-media':''}" data-board="${i}">
     <div class="real-board-head">
       <div class="real-board-title"><span class="chalk-dot"></span><span>Tafelbild ${i+1}</span></div>
       <div class="board-head-actions">
-        ${hasAudio?`<button class="board-audio-control" type="button" data-board-play="${i}" aria-label="Tafelerklärung starten oder pausieren" title="Tafelerklärung starten oder pausieren">${mediaPlayIcon()}</button>`:''}
-        <button class="real-board-open" type="button" data-open-board="${i}" aria-label="Tafelbild groß öffnen" title="Tafelbild groß öffnen"><svg class="ui-line-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5"/><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M16 21h5v-5"/></svg></button>
+        ${!hasAudio?`<button class="real-board-open" type="button" data-open-board="${i}" aria-label="Tafelbild ${i+1} groß öffnen" title="Großansicht">${fullscreenIcon()}</button>`:''}
       </div>
     </div>
     ${hasAudio?`<div class="board-cinema-shell" id="boardShell-${i}"><div class="board-cinema-sticky" id="boardSticky-${i}">
-      <div class="board-media-frame" id="boardFrame-${i}" data-open-board-image="${i}" role="button" tabindex="0" aria-label="Tafelbild ${i+1} groß öffnen">
+      <div class="board-media-frame controls-visible" id="boardFrame-${i}" data-board-player="${i}" aria-label="Tafelbild ${i+1} mit Audioerklärung">
         <img class="board-image" id="boardImg-${i}" src="${BOARD_IMAGES[i]}" alt="Tafelbild ${i+1}" draggable="false" decoding="async">
         <div class="board-media-overlay" id="boardOverlayLayer-${i}" aria-hidden="true"></div>
         <div class="laser-pointer" id="laser-${i}" aria-hidden="true"><span></span></div>
-        <div class="board-progress"><div class="board-progress-fill" id="boardProgress-${i}"></div></div>
-        <div class="board-status" id="boardStatus-${i}" hidden></div>
+        <div class="board-progress" aria-hidden="true"><div class="board-progress-fill" id="boardProgress-${i}"></div></div>
+        <div class="board-status" id="boardStatus-${i}" hidden aria-live="polite"></div>
+        <div class="board-player-chrome" id="boardChrome-${i}" aria-hidden="false">
+          <div class="board-player-top">
+            <span class="board-player-label">Tafelbild ${i+1}</span>
+            <button class="board-player-fullscreen" type="button" data-board-fullscreen="${i}" aria-label="Tafelbild ${i+1} im Vollbild öffnen" title="Vollbild">${fullscreenIcon()}</button>
+          </div>
+          <button class="board-player-toggle" type="button" data-board-play="${i}" aria-label="Tafelerklärung starten" title="Wiedergabe">${mediaPlayIcon(true)}</button>
+        </div>
       </div>
     </div></div>`:`<div class="board-natural" data-open-board-image="${i}" role="button" tabindex="0" aria-label="Tafelbild ${i+1} groß öffnen"><img class="board-image" id="boardImg-${i}" src="${BOARD_IMAGES[i]}" alt="Tafelbild ${i+1}" draggable="false" decoding="async"></div>`}
     <div class="board-continue"><button class="board-next-inline" type="button" data-board-next="${i}">${isLast?'Ergebnis ansehen':'Weiter zu Frage '+(i+2)+' →'}</button></div>
   </div>`;
 }
+let boardChromeTimer=null;
+function setBoardChromeVisible(i,visible,autoHide=false){
+  const frame=$(`boardFrame-${i}`);if(!frame)return;
+  frame.classList.toggle("controls-visible",!!visible);
+  clearTimeout(boardChromeTimer);
+  if(visible&&autoHide&&activeBoard===i&&!audioEngine.paused){
+    boardChromeTimer=setTimeout(()=>{
+      const f=$(`boardFrame-${i}`);
+      if(f&&activeBoard===i&&!audioEngine.paused)f.classList.remove("controls-visible");
+    },1900);
+  }
+}
+function toggleBoardChrome(i){
+  const frame=$(`boardFrame-${i}`);if(!frame)return;
+  const show=!frame.classList.contains("controls-visible");
+  setBoardChromeVisible(i,show,show);
+}
+function overlayStateText(i){
+  const tl=MEDIA_TIMELINE[String(i+1)];
+  if(boardCompleted.has(i))return "Tafelerklärung abgeschlossen";
+  if(activeBoard===i&&activeSegment===tl?.boardSegment)return audioEngine.paused?"Tafelerklärung pausiert":"Tafelerklärung läuft";
+  if(activeSegment===tl?.transferSegment)return "Transfer läuft";
+  return "Tafelerklärung bereit";
+}
+function updateOverlayControls(i){
+  if(!$("boardOverlay").classList.contains("show")||$("boardOverlay").dataset.board!==String(i))return;
+  const b=$("boardOverlayPlay"),s=$("boardOverlayState"),tl=MEDIA_TIMELINE[String(i+1)];
+  const playing=activeBoard===i&&activeSegment===tl?.boardSegment&&!audioEngine.paused;
+  if(b){b.innerHTML=mediaPlayIcon(!playing);b.setAttribute("aria-label",playing?"Tafelerklärung pausieren":"Tafelerklärung starten");}
+  if(s)s.textContent=overlayStateText(i);
+}
 function openBoard(i){
-  const img=$("boardOverlayImg"); img.src=BOARD_IMAGES[i]; img.alt=`Tafelbild ${i+1} in Großansicht`; $("boardOverlay").dataset.board=String(i);
+  const img=$("boardOverlayImg"); img.src=BOARD_IMAGES[i]; img.alt=`Tafelbild ${i+1} in Vollbildansicht`; $("boardOverlay").dataset.board=String(i);
   $("boardOverlayTitle").textContent=`Tafelbild ${i+1}`; $("boardOverlay").classList.add("show");
-  $("boardOverlay").setAttribute("aria-hidden","false"); $("boardOverlayScroll").scrollTo({top:0,left:0}); document.body.style.overflow="hidden";
+  $("boardOverlay").setAttribute("aria-hidden","false"); document.body.style.overflow="hidden";
+  updateOverlayControls(i);
 }
 function closeBoard(){
   $("boardOverlay").classList.remove("show"); $("boardOverlay").setAttribute("aria-hidden","true"); $("boardOverlayImg").removeAttribute("src"); $("boardOverlayLaser").classList.remove("active"); delete $("boardOverlay").dataset.board; document.body.style.overflow="";
 }
 function wireBoard(i){
   const btn=document.querySelector(`[data-open-board="${i}"]`); if(btn)btn.onclick=()=>openBoard(i);
-  const image=document.querySelector(`[data-open-board-image="${i}"]`); if(image){image.onclick=e=>{if(e.target.closest('.board-audio-control'))return;openBoard(i)};image.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openBoard(i);}};}
+  const natural=document.querySelector(`[data-open-board-image="${i}"]`);
+  if(natural){natural.onclick=()=>openBoard(i);natural.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openBoard(i);}};}
+
+  const frame=document.querySelector(`[data-board-player="${i}"]`);
+  if(frame){
+    frame.onclick=e=>{
+      if(e.target.closest('button'))return;
+      toggleBoardChrome(i);
+    };
+  }
+  const fs=document.querySelector(`[data-board-fullscreen="${i}"]`);
+  if(fs)fs.onclick=e=>{e.stopPropagation();openBoard(i);};
+
   const next=document.querySelector(`[data-board-next="${i}"]`); if(next)next.onclick=()=>goNextQuestion(true);
-  const play=document.querySelector(`[data-board-play="${i}"]`); if(play)play.onclick=e=>{e.stopPropagation();manualToggleBoard(i)};
+  const play=document.querySelector(`[data-board-play="${i}"]`);
+  if(play)play.onclick=e=>{e.stopPropagation();manualToggleBoard(i);setBoardChromeVisible(i,true,true);};
+
   if(boardHasAudio(i))setupBoardDwell(i);
 }
 function boardHtml(q){
@@ -1125,8 +1552,10 @@ function waitForVisualReady(el,{minRatio=.62,idleMs=320,maxWait=4200}={}){
 }
 function boardFocusRatio(i){return visibleRatio($(`boardFrame-${i}`));}
 function setBoardStatus(i,text,cls="waiting"){
-  const s=$(`boardStatus-${i}`);if(!s)return;
-  s.hidden=false;s.className=`board-status ${cls}`;s.textContent=text;
+  const s=$(`boardStatus-${i}`);
+  if(s){s.hidden=false;s.className=`board-status ${cls}`;s.textContent=text;}
+  const os=$("boardOverlayState");
+  if(os&&$("boardOverlay").classList.contains("show")&&$("boardOverlay").dataset.board===String(i))os.textContent=text;
 }
 function markBoardCompleted(i){
   boardCompleted.add(i);
@@ -1137,6 +1566,8 @@ function markBoardCompleted(i){
   const s=$(`boardStatus-${i}`);
   if(s){s.hidden=false;s.className="board-status completed";s.textContent="Tafelerklärung abgeschlossen";}
   updateBoardPlayButton(i);
+  setBoardChromeVisible(i,true,false);
+  updateOverlayControls(i);
   setTimeout(()=>{const x=$(`boardStatus-${i}`);if(x&&boardCompleted.has(i))x.hidden=true;},1800);
 }
 function boardMayAutoStart(i){
@@ -1254,7 +1685,11 @@ function onUserScroll(){
   clearTimeout(dwellTimer);dwellTimer=null;
   const status=$(`boardStatus-${i}`); if(status && activeBoard!==i){status.hidden=true;}
 
-  if(activeBoard===i && !audioEngine.paused)audioEngine.pause();
+  if(activeBoard===i && !audioEngine.paused){
+    audioEngine.pause();
+    setBoardChromeVisible(i,true,false);
+    updateBoardPlayButton(i);
+  }
 
   clearTimeout(window.__boardScrollResume);
   window.__boardScrollResume=setTimeout(()=>{
@@ -1270,7 +1705,11 @@ function manualToggleBoard(i){
   if(!audioEnabled)return;
   const tl=MEDIA_TIMELINE[String(i+1)];
   if(activeBoard===i&&activeSegment===tl.boardSegment){
-    if(audioEngine.paused)audioEngine.play().catch(()=>{});else audioEngine.pause();
+    if(audioEngine.paused){
+      audioEngine.play().then(()=>setBoardChromeVisible(i,true,true)).catch(()=>{});
+    }else{
+      audioEngine.pause();setBoardChromeVisible(i,true,false);
+    }
     updateBoardPlayButton(i);return;
   }
   if(boardCompleted.has(i))boardCompleted.delete(i);
@@ -1287,6 +1726,7 @@ function startBoardMedia(i,manual){
   resetBoardMedia(i);
   setBoardStatus(i,"Tafelerklärung läuft","playing");
 
+  setBoardChromeVisible(i,true,true);
   requestPlay(tl.boardSegment,{onEnded:()=>{
     finishBoardMedia(i);
     setBoardStatus(i,"Transfer …","waiting");
@@ -1308,7 +1748,26 @@ function finishBoardMedia(i){
   updateBoardPlayButton(i);
 }
 function resetBoardMedia(i){const l=$(`laser-${i}`);if(l)l.classList.remove('active');const p=$(`boardProgress-${i}`);if(p)p.style.width='0';const o=$(`boardOverlayLayer-${i}`);if(o)o.innerHTML='';const s=$(`boardStatus-${i}`);if(s)s.hidden=true;updateBoardPlayButton(i);}
-function updateBoardPlayButton(i){const b=document.querySelector(`[data-board-play="${i}"]`);if(b)b.innerHTML=mediaPlayIcon(!(activeBoard===i&&!audioEngine.paused));}
+function updateBoardPlayButton(i){
+  const b=document.querySelector(`[data-board-play="${i}"]`),frame=$(`boardFrame-${i}`),tl=MEDIA_TIMELINE[String(i+1)];
+  const playing=activeBoard===i&&activeSegment===tl?.boardSegment&&!audioEngine.paused;
+  if(b){
+    b.innerHTML=mediaPlayIcon(!playing);
+    b.setAttribute("aria-label",playing?"Tafelerklärung pausieren":"Tafelerklärung starten");
+    b.title=playing?"Pause":"Wiedergabe";
+  }
+  if(frame){
+    const nextState=playing?"playing":"idle";
+    const changed=frame.dataset.playerState!==nextState;
+    frame.dataset.playerState=nextState;
+    frame.classList.toggle("is-playing",playing);
+    if(changed){
+      if(playing)setBoardChromeVisible(i,true,true);
+      else setBoardChromeVisible(i,true,false);
+    }
+  }
+  updateOverlayControls(i);
+}
 function positionLaser(i,cue){
   const img=$(`boardImg-${i}`),frame=$(`boardFrame-${i}`),laser=$(`laser-${i}`);if(!img||!frame||!laser)return;
   const ir=img.getBoundingClientRect(),fr=frame.getBoundingClientRect();laser.style.left=(ir.left-fr.left+cue.x*ir.width)+'px';laser.style.top=(ir.top-fr.top+cue.y*ir.height)+'px';laser.classList.add('active');
@@ -1456,6 +1915,10 @@ $("audioUnlock").onclick=unlockPendingAudio;
 document.addEventListener("pointerdown",()=>{if(pendingAutoplay)unlockPendingAudio();},{passive:true});
 window.addEventListener("scroll",onUserScroll,{passive:true});
 $("boardOverlayClose").onclick=closeBoard;
+$("boardOverlayPlay").onclick=()=>{
+  const i=Number($("boardOverlay").dataset.board);
+  if(Number.isFinite(i))manualToggleBoard(i);
+};
 $("boardOverlay").onclick=e=>{ if(e.target===$("boardOverlay"))closeBoard(); };
 document.addEventListener("keydown",e=>{ if(e.key==="Escape" && $("boardOverlay").classList.contains("show"))closeBoard(); });
 
